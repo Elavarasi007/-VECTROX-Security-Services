@@ -143,3 +143,60 @@ window.addEventListener('scroll', function () {
     }
 
 });
+
+
+
+
+
+
+/* =========================================
+FAQ
+========================================= */
+
+
+document.querySelectorAll('.faq-question').forEach(function(question){
+
+    question.addEventListener('click', function(){
+
+        const item = this.parentElement;
+
+        item.classList.toggle('active');
+
+    });
+
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    const faqButtons = document.querySelectorAll('.faq-question');
+
+    faqButtons.forEach(button => {
+
+        button.addEventListener('click', function () {
+
+            const answer = this.nextElementSibling;
+
+            document.querySelectorAll('.faq-answer').forEach(item => {
+
+                if(item !== answer){
+                    item.style.maxHeight = null;
+                    item.parentElement.classList.remove('active');
+                }
+
+            });
+
+            if(answer.style.maxHeight){
+                answer.style.maxHeight = null;
+                this.parentElement.classList.remove('active');
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                this.parentElement.classList.add('active');
+            }
+
+        });
+
+    });
+
+});

@@ -2606,15 +2606,37 @@ font-size:2.2rem;
 }
 
 
-
 /* =========================================
-  ABOUT VECTROX
+   ABOUT VECTROX PAGE
 ========================================= */
 
-    .page-banner{
+/* =========================================
+   PAGE BANNER
+========================================= */
+
+.page-banner{
     background:#000;
     padding:100px 0;
     text-align:center;
+    position:relative;
+}
+
+.page-banner::before{
+    content:'';
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(153,11,44,.15),
+            transparent 60%
+        );
+}
+
+.page-banner .container{
+    position:relative;
+    z-index:2;
 }
 
 .page-banner h1{
@@ -2622,10 +2644,6 @@ font-size:2.2rem;
     font-size:50px;
     font-weight:700;
     margin-bottom:15px;
-}
-
-.page-banner{
-    text-align:center;
 }
 
 .breadcrumb{
@@ -2639,15 +2657,24 @@ font-size:2.2rem;
 .breadcrumb a{
     color:#fff;
     text-decoration:none;
+    transition:.3s;
+}
+
+.breadcrumb a:hover{
+    color:#990b2c;
 }
 
 .breadcrumb span:last-child{
     color:#990b2c;
 }
 
-.inner-content{
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-section{
     padding:80px 0;
-    text-align: justify;
+    background:#f8f9fb;
 }
 
 .section-tag{
@@ -2656,29 +2683,301 @@ font-size:2.2rem;
     color:#fff;
     padding:10px 18px;
     font-size:10px;
-    font-weight: 700;
+    font-weight:700;
     letter-spacing:3px;
     margin-bottom:25px;
+    border-radius:4px;
 }
 
-.inner-content h2{
-    font-size: 1.5rem;
-    margin-bottom:25px;
+.about-section h2{
+    font-size:1.5rem;
+    margin-bottom:30px;
+    font-weight:700;
 }
 
-.inner-content p{
-    color:#666;
-    line-height:1.9;
+/* =========================================
+   INTRO CARD
+========================================= */
+
+.about-intro-card{
+    position:relative;
+    overflow:hidden;
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    margin-bottom:40px;
+
+    border-left:5px solid #990b2c;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+}
+
+.about-intro-card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 20px 50px rgba(153,11,44,.12);
+}
+
+.about-intro-card::before{
+    content:'';
+
+    position:absolute;
+    top:0;
+    right:0;
+
+    width:180px;
+    height:180px;
+
+    background:
+        radial-gradient(
+            rgba(153,11,44,.08),
+            transparent 70%
+        );
+}
+
+.about-intro-card h3{
+    color:#990b2c;
+    font-size:1.4rem;
+    font-weight:700;
     margin-bottom:20px;
 }
 
-.company-reg{
-    color:#990b2c;
-    font-weight:700;
-    margin-top:25px;
+.about-intro-card i{
+    margin-right:10px;
 }
 
+.about-intro-card p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:0;
+}
 
+/* =========================================
+   FEATURE CARDS
+========================================= */
+
+.about-feature-card{
+    position:relative;
+    overflow:hidden;
+
+    background:#fff;
+
+    padding:35px 30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    height:100%;
+
+    margin-bottom:30px !important;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+}
+
+.about-feature-card::before{
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #990b2c,
+            #2b2024
+        );
+
+    transition:.45s ease;
+}
+
+.about-feature-card:hover::before{
+    bottom:0;
+}
+
+.about-feature-card i,
+.about-feature-card h4,
+.about-feature-card p{
+    position:relative;
+    z-index:2;
+}
+
+.about-feature-card i{
+    font-size:42px;
+    color:#990b2c;
+    margin-bottom:18px;
+    transition:.4s ease;
+}
+
+.about-feature-card h4{
+    font-size:1.1rem;
+    font-weight:700;
+    color:#111;
+    margin-bottom:12px;
+    transition:.4s ease;
+}
+
+.about-feature-card p{
+    font-size:.95rem;
+    color:#666;
+    line-height:1.8;
+    margin-bottom:0;
+    transition:.4s ease;
+}
+
+.about-feature-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 20px 40px rgba(153,11,44,.20);
+}
+
+.about-feature-card:hover i,
+.about-feature-card:hover h4,
+.about-feature-card:hover p{
+    color:#fff;
+}
+
+/* =========================================
+   CONTENT CARDS
+========================================= */
+
+.about-content-card{
+    position:relative;
+    overflow:hidden;
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    margin-bottom:30px;
+    margin-top: 30px;
+
+    border-left:5px solid #990b2c;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+}
+
+.about-content-card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 20px 50px rgba(153,11,44,.12);
+}
+
+.about-content-card::before{
+    content:'';
+
+    position:absolute;
+
+    top:0;
+    right:0;
+
+    width:180px;
+    height:180px;
+
+    background:
+        radial-gradient(
+            rgba(153,11,44,.08),
+            transparent 70%
+        );
+}
+
+.about-content-card h3{
+    color:#990b2c;
+    font-size:1.3rem;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.about-content-card p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:18px;
+    text-align:justify;
+}
+
+/* =========================================
+   COMPANY REGISTRATION
+========================================= */
+
+.company-reg{
+    background:#fff;
+
+    padding:20px 25px;
+
+    margin-top:30px;
+
+    border-radius:12px;
+
+    border-left:5px solid #990b2c;
+
+    color:#990b2c;
+
+    font-weight:700;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.05);
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+    .page-banner{
+        padding:70px 0;
+    }
+
+    .page-banner h1{
+        font-size:36px;
+    }
+
+    .about-section{
+        padding:60px 0;
+    }
+
+    .about-intro-card,
+    .about-content-card{
+        padding:25px;
+    }
+
+    .about-feature-card{
+        padding:25px;
+    }
+
+    .about-feature-card i{
+        font-size:34px;
+    }
+
+    .about-feature-card h4{
+        font-size:1rem;
+    }
+}
 /* =========================================
    MISSION, VISION & VALUES PAGE
 ========================================= */
@@ -2815,302 +3114,301 @@ font-size:2.2rem;
 }
 
 
+
+
 /* =========================================
    SECURITY COMPANY IN LONDON PAGE
 ========================================= */
 
-.intro-box,
-.services-box,
-.commitment-box{
-    position:relative !important;
-    overflow:hidden !important;
+.security-intro-box,
+.security-services-box,
+.security-commitment-box{
+    position:relative;
+    overflow:hidden;
 
-    background:#ffffff !important;
+    background:#ffffff;
 
-    padding:40px !important;
+    padding:40px;
 
-    border-radius:20px !important;
+    border-radius:20px;
 
-    margin-top:35px !important;
-    margin-bottom: 35px;
+    margin:35px 0;
 
-    border-left:5px solid #990b2c !important;
-
-    box-shadow:
-        0 15px 40px rgba(0,0,0,.08) !important;
-
-    transition:.4s ease !important;
-}
-
-.intro-box:hover,
-.services-box:hover{
-    transform:translateY(-5px) !important;
+    border-left:5px solid #990b2c;
 
     box-shadow:
-        0 20px 45px rgba(153,11,44,.12) !important;
+        0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s ease;
 }
 
-.intro-box::before,
-.services-box::before{
-    content:'' !important;
-    position:absolute !important;
-    top:0 !important;
-    right:0 !important;
+.security-intro-box:hover,
+.security-services-box:hover{
+    transform:translateY(-5px);
 
-    width:180px !important;
-    height:180px !important;
+    box-shadow:
+        0 20px 45px rgba(153,11,44,.12);
+}
+
+/* Decorative Glow */
+
+.security-intro-box::before,
+.security-services-box::before{
+    content:'';
+    position:absolute;
+
+    top:0;
+    right:0;
+
+    width:180px;
+    height:180px;
 
     background:
         radial-gradient(
             rgba(153,11,44,.08),
             transparent 70%
-        ) !important;
+        );
 
-    pointer-events:none !important;
-}
-
-/* HEADINGS */
-
-.intro-box h3,
-.services-box h3,
-.commitment-box h3{
-    color:#990b2c !important;
-
-    font-size:1.45rem !important;
-
-    font-weight:700 !important;
-
-    margin-bottom:20px !important;
-}
-
-.intro-box i,
-.services-box i,
-.commitment-box i{
-    color:#990b2c !important;
-    margin-right:10px !important;
-}
-
-/* PARAGRAPHS */
-
-.intro-box p,
-.services-box p{
-    color:#666 !important;
-
-    font-size:.97rem !important;
-
-    line-height:1.9 !important;
-
-    margin-bottom:18px !important;
+    pointer-events:none;
 }
 
 /* =========================================
-   FEATURE CARDS
+   HEADINGS
 ========================================= */
 
-.feature-box{
-    position:relative !important;
-    overflow:hidden !important;
+.security-intro-box h3,
+.security-services-box h3,
+.security-commitment-box h3{
+    color:#990b2c;
 
-    background:#ffffff !important;
+    font-size:1.5rem;
 
-    padding:30px !important;
+    font-weight:700;
 
-    border-radius:18px !important;
-
-    text-align:center !important;
-
-    margin-bottom:25px !important;
-
-    height:100% !important;
-
-    border:1px solid rgba(153,11,44,.08) !important;
-
-    box-shadow:
-        0 10px 30px rgba(0,0,0,.06) !important;
-
-    transition:.4s ease !important;
+    margin-bottom:20px;
 }
 
-.feature-box::before{
-    content:'' !important;
-    position:absolute !important;
+.security-intro-box i,
+.security-services-box i,
+.security-commitment-box i{
+    color:#990b2c;
+    margin-right:10px;
+}
 
-    left:0 !important;
-    bottom:-100% !important;
+/* =========================================
+   PARAGRAPHS
+========================================= */
 
-    width:100% !important;
-    height:100% !important;
+.security-intro-box p,
+.security-services-box p{
+    color:#666;
+
+    font-size:.97rem;
+
+    line-height:1.9;
+
+    margin-bottom:18px;
+}
+
+/* =========================================
+   FEATURE SECTION
+========================================= */
+
+.service-highlight{
+    margin:40px 0;
+}
+
+.security-feature-box{
+    position:relative;
+    overflow:hidden;
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    height:100%;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+}
+
+.security-feature-box::before{
+    content:'';
+    position:absolute;
+
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
 
     background:
         linear-gradient(
             135deg,
             #990b2c,
             #2b2024
-        ) !important;
+        );
 
-    transition:.45s ease !important;
+    transition:.45s ease;
 }
 
-.feature-box:hover::before{
-    bottom:0 !important;
+.security-feature-box:hover::before{
+    bottom:0;
 }
 
-.feature-box i,
-.feature-box h4,
-.feature-box p{
-    position:relative !important;
-    z-index:2 !important;
+.security-feature-box i,
+.security-feature-box h4,
+.security-feature-box p{
+    position:relative;
+    z-index:2;
 }
 
-.feature-box i{
-    font-size:42px !important;
+.security-feature-box i{
+    font-size:42px;
 
-    color:#990b2c !important;
+    color:#990b2c;
 
-    margin-bottom:18px !important;
+    margin-bottom:18px;
 
-    transition:.4s ease !important;
+    transition:.4s ease;
 }
 
-.feature-box h4{
-    font-size:1.15rem !important;
+.security-feature-box h4{
+    font-size:1.1rem;
 
-    font-weight:700 !important;
+    font-weight:700;
 
-    color:#111 !important;
+    color:#111;
 
-    margin-bottom:12px !important;
+    margin-bottom:12px;
 
-    transition:.4s ease !important;
+    transition:.4s ease;
 }
 
-.feature-box p{
-    font-size:.95rem !important;
+.security-feature-box p{
+    font-size:.95rem;
 
-    color:#666 !important;
+    color:#666;
 
-    line-height:1.8 !important;
+    line-height:1.8;
 
-    margin-bottom:0 !important;
+    margin-bottom:0;
 
-    transition:.4s ease !important;
+    transition:.4s ease;
 }
 
-.feature-box:hover{
-    transform:translateY(-10px) !important;
+.security-feature-box:hover{
+    transform:translateY(-10px);
 
     box-shadow:
-        0 20px 40px rgba(153,11,44,.20) !important;
+        0 20px 40px rgba(153,11,44,.20);
 }
 
-.feature-box:hover i,
-.feature-box:hover h4,
-.feature-box:hover p{
-    color:#ffffff !important;
+.security-feature-box:hover i,
+.security-feature-box:hover h4,
+.security-feature-box:hover p{
+    color:#ffffff;
 }
 
 /* =========================================
    SERVICES TAGS
 ========================================= */
 
-.services-grid{
-    display:flex !important;
+.security-services-grid{
+    display:flex;
 
-    flex-wrap:wrap !important;
+    flex-wrap:wrap;
 
-    gap:15px !important;
+    gap:15px;
 
-    margin-top:20px !important;
-}
-.services-grid{
-    padding:20px !important;
+    margin-top:20px;
 
-    border-radius:20px !important;
+    padding:20px;
 
-    background:#fafafa !important;
+    border-radius:20px;
 
-    border:1px solid rgba(153,11,44,.12) !important;
+    background:#fafafa;
+
+    border:1px solid rgba(153,11,44,.12);
 
     box-shadow:
         inset 0 1px 0 rgba(255,255,255,.8),
-        0 10px 30px rgba(0,0,0,.05) !important;
+        0 10px 30px rgba(0,0,0,.05);
 }
 
-.services-grid span{
+.security-services-grid span{
     background:
         linear-gradient(
             135deg,
             #b0002a,
             #7a001b
-        ) !important;
+        );
 
-    color:#ffffff !important;
+    color:#ffffff;
 
-    padding:12px 22px !important;
+    padding:12px 22px;
 
-    border-radius:50px !important;
+    border-radius:50px;
 
-    font-size:.92rem !important;
+    font-size:.92rem;
 
-    font-weight:600 !important;
+    font-weight:600;
 
-    white-space:nowrap !important;
-
-    box-shadow:
-        0 8px 20px rgba(153,11,44,.18) !important;
-
-    transition:.35s ease !important;
-}
-.services-grid span{
-    background:
-    linear-gradient(
-        135deg,
-        #b0002a,
-        #7a001b
-    ) !important;
+    white-space:nowrap;
 
     box-shadow:
-        0 8px 20px rgba(153,11,44,.25) !important;
+        0 8px 20px rgba(153,11,44,.25);
+
+    transition:.35s ease;
 }
-.services-grid span:hover{
+
+.security-services-grid span:hover{
     background:
         linear-gradient(
             135deg,
             #111,
             #2b2024
-        ) !important;
+        );
 
-    transform:translateY(-4px) !important;
+    transform:translateY(-4px);
 }
 
 /* =========================================
-   COMMITMENT SECTION
+   COMMITMENT BOX
 ========================================= */
 
-.commitment-box{
+.security-commitment-box{
     background:
         linear-gradient(
             135deg,
             #b0002a 0%,
             #7a001b 50%,
             #2b2024 100%
-        ) !important;
+        );
 
-    border-left:none !important;
+    border-left:none;
 
     box-shadow:
-        0 20px 50px rgba(153,11,44,.25) !important;
+        0 20px 50px rgba(153,11,44,.25);
 }
 
-.commitment-box h3,
-.commitment-box p,
-.commitment-box i{
-    color:#ffffff !important;
+.security-commitment-box h3,
+.security-commitment-box p,
+.security-commitment-box i{
+    color:#ffffff;
 }
 
-.commitment-box p{
-    font-size:1rem !important;
-    line-height:1.9 !important;
+.security-commitment-box p{
+    font-size:1rem;
+    line-height:1.9;
 }
 
 /* =========================================
@@ -3119,30 +3417,6608 @@ font-size:2.2rem;
 
 @media(max-width:768px){
 
-    .intro-box,
-    .services-box,
-    .commitment-box{
-        padding:25px !important;
+    .security-intro-box,
+    .security-services-box,
+    .security-commitment-box{
+        padding:25px;
     }
 
-    .feature-box{
-        padding:22px !important;
+    .security-feature-box{
+        padding:22px;
     }
 
-    .feature-box i{
-        font-size:34px !important;
+    .security-feature-box i{
+        font-size:34px;
     }
 
-    .feature-box h4{
-        font-size:1rem !important;
+    .security-feature-box h4{
+        font-size:1rem;
     }
 
-    .services-grid{
-        gap:10px !important;
+    .security-services-grid{
+        gap:10px;
     }
 
-    .services-grid span{
-        font-size:.85rem !important;
-        padding:10px 16px !important;
+    .security-services-grid span{
+        font-size:.85rem;
+        padding:10px 16px;
     }
 }
+
+
+
+
+
+/* =========================================
+   CORPORATE SOCIAL RESPONSIBILITY PAGE
+========================================= */
+
+.csr-page{
+    padding:80px 0;
+}
+
+.csr-section{
+    background:#fff;
+    padding:35px;
+    margin-bottom:30px;
+    border-radius:15px;
+    border-left:5px solid #990b2c;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.csr-section h2{
+    font-size:2rem;
+    font-weight:700;
+    color:#111;
+    margin-bottom:20px;
+}
+
+.csr-section h3{
+    font-size:1.5rem;
+    font-weight:700;
+    color:#990b2c;
+    margin-bottom:20px;
+}
+
+.csr-section p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:15px;
+}
+
+.csr-list{
+    margin-top:20px;
+    padding-left:20px;
+}
+
+.csr-list li{
+    color:#555;
+    margin-bottom:10px;
+}
+
+/* CARDS */
+/* =========================================
+   CSR CARDS
+========================================= */
+
+.csr-card{
+    position:relative;
+    overflow:hidden;
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    height:100%;
+
+    margin-bottom:30px;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+}
+
+.csr-card::before{
+    content:'';
+    position:absolute;
+
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #990b2c,
+            #2b2024
+        );
+
+    transition:.45s ease;
+}
+
+.csr-card:hover::before{
+    bottom:0;
+}
+
+.csr-card i,
+.csr-card h4,
+.csr-card p{
+    position:relative;
+    z-index:2;
+}
+
+.csr-card i{
+    font-size:42px;
+
+    color:#990b2c;
+
+    margin-bottom:18px;
+
+    transition:.4s ease;
+}
+
+.csr-card h4{
+    font-size:1.1rem;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:12px;
+
+    transition:.4s ease;
+}
+
+.csr-card p{
+    font-size:.95rem;
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:0;
+
+    transition:.4s ease;
+}
+
+.csr-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 20px 40px rgba(153,11,44,.20);
+}
+
+.csr-card:hover i,
+.csr-card:hover h4,
+.csr-card:hover p{
+    color:#ffffff;
+}
+/* COMMITMENT */
+
+.csr-commitment{
+    background:linear-gradient(
+        135deg,
+        #990b2c,
+        #2b2024
+    );
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.csr-commitment h3{
+    color:#fff;
+    margin-bottom:20px;
+    font-size:1.8rem;
+}
+
+.csr-commitment p{
+    color:#fff;
+    line-height:1.9;
+    margin:0;
+}
+.csr-page .row{
+    margin-bottom:30px !important;
+}
+.inner-content .row{
+    margin-bottom:30px !important;
+}
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .csr-section{
+        padding:25px;
+    }
+
+    .csr-commitment{
+        padding:25px;
+    }
+
+    .csr-card{
+        margin-bottom:20px;
+    }
+
+    .csr-section h2{
+        font-size:1.7rem;
+    }
+
+    .csr-section h3{
+        font-size:1.3rem;
+    }
+}
+
+
+
+
+/* =========================================
+   ENVIRONMENTAL POLICY PAGE
+========================================= */
+
+.environmental-policy{
+    padding:80px 0;
+}
+
+.env-intro-box,
+.env-section{
+    background:#fff;
+    padding:35px;
+    margin-bottom:30px;
+    border-radius:18px;
+    border-left:5px solid #990b2c;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.env-intro-box h3,
+.env-section h3{
+    color:#990b2c;
+    font-size:1.5rem;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.env-intro-box h3 i,
+.env-section h3 i{
+    margin-right:10px;
+}
+
+.env-intro-box p,
+.env-section p{
+    color:#666;
+    line-height:1.9;
+}
+
+.env-section ul{
+    margin:0;
+    padding-left:20px;
+}
+
+.env-section ul li{
+    margin-bottom:12px;
+    color:#555;
+    line-height:1.8;
+}
+
+/* =========================================
+   ENVIRONMENT CARDS
+========================================= */
+
+.env-card{
+    position:relative;
+    overflow:hidden;
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    height:100%;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+}
+
+.env-card::before{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:
+    linear-gradient(
+        135deg,
+        #990b2c,
+        #2b2024
+    );
+
+    transition:.4s ease;
+}
+
+.env-card:hover::before{
+    bottom:0;
+}
+
+.env-card i,
+.env-card h4,
+.env-card p{
+    position:relative;
+    z-index:2;
+}
+
+.env-card i{
+    font-size:42px;
+    color:#990b2c;
+    margin-bottom:15px;
+}
+
+.env-card h4{
+    font-size:1.2rem;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.env-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+.env-card:hover{
+    transform:translateY(-8px);
+}
+
+.env-card:hover i,
+.env-card:hover h4,
+.env-card:hover p{
+    color:#fff;
+}
+
+/* =========================================
+   COMMITMENT
+========================================= */
+
+.env-commitment{
+    background:
+    linear-gradient(
+        135deg,
+        #990b2c,
+        #2b2024
+    );
+
+    padding:45px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    margin-top:30px;
+}
+
+.env-commitment h3{
+    color:#fff;
+    margin-bottom:20px;
+    font-size:1.8rem;
+}
+
+.env-commitment p{
+    color:#fff;
+    line-height:1.9;
+    max-width:900px;
+    margin:auto;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+    .env-intro-box,
+    .env-section{
+        padding:25px;
+    }
+
+    .env-commitment{
+        padding:30px;
+    }
+
+    .env-card{
+        margin-bottom:20px;
+    }
+}
+
+
+/* =========================================
+   HEALTH & SAFETY POLICY PAGE
+========================================= */
+
+.hs-intro-box,
+.hs-policy-box{
+    background:#fff;
+    padding:35px;
+    border-radius:18px;
+    margin-bottom:30px;
+    border-left:5px solid #990b2c;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+    transition:.35s;
+}
+
+.hs-intro-box:hover,
+.hs-policy-box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 40px rgba(153,11,44,.12);
+}
+
+.hs-policy-box h3,
+.hs-commitment-box h3{
+    color:#990b2c;
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.hs-policy-box h3 i,
+.hs-commitment-box h3 i{
+    margin-right:12px;
+}
+
+.hs-intro-box p,
+.hs-policy-box p{
+    color:#666;
+    line-height:1.9;
+    font-size:16px;
+}
+
+.hs-policy-box ul{
+    margin-top:20px;
+    padding-left:20px;
+}
+
+.hs-policy-box ul li{
+    margin-bottom:12px;
+    color:#555;
+    line-height:1.8;
+}
+
+.hs-policy-box ul li::marker{
+    color:#990b2c;
+}
+
+/* Commitment Box */
+
+.hs-commitment-box{
+    background:
+    linear-gradient(
+        135deg,
+        #990b2c,
+        #2b2024
+    );
+
+    color:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    margin-top:40px;
+
+    box-shadow:
+    0 20px 50px rgba(153,11,44,.25);
+}
+
+.hs-commitment-box h3,
+.hs-commitment-box p{
+    color:#fff;
+}
+
+.hs-commitment-box p{
+    font-size:17px;
+    line-height:1.9;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .hs-intro-box,
+    .hs-policy-box,
+    .hs-commitment-box{
+        padding:25px;
+    }
+
+    .hs-policy-box h3,
+    .hs-commitment-box h3{
+        font-size:24px;
+    }
+}
+
+
+/* =========================================
+   QUALITY POLICY PAGE
+========================================= */
+
+.quality-intro-box,
+.quality-policy-box{
+    background:#fff;
+    padding:35px;
+    margin-bottom:30px;
+    border-radius:18px;
+    border-left:5px solid #990b2c;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.quality-intro-box h3,
+.quality-policy-box h3,
+.quality-commitment-box h3{
+    color:#990b2c;
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.quality-intro-box h3 i,
+.quality-policy-box h3 i,
+.quality-commitment-box h3 i{
+    margin-right:10px;
+}
+
+.quality-intro-box p,
+.quality-policy-box p{
+    color:#666;
+    line-height:1.9;
+}
+
+.quality-policy-box ul{
+    padding-left:20px;
+}
+
+.quality-policy-box li{
+    margin-bottom:12px;
+    color:#555;
+}
+
+.quality-policy-box li::marker{
+    color:#990b2c;
+}
+
+/* COMMITMENT */
+
+.quality-commitment-box{
+    background:linear-gradient(135deg,#990b2c,#2b2024);
+    color:#fff;
+    padding:40px;
+    border-radius:20px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.quality-commitment-box h3,
+.quality-commitment-box p{
+    color:#fff;
+}
+
+/* =========================================
+   QUALITY POLICY CARDS
+========================================= */
+
+.quality-card{
+    position:relative;
+    overflow:hidden;
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    height:100%;
+
+    margin-bottom:30px;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+}
+
+.quality-card::before{
+    content:'';
+    position:absolute;
+
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #990b2c,
+            #2b2024
+        );
+
+    transition:.45s ease;
+}
+
+.quality-card:hover::before{
+    bottom:0;
+}
+
+.quality-card i,
+.quality-card h4,
+.quality-card p{
+    position:relative;
+    z-index:2;
+}
+
+.quality-card i{
+    font-size:42px;
+
+    color:#990b2c;
+
+    margin-bottom:18px;
+
+    transition:.4s ease;
+}
+
+.quality-card h4{
+    font-size:1.1rem;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:12px;
+
+    transition:.4s ease;
+}
+
+.quality-card p{
+    font-size:.95rem;
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:0;
+
+    transition:.4s ease;
+}
+
+.quality-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 20px 40px rgba(153,11,44,.20);
+}
+
+.quality-card:hover i,
+.quality-card:hover h4,
+.quality-card:hover p{
+    color:#ffffff;
+}
+
+
+/* =========================================
+   EQUALITY & DIVERSITY POLICY PAGE
+========================================= */
+
+.equality-intro-box,
+.equality-policy-box{
+    position:relative;
+    overflow:hidden;
+
+    background:#ffffff;
+
+    padding:40px;
+
+    margin-bottom:30px;
+
+    border-radius:20px;
+
+    border-left:5px solid #990b2c;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+}
+
+.equality-intro-box:hover,
+.equality-policy-box:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 20px 45px rgba(153,11,44,.12);
+}
+
+.equality-intro-box::before,
+.equality-policy-box::before{
+    content:'';
+
+    position:absolute;
+
+    top:0;
+    right:0;
+
+    width:180px;
+    height:180px;
+
+    background:
+        radial-gradient(
+            rgba(153,11,44,.08),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+.equality-intro-box h3,
+.equality-policy-box h3,
+.equality-commitment-box h3{
+    color:#990b2c;
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.equality-intro-box h3 i,
+.equality-policy-box h3 i,
+.equality-commitment-box h3 i{
+    margin-right:12px;
+}
+
+/* =========================================
+   TEXT
+========================================= */
+
+.equality-intro-box p,
+.equality-policy-box p{
+    color:#666;
+
+    font-size:.97rem;
+
+    line-height:1.9;
+
+    margin-bottom:18px;
+}
+
+/* =========================================
+   LISTS
+========================================= */
+
+.equality-policy-box ul{
+    margin-top:20px;
+
+    padding-left:20px;
+}
+
+.equality-policy-box ul li{
+    color:#555;
+
+    margin-bottom:12px;
+
+    line-height:1.8;
+}
+
+.equality-policy-box ul li::marker{
+    color:#990b2c;
+}
+
+/* =========================================
+   EQUALITY CARDS
+========================================= */
+
+.equality-card{
+    position:relative;
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    height:100%;
+
+    margin-bottom:30px;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+}
+
+.equality-card::before{
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #990b2c,
+            #2b2024
+        );
+
+    transition:.45s ease;
+}
+
+.equality-card:hover::before{
+    bottom:0;
+}
+
+.equality-card i,
+.equality-card h4,
+.equality-card p{
+    position:relative;
+
+    z-index:2;
+}
+
+.equality-card i{
+    font-size:42px;
+
+    color:#990b2c;
+
+    margin-bottom:18px;
+
+    transition:.4s ease;
+}
+
+.equality-card h4{
+    font-size:1.1rem;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:12px;
+
+    transition:.4s ease;
+}
+
+.equality-card p{
+    font-size:.95rem;
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:0;
+
+    transition:.4s ease;
+}
+
+.equality-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 20px 40px rgba(153,11,44,.20);
+}
+
+.equality-card:hover i,
+.equality-card:hover h4,
+.equality-card:hover p{
+    color:#ffffff;
+}
+
+/* =========================================
+   COMMITMENT BOX
+========================================= */
+
+.equality-commitment-box{
+    background:
+        linear-gradient(
+            135deg,
+            #b0002a 0%,
+            #7a001b 50%,
+            #2b2024 100%
+        );
+
+    padding:45px;
+
+    margin-top:20px;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 20px 50px rgba(153,11,44,.25);
+}
+
+.equality-commitment-box h3,
+.equality-commitment-box p{
+    color:#ffffff;
+}
+
+.equality-commitment-box p{
+    font-size:1rem;
+
+    line-height:1.9;
+
+    margin-bottom:0;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+    .equality-intro-box,
+    .equality-policy-box,
+    .equality-commitment-box{
+        padding:25px;
+    }
+
+    .equality-card{
+        padding:22px;
+    }
+
+    .equality-card i{
+        font-size:34px;
+    }
+
+    .equality-card h4{
+        font-size:1rem;
+    }
+
+    .equality-intro-box h3,
+    .equality-policy-box h3,
+    .equality-commitment-box h3{
+        font-size:1.25rem;
+    }
+}
+
+
+/* =========================================
+   WORKPLACE PENSION POLICY PAGE
+========================================= */
+
+.pension-intro-box,
+.pension-policy-box,
+.pension-commitment-box{
+    position:relative;
+    overflow:hidden;
+
+    background:#ffffff;
+
+    padding:40px;
+
+    margin-top:35px;
+    margin-bottom:35px;
+
+    border-radius:20px;
+
+    border-left:5px solid #990b2c;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+}
+
+.pension-intro-box:hover,
+.pension-policy-box:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 20px 45px rgba(153,11,44,.12);
+}
+
+.pension-intro-box::before,
+.pension-policy-box::before{
+    content:'';
+
+    position:absolute;
+
+    top:0;
+    right:0;
+
+    width:180px;
+    height:180px;
+
+    background:
+        radial-gradient(
+            rgba(153,11,44,.08),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+.pension-intro-box h3,
+.pension-policy-box h3,
+.pension-commitment-box h3{
+    color:#990b2c;
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.pension-intro-box i,
+.pension-policy-box i,
+.pension-commitment-box i{
+    color:#990b2c;
+
+    margin-right:10px;
+}
+
+/* =========================================
+   PARAGRAPHS
+========================================= */
+
+.pension-intro-box p,
+.pension-policy-box p{
+    color:#666;
+
+    font-size:.97rem;
+
+    line-height:1.9;
+
+    margin-bottom:18px;
+}
+
+/* =========================================
+   LISTS
+========================================= */
+
+.pension-policy-box ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+.pension-policy-box ul li{
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:12px;
+}
+
+/* =========================================
+   PENSION CARDS
+========================================= */
+
+.pension-card{
+    position:relative;
+    overflow:hidden;
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    height:100%;
+
+    margin-bottom:30px;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+}
+
+.pension-card::before{
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #990b2c,
+            #2b2024
+        );
+
+    transition:.45s ease;
+}
+
+.pension-card:hover::before{
+    bottom:0;
+}
+
+.pension-card i,
+.pension-card h4,
+.pension-card p{
+    position:relative;
+    z-index:2;
+}
+
+.pension-card i{
+    font-size:42px;
+
+    color:#990b2c;
+
+    margin-bottom:18px;
+
+    transition:.4s ease;
+}
+
+.pension-card h4{
+    font-size:1.1rem;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:12px;
+
+    transition:.4s ease;
+}
+
+.pension-card p{
+    font-size:.95rem;
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:0;
+
+    transition:.4s ease;
+}
+
+.pension-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 20px 40px rgba(153,11,44,.20);
+}
+
+.pension-card:hover i,
+.pension-card:hover h4,
+.pension-card:hover p{
+    color:#ffffff;
+}
+
+/* =========================================
+   COMMITMENT BOX
+========================================= */
+
+.pension-commitment-box{
+    background:
+        linear-gradient(
+            135deg,
+            #b0002a 0%,
+            #7a001b 50%,
+            #2b2024 100%
+        );
+
+    border-left:none;
+
+    box-shadow:
+        0 20px 50px rgba(153,11,44,.25);
+}
+
+.pension-commitment-box h3,
+.pension-commitment-box p,
+.pension-commitment-box i{
+    color:#ffffff;
+}
+
+.pension-commitment-box p{
+    font-size:1rem;
+
+    line-height:1.9;
+
+    margin-bottom:0;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+    .pension-intro-box,
+    .pension-policy-box,
+    .pension-commitment-box{
+        padding:25px;
+    }
+
+    .pension-card{
+        padding:25px;
+    }
+
+    .pension-card i{
+        font-size:34px;
+    }
+
+    .pension-card h4{
+        font-size:1rem;
+    }
+}
+
+
+
+
+/* =========================================
+   WORKPLACE DRUG & ALCOHOL POLICY PAGE
+========================================= */
+
+.drug-intro-box,
+.drug-policy-box,
+.drug-commitment-box{
+    position:relative;
+    overflow:hidden;
+
+    background:#ffffff;
+
+    padding:40px;
+
+    margin-top:35px;
+    margin-bottom:35px;
+
+    border-radius:20px;
+
+    border-left:5px solid #990b2c;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+}
+
+.drug-intro-box:hover,
+.drug-policy-box:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 20px 45px rgba(153,11,44,.12);
+}
+
+.drug-intro-box::before,
+.drug-policy-box::before{
+    content:'';
+
+    position:absolute;
+
+    top:0;
+    right:0;
+
+    width:180px;
+    height:180px;
+
+    background:
+        radial-gradient(
+            rgba(153,11,44,.08),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.drug-intro-box h3,
+.drug-policy-box h3,
+.drug-commitment-box h3{
+    color:#990b2c;
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.drug-intro-box i,
+.drug-policy-box i,
+.drug-commitment-box i{
+    color:#990b2c;
+
+    margin-right:10px;
+}
+
+/* =========================================
+   PARAGRAPHS
+========================================= */
+
+.drug-intro-box p,
+.drug-policy-box p{
+    color:#666;
+
+    font-size:.97rem;
+
+    line-height:1.9;
+
+    margin-bottom:18px;
+}
+
+/* =========================================
+   LISTS
+========================================= */
+
+.drug-policy-box ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+.drug-policy-box ul li{
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:12px;
+}
+
+/* =========================================
+   POLICY CARDS
+========================================= */
+
+.drug-card{
+    position:relative;
+    overflow:hidden;
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    height:100%;
+
+    margin-bottom:30px;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+}
+
+.drug-card::before{
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #990b2c,
+            #2b2024
+        );
+
+    transition:.45s ease;
+}
+
+.drug-card:hover::before{
+    bottom:0;
+}
+
+.drug-card i,
+.drug-card h4,
+.drug-card p{
+    position:relative;
+    z-index:2;
+}
+
+.drug-card i{
+    font-size:42px;
+
+    color:#990b2c;
+
+    margin-bottom:18px;
+
+    transition:.4s ease;
+}
+
+.drug-card h4{
+    font-size:1.1rem;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:12px;
+
+    transition:.4s ease;
+}
+
+.drug-card p{
+    font-size:.95rem;
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:0;
+
+    transition:.4s ease;
+}
+
+.drug-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 20px 40px rgba(153,11,44,.20);
+}
+
+.drug-card:hover i,
+.drug-card:hover h4,
+.drug-card:hover p{
+    color:#ffffff;
+}
+
+/* =========================================
+   COMMITMENT BOX
+========================================= */
+
+.drug-commitment-box{
+    background:
+        linear-gradient(
+            135deg,
+            #b0002a 0%,
+            #7a001b 50%,
+            #2b2024 100%
+        );
+
+    border-left:none;
+
+    box-shadow:
+        0 20px 50px rgba(153,11,44,.25);
+}
+
+.drug-commitment-box h3,
+.drug-commitment-box p,
+.drug-commitment-box i{
+    color:#ffffff;
+}
+
+.drug-commitment-box p{
+    font-size:1rem;
+
+    line-height:1.9;
+
+    margin-bottom:0;
+}
+
+/* =========================================
+   IMPORTANT NOTICE BOX
+========================================= */
+
+.drug-notice{
+    background:#fff8f8;
+
+    border-left:5px solid #990b2c;
+
+    padding:25px;
+
+    margin:30px 0;
+
+    border-radius:12px;
+}
+
+.drug-notice h4{
+    color:#990b2c;
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+}
+
+.drug-notice p{
+    margin-bottom:0;
+
+    color:#666;
+
+    line-height:1.8;
+}
+
+/* =========================================
+   SUPPORT LINKS
+========================================= */
+
+.support-links{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    margin-top:20px;
+}
+
+.support-item{
+    flex:1;
+
+    min-width:250px;
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    border-top:4px solid #990b2c;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.06);
+
+    transition:.3s ease;
+}
+
+.support-item:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(153,11,44,.15);
+}
+
+.support-item h5{
+    color:#990b2c;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+}
+
+.support-item p{
+    color:#666;
+
+    margin-bottom:8px;
+}
+
+.support-item a{
+    color:#990b2c;
+
+    text-decoration:none;
+
+    font-weight:600;
+}
+
+.support-item a:hover{
+    text-decoration:underline;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+    .drug-intro-box,
+    .drug-policy-box,
+    .drug-commitment-box{
+        padding:25px;
+    }
+
+    .drug-card{
+        padding:25px;
+    }
+
+    .drug-card i{
+        font-size:34px;
+    }
+
+    .drug-card h4{
+        font-size:1rem;
+    }
+
+    .support-links{
+        flex-direction:column;
+    }
+}
+
+
+/* =========================================
+   ANTI-MODERN SLAVERY POLICY PAGE
+========================================= */
+
+.slavery-intro-box,
+.slavery-policy-box,
+.slavery-commitment-box{
+    position:relative;
+    overflow:hidden;
+
+    background:#ffffff;
+
+    padding:40px;
+
+    margin-top:35px;
+    margin-bottom:35px;
+
+    border-radius:20px;
+
+    border-left:5px solid #990b2c;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+}
+
+.slavery-intro-box:hover,
+.slavery-policy-box:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 20px 45px rgba(153,11,44,.12);
+}
+
+.slavery-intro-box::before,
+.slavery-policy-box::before{
+    content:'';
+
+    position:absolute;
+
+    top:0;
+    right:0;
+
+    width:180px;
+    height:180px;
+
+    background:
+        radial-gradient(
+            rgba(153,11,44,.08),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.slavery-intro-box h3,
+.slavery-policy-box h3,
+.slavery-commitment-box h3{
+    color:#990b2c;
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.slavery-intro-box i,
+.slavery-policy-box i,
+.slavery-commitment-box i{
+    color:#990b2c;
+
+    margin-right:10px;
+}
+
+/* =========================================
+   PARAGRAPHS
+========================================= */
+
+.slavery-intro-box p,
+.slavery-policy-box p{
+    color:#666;
+
+    font-size:.97rem;
+
+    line-height:1.9;
+
+    margin-bottom:18px;
+}
+
+/* =========================================
+   LISTS
+========================================= */
+
+.slavery-policy-box ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+.slavery-policy-box ul li{
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:12px;
+}
+
+/* =========================================
+   MODERN SLAVERY CARDS
+========================================= */
+
+.slavery-card{
+    position:relative;
+    overflow:hidden;
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    height:100%;
+
+    margin-bottom:30px;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+}
+
+.slavery-card::before{
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #990b2c,
+            #2b2024
+        );
+
+    transition:.45s ease;
+}
+
+.slavery-card:hover::before{
+    bottom:0;
+}
+
+.slavery-card i,
+.slavery-card h4,
+.slavery-card p{
+    position:relative;
+    z-index:2;
+}
+
+.slavery-card i{
+    font-size:42px;
+
+    color:#990b2c;
+
+    margin-bottom:18px;
+
+    transition:.4s ease;
+}
+
+.slavery-card h4{
+    font-size:1.1rem;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:12px;
+
+    transition:.4s ease;
+}
+
+.slavery-card p{
+    font-size:.95rem;
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:0;
+
+    transition:.4s ease;
+}
+
+.slavery-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 20px 40px rgba(153,11,44,.20);
+}
+
+.slavery-card:hover i,
+.slavery-card:hover h4,
+.slavery-card:hover p{
+    color:#ffffff;
+}
+
+/* =========================================
+   RESPONSIBILITY BOX
+========================================= */
+
+.slavery-responsibility{
+    background:#fff8f8;
+
+    border-left:5px solid #990b2c;
+
+    padding:25px;
+
+    margin:30px 0;
+
+    border-radius:12px;
+}
+
+.slavery-responsibility h4{
+    color:#990b2c;
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+}
+
+.slavery-responsibility p{
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:0;
+}
+
+/* =========================================
+   COMMITMENT SECTION
+========================================= */
+
+.slavery-commitment-box{
+    background:
+        linear-gradient(
+            135deg,
+            #b0002a 0%,
+            #7a001b 50%,
+            #2b2024 100%
+        );
+
+    border-left:none;
+
+    box-shadow:
+        0 20px 50px rgba(153,11,44,.25);
+}
+
+.slavery-commitment-box h3,
+.slavery-commitment-box p,
+.slavery-commitment-box i{
+    color:#ffffff;
+}
+
+.slavery-commitment-box p{
+    font-size:1rem;
+
+    line-height:1.9;
+
+    margin-bottom:0;
+}
+
+/* =========================================
+   POLICY HIGHLIGHT BOX
+========================================= */
+
+.slavery-highlight{
+    background:#fafafa;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    margin:30px 0;
+
+    border:1px solid rgba(153,11,44,.10);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.05);
+}
+
+.slavery-highlight h4{
+    color:#990b2c;
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+}
+
+.slavery-highlight ul{
+    margin:0;
+    padding-left:20px;
+}
+
+.slavery-highlight ul li{
+    margin-bottom:10px;
+
+    color:#666;
+
+    line-height:1.8;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+    .slavery-intro-box,
+    .slavery-policy-box,
+    .slavery-commitment-box{
+        padding:25px;
+    }
+
+    .slavery-card{
+        padding:25px;
+    }
+
+    .slavery-card i{
+        font-size:34px;
+    }
+
+    .slavery-card h4{
+        font-size:1rem;
+    }
+
+    .slavery-policy-box ul li{
+        font-size:.95rem;
+    }
+}
+
+
+/* =========================================
+   LONE WORKER POLICY PAGE
+========================================= */
+
+.loneworker-intro-box,
+.loneworker-policy-box,
+.loneworker-commitment-box{
+    position:relative;
+    overflow:hidden;
+
+    background:#ffffff;
+
+    padding:40px;
+
+    margin-top:35px;
+    margin-bottom:35px;
+
+    border-radius:20px;
+
+    border-left:5px solid #990b2c;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+}
+
+.loneworker-intro-box:hover,
+.loneworker-policy-box:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 20px 45px rgba(153,11,44,.12);
+}
+
+.loneworker-intro-box::before,
+.loneworker-policy-box::before{
+    content:'';
+
+    position:absolute;
+
+    top:0;
+    right:0;
+
+    width:180px;
+    height:180px;
+
+    background:
+        radial-gradient(
+            rgba(153,11,44,.08),
+            transparent 70%
+        );
+}
+
+/* HEADINGS */
+
+.loneworker-intro-box h3,
+.loneworker-policy-box h3,
+.loneworker-commitment-box h3{
+    color:#990b2c;
+    font-size:1.5rem;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.loneworker-intro-box i,
+.loneworker-policy-box i,
+.loneworker-commitment-box i{
+    color:#990b2c;
+    margin-right:10px;
+}
+
+/* PARAGRAPHS */
+
+.loneworker-intro-box p,
+.loneworker-policy-box p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:18px;
+}
+
+/* LISTS */
+
+.loneworker-policy-box ul{
+    padding-left:20px;
+}
+
+.loneworker-policy-box li{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:10px;
+}
+
+/* CARDS */
+
+.loneworker-card{
+    position:relative;
+    overflow:hidden;
+
+    background:#fff;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    margin-bottom:30px;
+
+    height:100%;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+}
+
+.loneworker-card::before{
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #990b2c,
+            #2b2024
+        );
+
+    transition:.45s ease;
+}
+
+.loneworker-card:hover::before{
+    bottom:0;
+}
+
+.loneworker-card i,
+.loneworker-card h4,
+.loneworker-card p{
+    position:relative;
+    z-index:2;
+}
+
+.loneworker-card i{
+    font-size:42px;
+    color:#990b2c;
+    margin-bottom:18px;
+}
+
+.loneworker-card h4{
+    font-size:1.1rem;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.loneworker-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+.loneworker-card:hover{
+    transform:translateY(-10px);
+}
+
+.loneworker-card:hover i,
+.loneworker-card:hover h4,
+.loneworker-card:hover p{
+    color:#fff;
+}
+
+/* COMMITMENT */
+
+.loneworker-commitment-box{
+    background:
+        linear-gradient(
+            135deg,
+            #b0002a,
+            #7a001b,
+            #2b2024
+        );
+
+    border-left:none;
+}
+
+.loneworker-commitment-box h3,
+.loneworker-commitment-box p,
+.loneworker-commitment-box i{
+    color:#fff;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .loneworker-intro-box,
+    .loneworker-policy-box,
+    .loneworker-commitment-box{
+        padding:25px;
+    }
+
+    .loneworker-card{
+        padding:25px;
+    }
+
+}
+
+
+
+/* =========================================
+   FAQ PAGE
+========================================= */
+
+.faq-section{
+    padding:80px 0;
+}
+
+.faq-intro{
+    max-width:850px;
+    margin-bottom:40px;
+    color:#666;
+    line-height:1.9;
+}
+
+.faq-wrapper{
+    max-width:1000px;
+}
+
+.faq-item{
+    background:#fff;
+    margin-bottom:20px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+    border-left:5px solid #990b2c;
+}
+
+.faq-question{
+    width:100%;
+    border:none;
+    background:#fff;
+    padding:25px 30px;
+    text-align:left;
+    font-size:18px;
+    font-weight:700;
+    color:#111;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.faq-question span{
+    color:#990b2c;
+    font-size:26px;
+    font-weight:700;
+}
+
+.faq-answer{
+    display:none;
+    padding:0 30px 25px;
+}
+
+.faq-answer p{
+    margin:0;
+    color:#666;
+    line-height:1.9;
+}
+
+.faq-item.active .faq-answer{
+    display:block;
+}
+
+.faq-item.active .faq-question{
+    background:#990b2c;
+    color:#fff;
+}
+
+.faq-item.active .faq-question span{
+    color:#fff;
+}
+
+@media(max-width:768px){
+
+    .faq-question{
+        font-size:16px;
+        padding:20px;
+    }
+
+    .faq-answer{
+        padding:0 20px 20px;
+    }
+
+}
+
+
+/* =========================================
+   GALLERY PAGE
+========================================= */
+
+.gallery-section{
+    padding:80px 0;
+}
+
+.gallery-intro{
+    max-width:900px;
+    color:#666;
+    line-height:1.9;
+    margin-bottom:40px;
+}
+
+.gallery-item{
+    position:relative;
+    display:block;
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.gallery-item img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.gallery-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        rgba(153,11,44,.85),
+        rgba(43,32,36,.92)
+    );
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    opacity:0;
+
+    transition:.4s;
+}
+
+.gallery-overlay i{
+    color:#fff;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.gallery-overlay h4{
+    color:#fff;
+    font-size:22px;
+    font-weight:700;
+    margin:0;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.1);
+}
+
+.gallery-item:hover .gallery-overlay{
+    opacity:1;
+}
+
+@media(max-width:768px){
+
+    .gallery-item img{
+        height:250px;
+    }
+
+}
+
+
+/* =========================================
+   PRIVACY POLICY PAGE
+========================================= */
+
+.privacy-policy-section{
+    padding:80px 0;
+}
+
+.privacy-policy-section h2{
+    font-size:1.5rem;
+    margin-bottom:30px;
+}
+
+.privacy-card{
+    background:#fff;
+    padding:35px;
+    margin-bottom:30px;
+    border-radius:15px;
+    border-left:5px solid #990b2c;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+    transition:.3s ease;
+}
+
+.privacy-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(153,11,44,.10);
+}
+
+.privacy-card h3{
+    color:#990b2c;
+    font-size:1.35rem;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.privacy-card p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:15px;
+}
+
+.privacy-card ul{
+    padding-left:20px;
+    margin:0;
+}
+
+.privacy-card ul li{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:10px;
+}
+
+.privacy-card ul li::marker{
+    color:#990b2c;
+}
+
+@media(max-width:768px){
+
+    .privacy-policy-section{
+        padding:60px 0;
+    }
+
+    .privacy-card{
+        padding:25px;
+    }
+
+    .privacy-card h3{
+        font-size:1.2rem;
+    }
+
+}
+
+
+/* =========================================
+   FEEDBACK PAGE
+========================================= */
+
+.feedback-section{
+    padding:80px 0;
+}
+
+.feedback-intro{
+    max-width:850px;
+    color:#666;
+    line-height:1.9;
+    margin-bottom:40px;
+}
+
+.feedback-info-card{
+    background:
+    linear-gradient(
+        135deg,
+        #990b2c,
+        #2b2024
+    );
+
+    color:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 20px 40px rgba(153,11,44,.20);
+
+    height:100%;
+}
+
+.feedback-info-card i.fa-comments{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.feedback-info-card h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.feedback-info-card p{
+    line-height:1.9;
+    color:#fff;
+}
+
+.feedback-benefits{
+    margin-top:30px;
+}
+
+.feedback-benefits div{
+    margin-bottom:15px;
+    font-weight:500;
+}
+
+.feedback-benefits i{
+    margin-right:10px;
+}
+
+.feedback-form-card{
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.08);
+}
+
+.feedback-form-card label{
+    font-weight:600;
+    margin-bottom:8px;
+    display:block;
+}
+
+.feedback-form-card .form-control{
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+.feedback-form-card .form-control:focus{
+    outline:none;
+
+    border-color:#990b2c;
+
+    box-shadow:
+    0 0 0 3px rgba(153,11,44,.15);
+}
+
+.feedback-btn{
+    background:#990b2c;
+
+    color:#fff;
+
+    border:none;
+
+    padding:14px 35px;
+
+    border-radius:50px;
+
+    margin-top:25px;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.feedback-btn:hover{
+    background:#111;
+
+    transform:translateY(-3px);
+}
+
+@media(max-width:991px){
+
+    .feedback-info-card{
+        margin-bottom:30px;
+    }
+
+    .feedback-form-card{
+        padding:25px;
+    }
+
+}
+
+
+/* =========================================
+   VECTROX SERVICES PAGE ONLY
+========================================= */
+
+.vectrox-services-page{
+    background:#f8f9fb;
+}
+
+/* Banner */
+
+.vectrox-services-page .vs-banner{
+    background:#000;
+    padding:100px 0;
+    text-align:center;
+    position:relative;
+}
+
+.vectrox-services-page .vs-banner h1{
+    color:#fff;
+    font-size:3rem;
+    font-weight:700;
+}
+
+/* Breadcrumb */
+
+.vectrox-services-page .vs-breadcrumb{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+}
+
+/* Section Tag */
+
+.vectrox-services-page .vs-tag{
+    display:inline-block;
+    background:#990b2c;
+    color:#fff;
+    padding:10px 18px;
+}
+
+/* Intro Card */
+
+.vectrox-services-page .vs-intro-card{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    border-left:5px solid #990b2c;
+}
+
+/* Service Cards */
+
+.vectrox-services-page .vs-card{
+    position:relative;
+    overflow:hidden;
+    background:#fff;
+    border-radius:18px;
+    padding:35px 25px;
+}
+
+.vectrox-services-page .vs-card i{
+    color:#990b2c;
+    font-size:42px;
+}
+
+/* Why Choose */
+
+.vectrox-services-page .vs-why-box{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+}
+
+/* CTA */
+
+.vectrox-services-page .vs-cta{
+    background:
+    linear-gradient(
+        135deg,
+        #990b2c,
+        #2b2024
+    );
+
+    color:#fff;
+    border-radius:20px;
+}
+
+
+
+
+/* =========================================
+   VECTROX SERVICES PAGE
+   Unique Classes - No Conflict
+========================================= */
+
+.vx-services-banner{
+    background:#000;
+    padding:100px 0;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.vx-services-banner::before{
+    content:'';
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(153,11,44,.18),
+        transparent 60%
+    );
+}
+
+.vx-services-banner .container{
+    position:relative;
+    z-index:2;
+}
+
+.vx-services-banner h1{
+    color:#fff;
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.vx-services-breadcrumb{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    color:#fff;
+}
+
+.vx-services-breadcrumb a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.vx-services-breadcrumb a:hover{
+    color:#990b2c;
+}
+
+.vx-services-breadcrumb span:last-child{
+    color:#990b2c;
+}
+
+/* =========================================
+   MAIN SECTION
+========================================= */
+
+.vx-services-page{
+    padding:80px 0;
+    background:#f8f9fb;
+}
+
+.vx-services-tag{
+    display:inline-block;
+
+    background:#990b2c;
+    color:#fff;
+
+    padding:10px 20px;
+
+    font-size:11px;
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    margin-bottom:25px;
+
+    border-radius:4px;
+}
+
+.vx-services-title{
+    font-size:2.5rem;
+    font-weight:700;
+    color:#111;
+    margin-bottom:35px;
+}
+
+/* =========================================
+   INTRO BOX
+========================================= */
+
+.vx-services-intro{
+    position:relative;
+    overflow:hidden;
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    margin-bottom:50px;
+
+    border-left:5px solid #990b2c;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+}
+
+.vx-services-intro:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 20px 50px rgba(153,11,44,.12);
+}
+
+.vx-services-intro::before{
+    content:'';
+
+    position:absolute;
+
+    top:0;
+    right:0;
+
+    width:180px;
+    height:180px;
+
+    background:
+    radial-gradient(
+        rgba(153,11,44,.08),
+        transparent 70%
+    );
+}
+
+.vx-services-intro h3{
+    color:#990b2c;
+    font-size:1.5rem;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.vx-services-intro h3 i{
+    margin-right:10px;
+}
+
+.vx-services-intro p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:18px;
+}
+
+.vx-services-intro p:last-child{
+    margin-bottom:0;
+}
+
+/* =========================================
+   SERVICE CARDS
+========================================= */
+
+.vx-service-card{
+    position:relative;
+    overflow:hidden;
+
+    background:#fff;
+
+    padding:35px 25px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    height:100%;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+}
+
+.vx-service-card::before{
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:
+    linear-gradient(
+        135deg,
+        #990b2c,
+        #2b2024
+    );
+
+    transition:.45s ease;
+}
+
+.vx-service-card:hover::before{
+    bottom:0;
+}
+
+.vx-service-card i,
+.vx-service-card h4,
+.vx-service-card p{
+    position:relative;
+    z-index:2;
+}
+
+.vx-service-card i{
+    font-size:42px;
+    color:#990b2c;
+    margin-bottom:20px;
+    transition:.4s ease;
+}
+
+.vx-service-card h4{
+    font-size:1.15rem;
+    font-weight:700;
+    color:#111;
+    margin-bottom:15px;
+    transition:.4s ease;
+}
+
+.vx-service-card p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:0;
+    transition:.4s ease;
+}
+
+.vx-service-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 20px 45px rgba(153,11,44,.22);
+}
+
+.vx-service-card:hover i,
+.vx-service-card:hover h4,
+.vx-service-card:hover p{
+    color:#fff;
+}
+
+/* =========================================
+   BENEFITS BOX
+========================================= */
+
+.vx-services-benefits{
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    margin-top:60px;
+    margin-bottom:50px;
+
+    border-left:5px solid #990b2c;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+}
+
+.vx-services-benefits h3{
+    color:#990b2c;
+    font-size:1.5rem;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.vx-services-benefits h3 i{
+    margin-right:10px;
+}
+
+.vx-services-benefits ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.vx-services-benefits li{
+    position:relative;
+
+    padding-left:28px;
+    margin-bottom:15px;
+
+    color:#555;
+    font-weight:500;
+}
+
+.vx-services-benefits li::before{
+    content:'✓';
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    color:#990b2c;
+    font-weight:700;
+}
+
+/* =========================================
+   CTA SECTION
+========================================= */
+
+.vx-services-cta{
+    text-align:center;
+
+    padding:60px 40px;
+
+    border-radius:20px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #990b2c,
+        #2b2024
+    );
+
+    box-shadow:
+        0 20px 50px rgba(153,11,44,.25);
+}
+
+.vx-services-cta h3{
+    color:#fff;
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.vx-services-cta p{
+    color:rgba(255,255,255,.92);
+    max-width:750px;
+    margin:0 auto 30px;
+    line-height:1.9;
+}
+
+.vx-services-cta .btn-main{
+    display:inline-block;
+
+    background:#fff;
+    color:#990b2c;
+
+    padding:14px 35px;
+
+    border-radius:50px;
+
+    font-weight:700;
+    text-decoration:none;
+
+    transition:.35s ease;
+}
+
+.vx-services-cta .btn-main:hover{
+    background:#111;
+    color:#fff;
+
+    transform:translateY(-3px);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:991px){
+
+    .vx-services-banner h1{
+        font-size:2.5rem;
+    }
+
+    .vx-services-title{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-services-banner{
+        padding:70px 0;
+    }
+
+    .vx-services-banner h1{
+        font-size:2rem;
+    }
+
+    .vx-services-page{
+        padding:60px 0;
+    }
+
+    .vx-services-title{
+        font-size:1.7rem;
+    }
+
+    .vx-services-intro,
+    .vx-services-benefits,
+    .vx-services-cta{
+        padding:25px;
+    }
+
+    .vx-service-card{
+        padding:25px;
+    }
+
+    .vx-service-card i{
+        font-size:34px;
+    }
+
+    .vx-services-cta h3{
+        font-size:1.5rem;
+    }
+
+    .vx-services-tag{
+        letter-spacing:2px;
+        font-size:10px;
+    }
+}
+
+
+/* =========================================
+   VECTROX CORPORATE SECURITY PAGE
+   CSS PART 1
+   HERO + QUOTE FORM + STATS + INTRO
+========================================= */
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.vx-corporate-hero{
+    position:relative;
+    overflow:hidden;
+
+    padding:120px 0;
+
+    background:
+    linear-gradient(
+        135deg,
+        #111 0%,
+        #1a1a1a 50%,
+        #2b2024 100%
+    );
+}
+
+.vx-corporate-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.60),
+        rgba(0,0,0,.60)
+    );
+}
+
+.vx-corporate-hero .container{
+    position:relative;
+    z-index:2;
+}
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.vx-corporate-tag{
+    display:inline-block;
+
+    background:#990b2c;
+
+    color:#fff;
+
+    padding:10px 20px;
+
+    border-radius:50px;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:25px;
+}
+
+.vx-corporate-content h1{
+    color:#fff;
+
+    font-size:3.5rem;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+}
+
+.vx-corporate-content p{
+    color:rgba(255,255,255,.85);
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+}
+
+/* =========================================
+   HERO LIST
+========================================= */
+
+.vx-corporate-list{
+    list-style:none;
+
+    padding:0;
+
+    margin:0 0 35px;
+}
+
+.vx-corporate-list li{
+    color:#fff;
+
+    margin-bottom:15px;
+
+    font-weight:500;
+}
+
+.vx-corporate-list i{
+    color:#990b2c;
+
+    margin-right:10px;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.vx-btn-primary{
+    display:inline-block;
+
+    background:#990b2c;
+
+    color:#fff;
+
+    padding:14px 35px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.35s ease;
+}
+
+.vx-btn-primary:hover{
+    background:#fff;
+
+    color:#990b2c;
+
+    transform:translateY(-3px);
+}
+
+/* =========================================
+   QUOTE FORM
+========================================= */
+
+.vx-quote-form{
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.20);
+}
+
+.vx-quote-form h3{
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:25px;
+
+    text-align:center;
+}
+
+.vx-quote-form input,
+.vx-quote-form select,
+.vx-quote-form textarea{
+    width:100%;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    padding:14px 15px;
+
+    margin-bottom:15px;
+
+    font-size:.95rem;
+
+    transition:.3s ease;
+}
+
+.vx-quote-form input:focus,
+.vx-quote-form select:focus,
+.vx-quote-form textarea:focus{
+    outline:none;
+
+    border-color:#990b2c;
+
+    box-shadow:
+    0 0 0 3px rgba(153,11,44,.10);
+}
+
+.vx-quote-form button{
+    width:100%;
+
+    border:none;
+
+    background:#990b2c;
+
+    color:#fff;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-weight:700;
+
+    transition:.35s ease;
+}
+
+.vx-quote-form button:hover{
+    background:#111;
+}
+
+/* =========================================
+   STATS SECTION
+========================================= */
+
+.vx-corporate-stats{
+    background:#fff;
+
+    padding:60px 0;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.05);
+}
+
+.vx-stat-box{
+    padding:20px;
+}
+
+.vx-stat-box i{
+    font-size:40px;
+
+    color:#990b2c;
+
+    margin-bottom:15px;
+}
+
+.vx-stat-box h3{
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:10px;
+}
+
+.vx-stat-box p{
+    color:#666;
+
+    margin-bottom:0;
+}
+
+/* =========================================
+   INTRO SECTION
+========================================= */
+
+.vx-corporate-intro{
+    padding:100px 0;
+
+    background:#f8f9fb;
+}
+
+.vx-intro-card{
+    background:#fff;
+
+    padding:45px;
+
+    border-radius:20px;
+
+    border-left:5px solid #990b2c;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+}
+
+.vx-section-tag{
+    display:inline-block;
+
+    background:#990b2c;
+
+    color:#fff;
+
+    padding:10px 20px;
+
+    border-radius:50px;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+}
+
+.vx-intro-card h2{
+    font-size:2.4rem;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:25px;
+}
+
+.vx-intro-card p{
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:18px;
+}
+
+/* =========================================
+   IMAGE BOX
+========================================= */
+
+.vx-image-box{
+    overflow:hidden;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.10);
+}
+
+.vx-image-box img{
+    width:100%;
+
+    display:block;
+}
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.vx-section-heading{
+    text-align:center;
+
+    margin-bottom:60px;
+}
+
+.vx-section-heading h2{
+    font-size:2.5rem;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:15px;
+}
+
+.vx-section-heading p{
+    color:#666;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:991px){
+
+    .vx-corporate-content{
+        margin-bottom:50px;
+    }
+
+    .vx-corporate-content h1{
+        font-size:2.8rem;
+    }
+
+    .vx-intro-card{
+        margin-bottom:40px;
+    }
+
+    .vx-intro-card h2{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-corporate-hero{
+        padding:80px 0;
+    }
+
+    .vx-corporate-content h1{
+        font-size:2.2rem;
+    }
+
+    .vx-quote-form{
+        padding:25px;
+    }
+
+    .vx-intro-card{
+        padding:25px;
+    }
+
+    .vx-intro-card h2{
+        font-size:1.7rem;
+    }
+
+    .vx-section-heading h2{
+        font-size:1.8rem;
+    }
+}
+
+
+/* =========================================
+   CSS PART 2
+   SERVICES + BENEFITS + INDUSTRIES
+   CTA + CONTRACT MANAGEMENT
+========================================= */
+
+/* =========================================
+   SERVICES SECTION
+========================================= */
+
+.vx-corporate-services{
+    padding:100px 0;
+    background:#ffffff;
+}
+
+.vx-service-box{
+    position:relative;
+    overflow:hidden;
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    height:100%;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+}
+
+.vx-service-box::before{
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #990b2c,
+            #2b2024
+        );
+
+    transition:.45s ease;
+}
+
+.vx-service-box:hover::before{
+    bottom:0;
+}
+
+.vx-service-box h4,
+.vx-service-box p{
+    position:relative;
+    z-index:2;
+}
+
+.vx-service-box h4{
+    color:#111;
+
+    font-size:1.25rem;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+    transition:.35s ease;
+}
+
+.vx-service-box p{
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:0;
+
+    transition:.35s ease;
+}
+
+.vx-service-box:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 20px 40px rgba(153,11,44,.20);
+}
+
+.vx-service-box:hover h4,
+.vx-service-box:hover p{
+    color:#fff;
+}
+
+/* =========================================
+   BENEFITS SECTION
+========================================= */
+
+.vx-corporate-benefits{
+    padding:100px 0;
+    background:#f8f9fb;
+}
+
+.vx-benefits-content{
+    padding-right:30px;
+}
+
+.vx-benefits-content h2{
+    font-size:2.4rem;
+
+    font-weight:700;
+
+    margin-bottom:35px;
+
+    color:#111;
+}
+
+.vx-benefit-item{
+    display:flex;
+
+    gap:20px;
+
+    margin-bottom:30px;
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.05);
+
+    transition:.35s ease;
+}
+
+.vx-benefit-item:hover{
+    transform:translateX(8px);
+}
+
+.vx-benefit-item i{
+    width:60px;
+    height:60px;
+
+    min-width:60px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#990b2c;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    font-size:24px;
+}
+
+.vx-benefit-item h5{
+    font-size:1.15rem;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:10px;
+}
+
+.vx-benefit-item p{
+    margin:0;
+
+    color:#666;
+
+    line-height:1.8;
+}
+
+.vx-benefits-image{
+    overflow:hidden;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.10);
+}
+
+.vx-benefits-image img{
+    width:100%;
+    display:block;
+}
+
+/* =========================================
+   INDUSTRIES SECTION
+========================================= */
+
+.vx-industries-section{
+    padding:100px 0;
+    background:#fff;
+}
+
+.vx-industries-image{
+    border-radius:20px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.10);
+}
+
+.vx-industries-content{
+    padding-left:30px;
+}
+
+.vx-industries-content h2{
+    font-size:2.3rem;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+    color:#111;
+}
+
+.vx-industries-content p{
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+}
+
+.vx-industries-list{
+    list-style:none;
+
+    padding:0;
+    margin:0;
+}
+
+.vx-industries-list li{
+    position:relative;
+
+    padding-left:28px;
+
+    margin-bottom:15px;
+
+    color:#555;
+
+    font-weight:500;
+}
+
+.vx-industries-list li::before{
+    content:'✓';
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    color:#990b2c;
+
+    font-weight:700;
+}
+
+/* =========================================
+   CTA BANNER
+========================================= */
+
+.vx-corporate-cta{
+    padding:90px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #990b2c,
+            #2b2024
+        );
+}
+
+.vx-cta-content{
+    text-align:center;
+
+    max-width:900px;
+
+    margin:auto;
+}
+
+.vx-cta-content h2{
+    color:#fff;
+
+    font-size:2.7rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.vx-cta-content p{
+    color:rgba(255,255,255,.92);
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+
+    margin-bottom:30px;
+}
+
+.vx-btn-white{
+    display:inline-block;
+
+    background:#fff;
+
+    color:#990b2c;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.35s ease;
+}
+
+.vx-btn-white:hover{
+    background:#111;
+
+    color:#fff;
+
+    transform:translateY(-3px);
+}
+
+/* =========================================
+   CONTRACT MANAGEMENT
+========================================= */
+
+.vx-contract-management{
+    padding:100px 0;
+
+    background:#f8f9fb;
+}
+
+.vx-contract-content{
+    padding-right:30px;
+}
+
+.vx-contract-content h2{
+    font-size:2.3rem;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:25px;
+}
+
+.vx-contract-content p{
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+}
+
+.vx-management-list{
+    list-style:none;
+
+    padding:0;
+    margin:0;
+}
+
+.vx-management-list li{
+    position:relative;
+
+    padding-left:30px;
+
+    margin-bottom:18px;
+
+    color:#555;
+
+    font-weight:500;
+}
+
+.vx-management-list li::before{
+    content:'✓';
+
+    position:absolute;
+
+    left:0;
+
+    color:#990b2c;
+
+    font-weight:700;
+}
+
+.vx-contract-image{
+    overflow:hidden;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.10);
+}
+
+.vx-contract-image img{
+    width:100%;
+    display:block;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:991px){
+
+    .vx-benefits-content,
+    .vx-contract-content,
+    .vx-industries-content{
+        padding:0;
+    }
+
+    .vx-benefits-image,
+    .vx-contract-image,
+    .vx-industries-image{
+        margin-top:40px;
+    }
+
+    .vx-cta-content h2{
+        font-size:2.1rem;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-corporate-services,
+    .vx-corporate-benefits,
+    .vx-industries-section,
+    .vx-contract-management{
+        padding:70px 0;
+    }
+
+    .vx-benefits-content h2,
+    .vx-industries-content h2,
+    .vx-contract-content h2{
+        font-size:1.8rem;
+    }
+
+    .vx-cta-content h2{
+        font-size:1.7rem;
+    }
+
+    .vx-benefit-item{
+        flex-direction:column;
+    }
+
+    .vx-service-box{
+        padding:25px;
+    }
+}
+
+/* =========================================
+   WHY CHOOSE US
+========================================= */
+
+.vx-why-choose{
+    padding:100px 0;
+    background:#ffffff;
+}
+
+.vx-why-card{
+    position:relative;
+    overflow:hidden;
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    height:100%;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+}
+
+.vx-why-card::before{
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #990b2c,
+            #2b2024
+        );
+
+    transition:.45s ease;
+}
+
+.vx-why-card:hover::before{
+    bottom:0;
+}
+
+.vx-why-card i,
+.vx-why-card h4,
+.vx-why-card p{
+    position:relative;
+    z-index:2;
+}
+
+.vx-why-card i{
+    font-size:45px;
+    color:#990b2c;
+    margin-bottom:20px;
+    transition:.35s;
+}
+
+.vx-why-card h4{
+    font-size:1.2rem;
+    font-weight:700;
+    color:#111;
+    margin-bottom:15px;
+    transition:.35s;
+}
+
+.vx-why-card p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:0;
+    transition:.35s;
+}
+
+.vx-why-card:hover{
+    transform:translateY(-10px);
+}
+
+.vx-why-card:hover i,
+.vx-why-card:hover h4,
+.vx-why-card:hover p{
+    color:#fff;
+}
+
+/* =========================================
+   PROCESS SECTION
+========================================= */
+
+.vx-protection-process{
+    padding:100px 0;
+    background:#f8f9fb;
+}
+
+.vx-process-card{
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    height:100%;
+
+    border-left:5px solid #990b2c;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    transition:.35s ease;
+}
+
+.vx-process-card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 20px 40px rgba(153,11,44,.12);
+}
+
+.vx-process-number{
+    width:65px;
+    height:65px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#990b2c;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    font-size:1.3rem;
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.vx-process-card h4{
+    font-size:1.2rem;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.vx-process-card p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:0;
+}
+
+.vx-metric-box{
+  
+    padding:40px 30px !important;
+    border-radius:20px !important;
+    text-align:center !important;
+    border:1px solid #eee !important;
+    box-shadow:0 15px 35px rgba(0,0,0,.08) !important;
+    transition:all .4s ease !important;
+    position:relative !important;
+    overflow:hidden !important;
+}
+
+.vx-metric-box:hover{
+    background:#990b2c !important;
+    transform:translateY(-10px) !important;
+    box-shadow:0 25px 50px rgba(153,11,44,.25) !important;
+}
+
+.vx-metric-box i{
+    font-size:50px !important;
+    color:#990b2c !important;
+    margin-bottom:20px !important;
+    transition:.4s !important;
+}
+
+.vx-metric-box h3{
+    font-size:3rem !important;
+    font-weight:700 !important;
+    color:#111 !important;
+    transition:.4s !important;
+}
+
+.vx-metric-box p{
+    color:#666 !important;
+    transition:.4s !important;
+}
+
+.vx-metric-box:hover i,
+.vx-metric-box:hover h3,
+.vx-metric-box:hover p{
+    color:#fff !important;
+}
+
+.vx-metric-box{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* =========================================
+   TESTIMONIALS
+========================================= */
+
+.vx-testimonials{
+    padding:100px 0;
+    background:#f8f9fb;
+}
+
+.vx-testimonial-card{
+    max-width:900px;
+
+    margin:auto;
+
+    background:#fff;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.08);
+}
+
+.vx-testimonial-card i{
+    font-size:55px;
+    color:#990b2c;
+    margin-bottom:25px;
+}
+
+.vx-testimonial-card p{
+    font-size:1.1rem;
+    color:#555;
+    line-height:2;
+    margin-bottom:25px;
+}
+
+.vx-testimonial-card h5{
+    font-size:1.2rem;
+    font-weight:700;
+    color:#111;
+    margin-bottom:5px;
+}
+
+.vx-testimonial-card span{
+    color:#990b2c;
+    font-weight:600;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+    .vx-why-choose,
+    .vx-protection-process,
+    .vx-reliability-stats,
+    .vx-testimonials{
+        padding:70px 0;
+    }
+
+    .vx-process-card,
+    .vx-why-card,
+    .vx-metric-box{
+        padding:25px;
+    }
+
+    .vx-testimonial-card{
+        padding:30px 25px;
+    }
+
+    .vx-testimonial-card p{
+        font-size:1rem;
+    }
+
+    .vx-metric-box h3{
+        font-size:1.8rem;
+    }
+}
+
+/* =========================================
+   FAQ SECTION
+========================================= */
+
+.vx-faq-section{
+    padding:100px 0;
+    background:#ffffff;
+}
+
+.vx-faq-section .accordion-item{
+    border:none;
+    margin-bottom:15px;
+
+    border-radius:15px !important;
+    overflow:hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.05);
+}
+
+.vx-faq-section .accordion-button{
+    background:#fff;
+
+    color:#111;
+
+    font-weight:700;
+
+    padding:22px 25px;
+
+    box-shadow:none !important;
+}
+
+.vx-faq-section .accordion-button:not(.collapsed){
+    background:#990b2c;
+    color:#fff;
+}
+
+.vx-faq-section .accordion-body{
+    padding:25px;
+
+    line-height:1.9;
+
+    color:#666;
+}
+
+/* =========================================
+   RELATED SERVICES
+========================================= */
+
+.vx-related-services{
+    padding:100px 0;
+    background:#f8f9fb;
+}
+
+.vx-related-card{
+    position:relative;
+    overflow:hidden;
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    height:100%;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+}
+
+.vx-related-card::before{
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #990b2c,
+            #2b2024
+        );
+
+    transition:.45s ease;
+}
+
+.vx-related-card:hover::before{
+    bottom:0;
+}
+
+.vx-related-card i,
+.vx-related-card h4,
+.vx-related-card p,
+.vx-related-card a{
+    position:relative;
+    z-index:2;
+}
+
+.vx-related-card i{
+    font-size:42px;
+    color:#990b2c;
+    margin-bottom:20px;
+    transition:.35s;
+}
+
+.vx-related-card h4{
+    font-size:1.2rem;
+    font-weight:700;
+    color:#111;
+    margin-bottom:15px;
+    transition:.35s;
+}
+
+.vx-related-card p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:20px;
+    transition:.35s;
+}
+
+.vx-related-card a{
+    color:#990b2c;
+    text-decoration:none;
+    font-weight:700;
+    transition:.35s;
+}
+
+.vx-related-card:hover{
+    transform:translateY(-8px);
+}
+
+.vx-related-card:hover i,
+.vx-related-card:hover h4,
+.vx-related-card:hover p,
+.vx-related-card:hover a{
+    color:#fff;
+}
+
+/* =========================================
+   ACCREDITATIONS
+========================================= */
+
+.vx-accreditations{
+    padding:100px 0;
+    background:#fff;
+}
+
+.vx-accreditation-box{
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    height:100%;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.05);
+
+    transition:.35s ease;
+}
+
+.vx-accreditation-box:hover{
+    transform:translateY(-5px);
+}
+
+.vx-accreditation-box img{
+    max-width:100%;
+    height:80px;
+    object-fit:contain;
+}
+
+/* =========================================
+   CONTACT CTA
+========================================= */
+
+.vx-contact-cta{
+    padding:100px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #990b2c,
+            #2b2024
+        );
+}
+
+.vx-contact-content h2{
+    color:#fff;
+
+    font-size:2.5rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.vx-contact-content p{
+    color:rgba(255,255,255,.92);
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+}
+
+.vx-contact-form{
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.15);
+}
+
+.vx-contact-form input,
+.vx-contact-form textarea{
+    width:100%;
+
+    padding:14px 15px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    transition:.3s ease;
+}
+
+.vx-contact-form input:focus,
+.vx-contact-form textarea:focus{
+    outline:none;
+
+    border-color:#990b2c;
+
+    box-shadow:
+        0 0 0 3px rgba(153,11,44,.10);
+}
+
+.vx-contact-form button{
+    width:100%;
+
+    border:none;
+
+    background:#990b2c;
+
+    color:#fff;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-weight:700;
+
+    transition:.35s ease;
+}
+
+.vx-contact-form button:hover{
+    background:#111;
+}
+
+/* =========================================
+   GLOBAL IMAGE FIX
+========================================= */
+
+.vx-image-box img,
+.vx-benefits-image img,
+.vx-contract-image img,
+.vx-industries-image{
+    width:100%;
+    display:block;
+    border-radius:20px;
+}
+
+/* =========================================
+   FINAL MOBILE
+========================================= */
+
+@media(max-width:991px){
+
+    .vx-contact-content{
+        margin-bottom:40px;
+    }
+
+    .vx-contact-content h2{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-faq-section,
+    .vx-related-services,
+    .vx-accreditations,
+    .vx-contact-cta{
+        padding:70px 0;
+    }
+
+    .vx-contact-form{
+        padding:25px;
+    }
+
+    .vx-contact-content h2{
+        font-size:1.8rem;
+    }
+
+    .vx-related-card,
+    .vx-accreditation-box{
+        padding:25px;
+    }
+
+    .vx-accreditation-box img{
+        height:60px;
+    }
+
+    .vx-faq-section .accordion-button{
+        padding:18px;
+        font-size:.95rem;
+    }
+
+    .vx-faq-section .accordion-body{
+        padding:18px;
+    }
+}
+
+/* =========================================
+   END OF FILE
+========================================= */
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.vx-concierge-hero{
+    position:relative;
+    padding:120px 0;
+    background:url('images/concierge-hero.jpg') center center/cover;
+    background-color: #000;
+    overflow:hidden;
+}
+
+.vx-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.70);
+}
+
+.vx-concierge-hero .container{
+    position:relative;
+    z-index:2;
+}
+
+.vx-tag{
+    display:inline-block;
+    background:#990b2c;
+    color:#fff;
+    padding:10px 18px;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.vx-hero-content h1{
+    color:#fff;
+    font-size:3.5rem;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.vx-hero-content p{
+    color:rgba(255,255,255,.85);
+    line-height:1.9;
+}
+
+.vx-hero-list{
+    list-style:none;
+    padding:0;
+    margin:30px 0;
+}
+
+.vx-hero-list li{
+    color:#fff;
+    margin-bottom:12px;
+    position:relative;
+    padding-left:25px;
+}
+
+.vx-hero-list li::before{
+    content:'✓';
+    position:absolute;
+    left:0;
+    color:#990b2c;
+    font-weight:700;
+}
+
+.vx-btn-primary{
+    display:inline-block;
+    background:#990b2c;
+    color:#fff;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:6px;
+    font-weight:700;
+    transition:.35s;
+}
+
+.vx-btn-primary:hover{
+    background:#fff;
+    color:#990b2c;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.vx-quote-form{
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+}
+
+.vx-quote-form h3{
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.vx-quote-form input,
+.vx-quote-form select,
+.vx-quote-form textarea{
+    width:100%;
+    margin-bottom:15px;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:6px;
+}
+
+.vx-quote-form button{
+    width:100%;
+    border:none;
+    background:#990b2c;
+    color:#fff;
+    padding:14px;
+    font-weight:700;
+    border-radius:6px;
+}
+/* =========================================
+   STATS BAR
+========================================= */
+
+.vx-stats-bar{
+    padding:60px 0;
+
+    background:
+    linear-gradient(
+        135deg,
+        #990b2c 0%,
+        #7a001b 50%,
+        #2b2024 100%
+    );
+}
+
+.vx-stat{
+    position:relative;
+
+    background:
+        rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+
+    padding:30px 20px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.10);
+
+    transition:.4s ease;
+
+    height:100%;
+}
+
+.vx-stat:hover{
+    transform:translateY(-10px);
+
+    background:
+        rgba(255,255,255,.15);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.15);
+}
+
+/* ICON */
+
+.vx-stat i{
+    color:#ffffff;
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+    transition:.4s ease;
+}
+
+.vx-stat:hover i{
+    transform:scale(1.15) rotate(8deg);
+}
+
+/* NUMBER */
+
+.vx-stat h4{
+    color:#ffffff;
+
+    font-size:2.4rem;
+
+    font-weight:800;
+
+    margin-bottom:8px;
+
+    transition:.4s ease;
+}
+
+/* TEXT */
+
+.vx-stat p{
+    color:rgba(255,255,255,.85);
+
+    font-size:.95rem;
+
+    margin:0;
+
+    transition:.4s ease;
+}
+
+/* OPTIONAL GLOW */
+
+.vx-stat::before{
+    content:'';
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    border-radius:20px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(255,255,255,.08),
+        transparent
+    );
+
+    pointer-events:none;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .vx-stats-bar{
+        padding:40px 0;
+    }
+
+    .vx-stat{
+        padding:25px 15px;
+        margin-bottom:15px;
+    }
+
+    .vx-stat i{
+        font-size:34px;
+    }
+
+    .vx-stat h4{
+        font-size:1.8rem;
+    }
+
+    .vx-stat p{
+        font-size:.85rem;
+    }
+}
+
+/* =========================================
+   INTRO SECTION
+========================================= */
+
+.vx-intro-section{
+    padding:100px 0;
+    background:#fff;
+}
+
+.vx-section-tag{
+    display:inline-block;
+    background:#990b2c;
+    color:#fff;
+    padding:10px 18px;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.vx-intro-content h2{
+    font-size:2.5rem;
+    font-weight:800;
+    color:#111;
+    margin-bottom:25px;
+}
+
+.vx-intro-content p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:20px;
+    text-align: justify;
+}
+
+.vx-image-box img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+p{
+    text-align: justify;
+}
+/* =========================================
+   SERVICES GRID
+========================================= */
+
+.vx-services-grid{
+    padding:100px 0;
+    background:#f8f9fb;
+}
+
+.vx-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.vx-heading h2{
+    font-size:2.6rem;
+    font-weight:800;
+    color:#111;
+    margin-bottom:15px;
+}
+
+/* =========================================
+   SERVICE CARD
+========================================= */
+
+.vx-service-card{
+    position:relative;
+    overflow:hidden;
+
+    background:#ffffff;
+
+    padding:40px 30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    height:100%;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.06);
+
+    transition:.45s ease;
+}
+
+/* Hover Background */
+
+.vx-service-card::before{
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:
+    linear-gradient(
+        135deg,
+        #990b2c,
+        #2b2024
+    );
+
+    transition:.45s ease;
+}
+
+.vx-service-card:hover::before{
+    bottom:0;
+}
+
+/* Content Layer */
+
+.vx-service-card i,
+.vx-service-card h3,
+.vx-service-card p{
+    position:relative;
+    z-index:2;
+}
+
+/* Icon */
+
+.vx-service-card i{
+    font-size:48px;
+
+    color:#990b2c;
+
+    margin-bottom:20px;
+
+    transition:.4s ease;
+}
+
+/* Heading */
+
+.vx-service-card h3{
+    font-size:1.25rem;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:15px;
+
+    transition:.4s ease;
+}
+
+/* Paragraph */
+
+.vx-service-card p{
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:0;
+
+    transition:.4s ease;
+}
+
+/* Hover Effects */
+
+.vx-service-card:hover{
+    transform:translateY(-12px);
+
+    box-shadow:
+        0 25px 50px rgba(153,11,44,.25);
+}
+
+.vx-service-card:hover i{
+    color:#fff;
+    transform:scale(1.1);
+}
+
+.vx-service-card:hover h3,
+.vx-service-card:hover p{
+    color:#fff;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+    .vx-services-grid{
+        padding:70px 0;
+    }
+
+    .vx-heading h2{
+        font-size:2rem;
+    }
+
+    .vx-service-card{
+        padding:30px 25px;
+    }
+
+    .vx-service-card i{
+        font-size:40px;
+    }
+
+    .vx-service-card h3{
+        font-size:1.1rem;
+    }
+}
+/* =========================================
+   RESPONSIBILITIES
+========================================= */
+
+.vx-responsibilities{
+    padding:100px 0;
+    background:#fff;
+}
+
+.vx-responsibility-content h2{
+    font-size:2.3rem;
+    font-weight:800;
+    margin-bottom:30px;
+}
+
+.vx-responsibility-content ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.vx-responsibility-content li{
+    margin-bottom:18px;
+    color:#555;
+    line-height:1.8;
+    font-weight:500;
+}
+
+.vx-responsibility-content li i{
+    width:28px;
+    height:28px;
+    background:#990b2c;
+    color:#fff;
+    text-align:center;
+    line-height:28px;
+    border-radius:50%;
+    margin-right:10px;
+    font-size:12px;
+}
+
+
+/* =========================================
+   BENEFITS SECTION
+========================================= */
+
+.vx-benefits-section{
+    padding:100px 0;
+    background:#fff;
+}
+
+.vx-benefits-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.vx-benefits-content h2{
+    font-size:2.3rem;
+    font-weight:800;
+    color:#111;
+    margin-bottom:35px;
+}
+
+.vx-benefit-item{
+    display:flex;
+    gap:15px;
+
+    padding:20px;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+    transition:.35s ease;
+}
+
+.vx-benefit-item:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(153,11,44,.15);
+}
+
+.vx-benefit-item i{
+    width:55px;
+    height:55px;
+
+    min-width:55px;
+
+    border-radius:50%;
+
+    background:#990b2c;
+
+    color:#fff;
+
+    text-align:center;
+
+    line-height:55px;
+
+    font-size:22px;
+}
+
+.vx-benefit-item h4{
+    font-size:1rem;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.vx-benefit-item p{
+    margin:0;
+    color:#666;
+    line-height:1.7;
+}
+
+/* =========================================
+   CTA SECTION
+========================================= */
+
+.vx-service-cta{
+    padding:120px 0;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.75)
+    ),
+    url('images/cta-security.jpg')
+    center center/cover;
+
+    text-align:center;
+}
+
+.vx-cta-content h2{
+    color:#fff;
+    font-size:3rem;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.vx-cta-content p{
+    color:rgba(255,255,255,.85);
+    max-width:700px;
+    margin:0 auto 30px;
+}
+
+.vx-cta-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.vx-btn-outline{
+    display:inline-block;
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:14px 30px;
+
+    border-radius:6px;
+
+    font-weight:700;
+
+    transition:.35s;
+}
+
+.vx-btn-outline:hover{
+    background:#fff;
+    color:#111;
+}
+
+/* =========================================
+   CONTRACT SECTION
+========================================= */
+
+.vx-contract-section{
+    padding:100px 0;
+    background:#f8f9fb;
+}
+
+.vx-contract-content h2{
+    font-size:2.3rem;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+.vx-contract-content p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:25px;
+}
+
+.vx-contract-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.vx-contract-list li{
+    position:relative;
+    padding-left:30px;
+    margin-bottom:15px;
+    color:#555;
+    font-weight:500;
+}
+
+.vx-contract-list li::before{
+    content:'✓';
+
+    position:absolute;
+    left:0;
+
+    color:#990b2c;
+    font-weight:700;
+}
+
+.vx-contract-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:991px){
+
+    .vx-benefits-content,
+    .vx-contract-content{
+        margin-top:40px;
+    }
+
+    .vx-cta-content h2{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-benefits-section,
+    .vx-contract-section{
+        padding:70px 0;
+    }
+
+    .vx-service-cta{
+        padding:80px 0;
+    }
+
+    .vx-cta-content h2{
+        font-size:1.7rem;
+    }
+
+    .vx-benefits-content h2,
+    .vx-contract-content h2{
+        font-size:1.8rem;
+    }
+}
+
+
+/* =========================================
+   CONSTRUCTION INTRO SECTION
+========================================= */
+
+.vx-corporate-intro{
+    padding:100px 0;
+    background:#f8f9fb;
+}
+
+.vx-intro-card{
+    background:#ffffff;
+
+    padding:45px;
+
+    border-radius:20px;
+
+    border-left:5px solid #990b2c;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+
+    height:100%;
+}
+
+.vx-section-tag{
+    display:inline-block;
+
+    background:#990b2c;
+
+    color:#fff;
+
+    padding:10px 18px;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+}
+
+.vx-intro-card h2{
+    font-size:2.4rem;
+
+    font-weight:800;
+
+    color:#111;
+
+    margin-bottom:25px;
+}
+
+.vx-intro-card p{
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+}
+
+.vx-image-box img{
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.10);
+}
+
+/* =========================================
+   SERVICES SECTION
+========================================= */
+
+.vx-corporate-services{
+    padding:100px 0;
+    background:#fff;
+}
+
+.vx-section-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.vx-section-heading h2{
+    font-size:2.5rem;
+    font-weight:800;
+    color:#111;
+    margin-bottom:15px;
+}
+
+.vx-section-heading p{
+    color:#666;
+    max-width:700px;
+    margin:auto;
+}
+
+.vx-service-box{
+    position:relative;
+
+    overflow:hidden;
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    height:100%;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+}
+
+.vx-service-box::before{
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:
+    linear-gradient(
+        135deg,
+        #990b2c,
+        #2b2024
+    );
+
+    transition:.45s ease;
+}
+
+.vx-service-box:hover::before{
+    bottom:0;
+}
+
+.vx-service-box h4,
+.vx-service-box p{
+    position:relative;
+    z-index:2;
+}
+
+.vx-service-box h4{
+    font-size:1.2rem;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:15px;
+
+    transition:.4s ease;
+}
+
+.vx-service-box p{
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:0;
+
+    transition:.4s ease;
+}
+
+.vx-service-box:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 20px 40px rgba(153,11,44,.20);
+}
+
+.vx-service-box:hover h4,
+.vx-service-box:hover p{
+    color:#fff;
+}
+
+/* =========================================
+   INDUSTRIES SECTION
+========================================= */
+
+.vx-industries-section{
+    padding:100px 0;
+    background:#f8f9fb;
+}
+
+.vx-industries-image{
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+}
+
+.vx-industries-content{
+    padding-left:30px;
+}
+
+.vx-industries-content h2{
+    font-size:2.4rem;
+
+    font-weight:800;
+
+    color:#111;
+
+    margin-bottom:20px;
+}
+
+.vx-industries-content p{
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+}
+
+.vx-industries-list{
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+}
+
+.vx-industries-list li{
+    position:relative;
+
+    padding-left:30px;
+
+    margin-bottom:18px;
+
+    color:#555;
+
+    font-weight:500;
+}
+
+.vx-industries-list li::before{
+    content:'✓';
+
+    position:absolute;
+
+    left:0;
+
+    color:#990b2c;
+
+    font-weight:700;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:991px){
+
+    .vx-intro-card{
+        margin-bottom:30px;
+    }
+
+    .vx-industries-content{
+        padding-left:0;
+        margin-top:30px;
+    }
+
+    .vx-intro-card h2,
+    .vx-industries-content h2,
+    .vx-section-heading h2{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-corporate-intro,
+    .vx-corporate-services,
+    .vx-industries-section{
+        padding:70px 0;
+    }
+
+    .vx-intro-card{
+        padding:30px;
+    }
+
+    .vx-intro-card h2,
+    .vx-industries-content h2,
+    .vx-section-heading h2{
+        font-size:1.7rem;
+    }
+}
+
+/* =========================================
+   CONTRACT MANAGEMENT SECTION
+========================================= */
+
+.vx-contract-management{
+    padding:100px 0;
+    background:#fff;
+}
+
+.vx-contract-content{
+    padding-right:30px;
+}
+
+.vx-contract-content h2{
+    font-size:2.5rem;
+    font-weight:800;
+    color:#111;
+    margin-bottom:25px;
+}
+
+.vx-contract-content p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+.vx-contract-list{
+    list-style:none;
+    padding:0;
+    margin:30px 0 0;
+}
+
+.vx-contract-list li{
+    position:relative;
+    padding-left:35px;
+    margin-bottom:15px;
+    color:#555;
+    font-weight:500;
+}
+
+.vx-contract-list li::before{
+    content:'✓';
+    position:absolute;
+    left:0;
+    top:0;
+    width:22px;
+    height:22px;
+    background:#990b2c;
+    color:#fff;
+    border-radius:50%;
+    text-align:center;
+    line-height:22px;
+    font-size:12px;
+}
+
+.vx-image-box img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 20px 50px rgba(0,0,0,.10);
+}
+
+/* =========================================
+   WHY CHOOSE VECTROX
+========================================= */
+
+.vx-why-choose{
+    padding:100px 0;
+    background:#f8f9fb;
+}
+
+.vx-why-card{
+    position:relative;
+    overflow:hidden;
+
+    background:#fff;
+    padding:40px 30px;
+    border-radius:20px;
+    text-align:center;
+    height:100%;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+}
+
+.vx-why-card::before{
+    content:'';
+    position:absolute;
+
+    left:0;
+    bottom:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:
+    linear-gradient(
+        135deg,
+        #990b2c,
+        #2b2024
+    );
+
+    transition:.45s ease;
+}
+
+.vx-why-card:hover::before{
+    bottom:0;
+}
+
+.vx-why-card i,
+.vx-why-card h4,
+.vx-why-card p{
+    position:relative;
+    z-index:2;
+}
+
+.vx-why-card i{
+    font-size:48px;
+    color:#990b2c;
+    margin-bottom:20px;
+    transition:.4s ease;
+}
+
+.vx-why-card h4{
+    font-size:1.2rem;
+    font-weight:700;
+    color:#111;
+    margin-bottom:15px;
+    transition:.4s ease;
+}
+
+.vx-why-card p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:0;
+    transition:.4s ease;
+}
+
+.vx-why-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 25px 50px rgba(153,11,44,.20);
+}
+
+.vx-why-card:hover i,
+.vx-why-card:hover h4,
+.vx-why-card:hover p{
+    color:#fff;
+}
+
+/* =========================================
+   RELIABILITY STATS
+========================================= */
+
+.vx-reliability-stats{
+    padding:100px 0;
+
+    background:
+    linear-gradient(
+        135deg,
+        #990b2c 0%,
+        #7a001b 50%,
+        #2b2024 100%
+    );
+}
+
+.vx-reliability-stats .vx-heading h2,
+.vx-reliability-stats .vx-heading p{
+    color:#fff;
+}
+
+.vx-metric-box{
+    background:
+    rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+
+    padding:35px 25px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.10);
+
+    transition:.4s ease;
+
+    height:100%;
+}
+
+.vx-metric-box:hover{
+    transform:translateY(-10px);
+
+    background:
+    rgba(255,255,255,.15);
+}
+
+.vx-metric-box i{
+    font-size:45px;
+    color:#fff;
+    margin-bottom:15px;
+}
+
+.vx-metric-box h3{
+    font-size:2.5rem;
+    font-weight:800;
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.vx-metric-box p{
+    color:rgba(255,255,255,.85);
+    margin-bottom:0;
+}
+
+/* =========================================
+   TESTIMONIALS
+========================================= */
+
+.vx-testimonials{
+    padding:100px 0;
+    background:#fff;
+}
+
+.vx-testimonial-card{
+    position:relative;
+
+    background:#fff;
+
+    padding:50px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    border:1px solid rgba(153,11,44,.08);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+}
+
+.vx-testimonial-card i{
+    font-size:40px;
+    color:#990b2c;
+    margin-bottom:20px;
+}
+
+.vx-testimonial-card p{
+    font-size:1.1rem;
+    line-height:2;
+    color:#555;
+    margin-bottom:25px;
+}
+
+.vx-testimonial-card h5{
+    font-weight:700;
+    margin-bottom:5px;
+    color:#111;
+}
+
+.vx-testimonial-card span{
+    color:#990b2c;
+    font-size:.9rem;
+}
+
+/* =========================================
+   FAQ SECTION
+========================================= */
+
+.vx-faq-section{
+    padding:100px 0;
+    background:#f8f9fb;
+}
+
+.vx-faq-section .accordion-item{
+    border:none;
+    margin-bottom:15px;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.vx-faq-section .accordion-button{
+    background:#fff;
+    color:#111;
+    font-weight:700;
+    padding:20px 25px;
+    box-shadow:none;
+}
+
+.vx-faq-section .accordion-button:not(.collapsed){
+    background:#990b2c;
+    color:#fff;
+}
+
+.vx-faq-section .accordion-button:focus{
+    box-shadow:none;
+}
+
+.vx-faq-section .accordion-body{
+    background:#fff;
+    padding:25px;
+    color:#666;
+    line-height:1.8;
+}
+
+/* =========================================
+   COMMON HEADING
+========================================= */
+
+.vx-heading{
+    margin-bottom:60px;
+}
+
+.vx-heading h2{
+    font-size:2.5rem;
+    font-weight:800;
+    color:#111;
+    margin-bottom:15px;
+}
+
+.vx-heading p{
+    color:#666;
+    max-width:700px;
+    margin:0 auto;
+}
+
+.vx-section-tag{
+    display:inline-block;
+    background:#990b2c;
+    color:#fff;
+    padding:10px 18px;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:20px;
+    border-radius:4px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:991px){
+
+    .vx-contract-content{
+        padding-right:0;
+        margin-bottom:40px;
+    }
+
+    .vx-contract-content h2,
+    .vx-heading h2{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-contract-management,
+    .vx-why-choose,
+    .vx-reliability-stats,
+    .vx-testimonials,
+    .vx-faq-section{
+        padding:70px 0;
+    }
+
+    .vx-heading{
+        margin-bottom:40px;
+    }
+
+    .vx-heading h2{
+        font-size:1.8rem;
+    }
+
+    .vx-testimonial-card{
+        padding:30px;
+    }
+
+    .vx-testimonial-card p{
+        font-size:1rem;
+    }
+
+    .vx-metric-box{
+        padding:25px 15px;
+    }
+
+    .vx-metric-box h3{
+        font-size:2rem;
+    }
+
+    .vx-why-card{
+        padding:30px 20px;
+    }
+}
+.vx-testimonial-card{
+    transition:.4s ease;
+    height:100%;
+}
+
+.vx-testimonial-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 25px 50px rgba(153,11,44,.15);
+}
+
+/* =========================================
+   SECTION TAG
+========================================= */
+
+.vx-section-tag{
+    display:inline-block;
+    background:#990b2c;
+    color:#fff;
+    padding:10px 18px;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+/* =========================================
+   COMMON HEADING
+========================================= */
+
+.vx-heading{
+    margin-bottom:60px;
+}
+
+.vx-heading h2{
+    font-size:2.6rem;
+    font-weight:800;
+    color:#111;
+    margin-bottom:15px;
+}
+
+.vx-heading p{
+    max-width:750px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+}
+
+/* =========================================
+   INTRO SECTION
+========================================= */
+
+.vx-intro-section{
+    padding:100px 0;
+    background:#f8f9fb;
+}
+
+.vx-intro-content h2{
+    font-size:2.5rem;
+    font-weight:800;
+    margin-bottom:25px;
+    color:#111;
+}
+
+.vx-intro-content p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+.vx-intro-section img{
+    border-radius:15px;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+}
+
+/* =========================================
+   SERVICES SECTION
+========================================= */
+
+.vx-services-section{
+    padding:100px 0;
+    background:#fff;
+}
+
+.vx-service-card{
+    background:#990b2c;
+    padding:40px 30px;
+    border-radius:20px;
+    height:100%;
+    text-align:center;
+    transition:.4s ease;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* Hover */
+
+.vx-service-card:hover{
+    transform:translateY(-10px);
+    background:#111;
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
+}
+
+/* Heading */
+
+.vx-service-card h3{
+    color:#ffffff !important;
+    font-size:1.8rem;
+    font-weight:700;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+/* Paragraph */
+
+.vx-service-card p{
+    color:rgba(255,255,255,.95) !important;
+    line-height:1.9;
+    font-size:1rem;
+    margin-bottom:0;
+    transition:.3s;
+}
+
+/* Hover Text */
+
+.vx-service-card:hover h3{
+    color:#ffffff !important;
+}
+
+.vx-service-card:hover p{
+    color:#ffffff !important;
+}
+
+/* =========================================
+   BENEFITS SECTION
+========================================= */
+
+.vx-benefits-section{
+    padding:100px 0;
+    background:#f8f9fb;
+}
+
+.vx-benefits-section h2{
+    font-size:2.3rem;
+    font-weight:800;
+    margin-bottom:30px;
+}
+
+.vx-benefits-list{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.vx-benefits-list li{
+    position:relative;
+    padding-left:35px;
+    margin-bottom:18px;
+    color:#555;
+    font-weight:500;
+}
+
+.vx-benefits-list li:before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    top:0;
+    color:#990b2c;
+    font-weight:700;
+}
+
+.vx-benefits-section img{
+    border-radius:15px;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+}
+
+/* =========================================
+   WHY CHOOSE US
+========================================= */
+
+.vx-why-us{
+    padding:100px 0;
+    background:#111;
+}
+
+.vx-why-us .vx-heading h2{
+    color:#fff;
+}
+
+.vx-feature-card{
+    background:#990b2c;
+    color:#fff;
+    padding:30px;
+    border-radius:12px;
+    height:100%;
+    text-align:center;
+    transition:.4s ease;
+}
+
+.vx-feature-card:hover{
+    transform:translateY(-10px);
+    background:#c10d39;
+}
+
+.vx-feature-card h3{
+    font-size:1.25rem;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.vx-feature-card p{
+    margin-bottom:0;
+    line-height:1.8;
+}
+
+/* =========================================
+   TESTIMONIALS
+========================================= */
+
+.vx-testimonials{
+    padding:100px 0;
+    background:#fff;
+}
+
+.vx-testimonial-card{
+    background:#f8f9fb;
+    padding:40px;
+    border-radius:15px;
+    border-top:5px solid #990b2c;
+    text-align:center;
+    height:100%;
+    transition:.4s ease;
+}
+
+.vx-testimonial-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.vx-testimonial-card p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:25px;
+    font-style:italic;
+}
+
+.vx-testimonial-card h5{
+    font-weight:700;
+    margin-bottom:5px;
+    color:#111;
+}
+
+.vx-testimonial-card span{
+    color:#990b2c;
+}
+
+/* =========================================
+   FAQ SECTION
+========================================= */
+
+.vx-faq-section{
+    padding:100px 0;
+    background:#f8f9fb;
+}
+
+.vx-faq-section .accordion-item{
+    border:none;
+    margin-bottom:15px;
+    border-radius:0;
+    overflow:hidden;
+}
+
+.vx-faq-section .accordion-button{
+    background:#111;
+    color:#fff;
+    font-weight:600;
+    padding:18px 25px;
+    box-shadow:none;
+}
+
+.vx-faq-section .accordion-button:not(.collapsed){
+    background:#990b2c;
+    color:#fff;
+}
+
+.vx-faq-section .accordion-body{
+    background:#fff;
+    padding:25px;
+    line-height:1.8;
+    color:#666;
+}
+
+/* =========================================
+   FINAL CTA
+========================================= */
+
+.vx-final-cta{
+    padding:100px 0;
+    background:
+    linear-gradient(
+        135deg,
+        #990b2c,
+        #2b2024
+    );
+    text-align:center;
+}
+
+.vx-final-cta h2{
+    color:#fff;
+    font-size:2.8rem;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.vx-final-cta p{
+    color:rgba(255,255,255,.9);
+    max-width:700px;
+    margin:0 auto 35px;
+    line-height:1.8;
+}
+
+.vx-btn-primary{
+    display:inline-block;
+    background:#fff;
+    color:#990b2c;
+    padding:16px 35px;
+    font-weight:700;
+    text-decoration:none;
+    transition:.4s ease;
+}
+
+.vx-btn-primary:hover{
+    background:#111;
+    color:#fff;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:991px){
+
+    .vx-intro-content h2,
+    .vx-benefits-section h2,
+    .vx-final-cta h2{
+        font-size:2rem;
+    }
+
+    .vx-heading h2{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-intro-section,
+    .vx-services-section,
+    .vx-benefits-section,
+    .vx-why-us,
+    .vx-testimonials,
+    .vx-faq-section,
+    .vx-final-cta{
+        padding:70px 0;
+    }
+
+    .vx-heading{
+        margin-bottom:40px;
+    }
+
+    .vx-heading h2{
+        font-size:1.8rem;
+    }
+
+    .vx-intro-content h2,
+    .vx-benefits-section h2,
+    .vx-final-cta h2{
+        font-size:1.7rem;
+    }
+
+    .vx-service-card,
+    .vx-feature-card,
+    .vx-testimonial-card{
+        padding:25px;
+    }
+
+    .vx-section-tag{
+        font-size:10px;
+        letter-spacing:2px;
+    }
+}
+
+
+
+/* =========================================
+   EVENT SECURITY PAGE
+   Namespace: vx-event-*
+========================================= */
+
+.vx-event-page{
+    background:#f8f9fb;
+}
+
+/* =========================================
+   INTRO SECTION
+========================================= */
+
+.vx-event-intro{
+    padding:100px 0;
+    background:#fff;
+}
+
+.vx-event-content{
+    background:#fff;
+    padding:50px;
+    border-radius:20px;
+    border-left:5px solid #990b2c;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+}
+
+.vx-event-content:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 20px 50px rgba(153,11,44,.12);
+}
+
+.vx-event-content h2{
+    font-size:2.5rem;
+    font-weight:800;
+    color:#111;
+    margin-bottom:25px;
+}
+
+.vx-event-content p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+.vx-event-image{
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.vx-event-image img{
+    width:100%;
+    border-radius:20px;
+
+    transition:.5s ease;
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.12);
+}
+
+.vx-event-image:hover img{
+    transform:scale(1.05);
+}
+
+/* =========================================
+   EVENT SECURITY PAGE
+   Namespace: vx-event-*
+========================================= */
+
+.vx-event-page{
+    background:#f8f9fb;
+}
+
+/* =========================================
+   INTRO SECTION
+========================================= */
+
+.vx-event-intro{
+    padding:100px 0;
+    background:#fff;
+}
+
+.vx-event-content{
+    background:#fff;
+    padding:50px;
+    border-radius:20px;
+    border-left:5px solid #990b2c;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+}
+
+.vx-event-content:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 20px 50px rgba(153,11,44,.12);
+}
+
+.vx-event-content h2{
+    font-size:2.5rem;
+    font-weight:800;
+    color:#111;
+    margin-bottom:25px;
+}
+
+.vx-event-content p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+.vx-event-image{
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.vx-event-image img{
+    width:100%;
+    border-radius:20px;
+
+    transition:.5s ease;
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.12);
+}
+
+.vx-event-image:hover img{
+    transform:scale(1.05);
+}
+
