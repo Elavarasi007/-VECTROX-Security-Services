@@ -309,7 +309,7 @@ img {
 .mega-menu-header h2 {
   color: var(--white);
   font-weight: 700;
-  font-size: 2.4rem;
+  font-size: 2rem;
   margin-bottom: 40px;
 }
 
@@ -323,7 +323,7 @@ img {
 
 .mega-columns h4 {
   color: var(--white);
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 14px;
 }
@@ -764,7 +764,7 @@ margin-top:40px;
 }
 
 .hero-content h1{
-font-size:2.8rem;
+font-size:2rem;
 }
 }
 
@@ -867,7 +867,7 @@ font-size:2.2rem;
 }
 
 .service-card i{
-  font-size:2.8rem;
+  font-size:2rem;
   color:#990b2c;
   margin-bottom:16px;
   transition:all .5s ease;
@@ -1062,7 +1062,7 @@ font-size:2.2rem;
 
 .service-card-front i,
 .service-card-back i{
-    font-size:3rem;
+    font-size:2rem;
     color:#990b2c;
     margin-bottom:20px;
 }
@@ -1157,7 +1157,7 @@ font-size:2.2rem;
 }
 
 .service-card i{
-    font-size:2.8rem;
+    font-size:2rem;
     color:#990b2c;
     margin-bottom:18px;
 }
@@ -1679,7 +1679,7 @@ font-size:2.2rem;
 
 /* ICO badge */
 .ico-text {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 800;
   color: #1a3a6e;
 }
@@ -2053,7 +2053,7 @@ font-size:2.2rem;
   padding: 14px 0;
   color: var(--black);
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 .mobile-submenu {
@@ -2091,7 +2091,7 @@ font-size:2.2rem;
    ========================================================================== */
 @media (max-width: 1199px) {
   .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -2107,7 +2107,7 @@ font-size:2.2rem;
   }
 
   .hero-content h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     text-align: center;
   }
 
@@ -2908,7 +2908,7 @@ font-size:2.2rem;
 
 .about-content-card h3{
     color:#990b2c;
-    font-size:1.3rem;
+    font-size:1.2rem;
     font-weight:700;
     margin-bottom:20px;
 }
@@ -2978,6 +2978,8 @@ font-size:2.2rem;
         font-size:1rem;
     }
 }
+
+
 /* =========================================
    MISSION, VISION & VALUES PAGE
 ========================================= */
@@ -2995,6 +2997,8 @@ font-size:2.2rem;
         0 10px 30px rgba(0,0,0,.08);
 
     border-left:5px solid #990b2c;
+
+
 }
 
 /* Section Headings */
@@ -3007,6 +3011,7 @@ font-size:2.2rem;
     font-size:1.5rem;
     font-weight:700;
     margin-bottom:18px;
+    
 }
 
 /* Icons */
@@ -3058,6 +3063,7 @@ font-size:2.2rem;
     margin-bottom:10px;
 
     transition:.3s ease;
+    
 }
 
 /* Value Text */
@@ -3089,6 +3095,10 @@ font-size:2.2rem;
     line-height:1.9;
     margin-bottom:12px;
 }
+.inner-content .container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 /* Mobile */
 
@@ -3105,7 +3115,7 @@ font-size:2.2rem;
     .vision-box h3,
     .values-box h3,
     .commitment-box h3{
-        font-size:1.3rem;
+        font-size:1.2rem;
     }
 
     .value-item{
@@ -3618,7 +3628,7 @@ font-size:2.2rem;
 .csr-commitment h3{
     color:#fff;
     margin-bottom:20px;
-    font-size:1.8rem;
+    font-size:1.5rem;
 }
 
 .csr-commitment p{
@@ -3653,7 +3663,7 @@ font-size:2.2rem;
     }
 
     .csr-section h3{
-        font-size:1.3rem;
+        font-size:1.2rem;
     }
 }
 
@@ -3665,7 +3675,7 @@ font-size:2.2rem;
 ========================================= */
 
 .environmental-policy{
-    padding:80px 0;
+    padding:50px 0;
 }
 
 .env-intro-box,
@@ -3676,6 +3686,7 @@ font-size:2.2rem;
     border-radius:18px;
     border-left:5px solid #990b2c;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
+    margin-top: 30px;
 }
 
 .env-intro-box h3,
@@ -3812,7 +3823,7 @@ font-size:2.2rem;
 .env-commitment h3{
     color:#fff;
     margin-bottom:20px;
-    font-size:1.8rem;
+    font-size:1.5rem;
 }
 
 .env-commitment p{
@@ -3856,6 +3867,7 @@ font-size:2.2rem;
     border-left:5px solid #990b2c;
     box-shadow:0 10px 30px rgba(0,0,0,.06);
     transition:.35s;
+    margin-top: 10px;
 }
 
 .hs-intro-box:hover,
@@ -3960,6 +3972,7 @@ font-size:2.2rem;
     border-radius:18px;
     border-left:5px solid #990b2c;
     box-shadow:0 10px 30px rgba(0,0,0,.06);
+    margin-top: 30px;
 }
 
 .quality-intro-box h3,
@@ -4133,6 +4146,7 @@ font-size:2.2rem;
     padding:40px;
 
     margin-bottom:30px;
+    margin-top: 30px;
 
     border-radius:20px;
 
@@ -5842,7 +5856,7 @@ font-size:2.2rem;
 
 .privacy-card h3{
     color:#990b2c;
-    font-size:1.35rem;
+    font-size:1.5rem;
     font-weight:700;
     margin-bottom:20px;
 }
@@ -6042,7 +6056,7 @@ font-size:2.2rem;
 
 .vectrox-services-page .vs-banner h1{
     color:#fff;
-    font-size:3rem;
+    font-size:2rem;
     font-weight:700;
 }
 
@@ -6145,7 +6159,7 @@ font-size:2.2rem;
 
 .vx-services-banner h1{
     color:#fff;
-    font-size:3rem;
+    font-size:2rem;
     font-weight:700;
     margin-bottom:15px;
 }
@@ -6200,7 +6214,7 @@ font-size:2.2rem;
 }
 
 .vx-services-title{
-    font-size:2.5rem;
+    font-size:2rem;
     font-weight:700;
     color:#111;
     margin-bottom:35px;
@@ -6342,9 +6356,9 @@ font-size:2.2rem;
 }
 
 .vx-service-card h4{
-    font-size:1.15rem;
+    font-size:1rem;
     font-weight:700;
-    color:#111;
+    color:white;
     margin-bottom:15px;
     transition:.4s ease;
 }
@@ -6452,7 +6466,7 @@ font-size:2.2rem;
 
 .vx-services-cta h3{
     color:#fff;
-    font-size:2rem;
+    font-size:1.5rem;
     font-weight:700;
     margin-bottom:20px;
 }
@@ -6494,7 +6508,7 @@ font-size:2.2rem;
 @media(max-width:991px){
 
     .vx-services-banner h1{
-        font-size:2.5rem;
+        font-size:2rem;
     }
 
     .vx-services-title{
@@ -6613,7 +6627,7 @@ font-size:2.2rem;
 .vx-corporate-content h1{
     color:#fff;
 
-    font-size:3.5rem;
+    font-size:2rem;
 
     font-weight:700;
 
@@ -6625,7 +6639,7 @@ font-size:2.2rem;
 .vx-corporate-content p{
     color:rgba(255,255,255,.85);
 
-    font-size:1.05rem;
+    font-size:1rem;
 
     line-height:1.9;
 
@@ -6792,7 +6806,7 @@ font-size:2.2rem;
 }
 
 .vx-stat-box h3{
-    font-size:2rem;
+    font-size:1.5rem;
 
     font-weight:700;
 
@@ -6851,7 +6865,7 @@ font-size:2.2rem;
 }
 
 .vx-intro-card h2{
-    font-size:2.4rem;
+    font-size:2rem;
 
     font-weight:700;
 
@@ -6898,7 +6912,7 @@ font-size:2.2rem;
 }
 
 .vx-section-heading h2{
-    font-size:2.5rem;
+    font-size:2rem;
 
     font-weight:700;
 
@@ -6928,7 +6942,7 @@ font-size:2.2rem;
     }
 
     .vx-corporate-content h1{
-        font-size:2.8rem;
+        font-size:2rem;
     }
 
     .vx-intro-card{
@@ -7082,7 +7096,7 @@ font-size:2.2rem;
 }
 
 .vx-benefits-content h2{
-    font-size:2.4rem;
+    font-size:2rem;
 
     font-weight:700;
 
@@ -7134,7 +7148,7 @@ font-size:2.2rem;
 }
 
 .vx-benefit-item h5{
-    font-size:1.15rem;
+    font-size:1rem;
 
     font-weight:700;
 
@@ -7186,7 +7200,7 @@ font-size:2.2rem;
 }
 
 .vx-industries-content h2{
-    font-size:2.3rem;
+    font-size:2rem;
 
     font-weight:700;
 
@@ -7273,7 +7287,7 @@ font-size:2.2rem;
 
     line-height:1.9;
 
-    font-size:1.05rem;
+    font-size:1rem;
 
     margin-bottom:30px;
 }
@@ -7319,7 +7333,7 @@ font-size:2.2rem;
 }
 
 .vx-contract-content h2{
-    font-size:2.3rem;
+    font-size:2.2rem;
 
     font-weight:700;
 
@@ -7574,7 +7588,7 @@ font-size:2.2rem;
 
     border-radius:50%;
 
-    font-size:1.3rem;
+    font-size:1.2rem;
     font-weight:700;
 
     margin-bottom:20px;
@@ -7618,7 +7632,7 @@ font-size:2.2rem;
 }
 
 .vx-metric-box h3{
-    font-size:3rem !important;
+    font-size:1.5rem !important;
     font-weight:700 !important;
     color:#111 !important;
     transition:.4s !important;
@@ -7645,7 +7659,7 @@ font-size:2.2rem;
 ========================================= */
 
 .vx-testimonials{
-    padding:100px 0;
+    padding:30px 0 !important;
     background:#f8f9fb;
 }
 
@@ -7719,7 +7733,7 @@ font-size:2.2rem;
     }
 
     .vx-metric-box h3{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 }
 
@@ -7914,7 +7928,7 @@ font-size:2.2rem;
 
 .vx-contact-cta{
     padding:100px 0;
-
+    margin-bottom: 30px;
     background:
         linear-gradient(
             135deg,
@@ -7926,7 +7940,7 @@ font-size:2.2rem;
 .vx-contact-content h2{
     color:#fff;
 
-    font-size:2.5rem;
+    font-size:2rem;
 
     font-weight:700;
 
@@ -7938,7 +7952,7 @@ font-size:2.2rem;
 
     line-height:1.9;
 
-    font-size:1.05rem;
+    font-size:1rem;
 }
 
 .vx-contact-form{
@@ -8066,7 +8080,172 @@ font-size:2.2rem;
 /* =========================================
    END OF FILE
 ========================================= */
+/* =========================================
+   INTRO CARD - FORCE OVERRIDE
+========================================= */
 
+.vx-intro-section{
+    padding:100px 0 !important;
+    background:#f8f9fb !important;
+}
+
+.vx-intro-card{
+    position:relative !important;
+
+    background:#ffffff !important;
+
+    padding:50px !important;
+
+    border-radius:30px !important;
+
+    border-left:6px solid #990b2c !important;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08) !important;
+
+    overflow:hidden !important;
+
+    transition:.4s ease !important;
+
+    height:100% !important;
+}
+
+.vx-intro-card:hover{
+    transform:translateY(-6px) !important;
+
+    box-shadow:
+        0 25px 60px rgba(153,11,44,.15) !important;
+}
+
+.vx-intro-card::before{
+    content:'' !important;
+
+    position:absolute !important;
+
+    top:0 !important;
+    left:0 !important;
+
+    width:180px !important;
+    height:180px !important;
+
+    background:
+        radial-gradient(
+            rgba(153,11,44,.08),
+            transparent 70%
+        ) !important;
+
+    pointer-events:none !important;
+}
+
+/* TAG */
+
+.vx-intro-card .vx-section-tag{
+    display:inline-block !important;
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    padding:12px 20px !important;
+
+    font-size:11px !important;
+
+    font-weight:700 !important;
+
+    letter-spacing:3px !important;
+
+    text-transform:uppercase !important;
+
+    border-radius:4px !important;
+
+    margin-bottom:25px !important;
+}
+
+/* HEADING */
+
+.vx-intro-card h2{
+    font-size:2rem !important;
+
+    font-weight:800 !important;
+
+    line-height:1.15 !important;
+
+    color:#111 !important;
+
+    margin-bottom:30px !important;
+}
+
+/* PARAGRAPH */
+
+.vx-intro-card p{
+    color:#555 !important;
+
+    line-height:2 !important;
+
+    font-size:1rem !important;
+
+    margin-bottom:22px !important;
+
+    text-align:justify !important;
+}
+
+/* IMAGE */
+
+.vx-image-box{
+    position:relative !important;
+}
+
+.vx-image-box img{
+    width:100% !important;
+
+    border-radius:25px !important;
+
+    display:block !important;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.12) !important;
+
+    transition:.4s ease !important;
+}
+
+.vx-image-box img:hover{
+    transform:scale(1.03) !important;
+}
+
+/* MOBILE */
+
+@media(max-width:991px){
+
+    .vx-intro-card{
+        padding:35px !important;
+        margin-bottom:40px !important;
+    }
+
+    .vx-intro-card h2{
+        font-size:2rem !important;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-intro-section{
+        padding:70px 0 !important;
+    }
+
+    .vx-intro-card{
+        padding:25px !important;
+        border-radius:20px !important;
+    }
+
+    .vx-intro-card h2{
+        font-size:1.9rem !important;
+    }
+
+    .vx-intro-card p{
+        font-size:.95rem !important;
+        line-height:1.8 !important;
+    }
+}
 /* =========================================
    HERO SECTION
 ========================================= */
@@ -8103,7 +8282,7 @@ font-size:2.2rem;
 
 .vx-hero-content h1{
     color:#fff;
-    font-size:3.5rem;
+    font-size:2rem;
     font-weight:800;
     margin-bottom:20px;
 }
@@ -8251,7 +8430,7 @@ font-size:2.2rem;
 .vx-stat h4{
     color:#ffffff;
 
-    font-size:2.4rem;
+    font-size:2rem;
 
     font-weight:800;
 
@@ -8344,7 +8523,7 @@ font-size:2.2rem;
 }
 
 .vx-intro-content h2{
-    font-size:2.5rem;
+    font-size:2rem;
     font-weight:800;
     color:#111;
     margin-bottom:25px;
@@ -8381,7 +8560,7 @@ p{
 }
 
 .vx-heading h2{
-    font-size:2.6rem;
+    font-size:2rem;
     font-weight:800;
     color:#111;
     margin-bottom:15px;
@@ -8464,7 +8643,7 @@ p{
 /* Heading */
 
 .vx-service-card h3{
-    font-size:1.25rem;
+    font-size:1.5rem;
 
     font-weight:700;
 
@@ -8542,7 +8721,7 @@ p{
 }
 
 .vx-responsibility-content h2{
-    font-size:2.3rem;
+    font-size:2rem;
     font-weight:800;
     margin-bottom:30px;
 }
@@ -8571,7 +8750,397 @@ p{
     margin-right:10px;
     font-size:12px;
 }
+/* =========================================
+   RESPONSIBILITY CONTENT CARD
+========================================= */
 
+.vx-responsibility-content{
+    position:relative !important;
+
+    background:#ffffff !important;
+
+    padding:50px !important;
+
+    border-radius:30px !important;
+
+    border-left:6px solid #990b2c !important;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08) !important;
+
+    overflow:hidden !important;
+
+    transition:.4s ease !important;
+}
+
+.vx-responsibility-content:hover{
+    transform:translateY(-6px) !important;
+
+    box-shadow:
+        0 25px 60px rgba(153,11,44,.15) !important;
+}
+
+/* Decorative Glow */
+
+.vx-responsibility-content::before{
+    content:'' !important;
+
+    position:absolute !important;
+
+    top:0 !important;
+    left:0 !important;
+
+    width:180px !important;
+    height:180px !important;
+
+    background:
+    radial-gradient(
+        rgba(153,11,44,.08),
+        transparent 70%
+    ) !important;
+
+    pointer-events:none !important;
+}
+
+/* Section Tag */
+
+.vx-responsibility-content .vx-section-tag{
+    display:inline-block !important;
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    padding:12px 20px !important;
+
+    font-size:11px !important;
+
+    font-weight:700 !important;
+
+    letter-spacing:3px !important;
+
+    text-transform:uppercase !important;
+
+    border-radius:4px !important;
+
+    margin-bottom:25px !important;
+}
+
+/* Heading */
+
+.vx-responsibility-content h2{
+    font-size:2rem !important;
+
+    font-weight:800 !important;
+
+    line-height:1.15 !important;
+
+    color:#111 !important;
+
+    margin-bottom:25px !important;
+}
+
+/* Paragraph */
+
+.vx-responsibility-content p{
+    color:#555 !important;
+
+    font-size:1rem !important;
+
+    line-height:2 !important;
+
+    margin-bottom:20px !important;
+}
+
+/* Checklist */
+
+.vx-responsibility-list{
+    list-style:none !important;
+
+    padding:0 !important;
+
+    margin:30px 0 0 !important;
+}
+
+.vx-responsibility-list li{
+    display:flex !important;
+
+    align-items:flex-start !important;
+
+    gap:15px !important;
+
+    margin-bottom:18px !important;
+
+    color:#444 !important;
+
+    font-weight:500 !important;
+
+    line-height:1.8 !important;
+}
+
+.vx-responsibility-list li i{
+    min-width:38px !important;
+
+    width:38px !important;
+
+    height:38px !important;
+
+    display:flex !important;
+
+    align-items:center !important;
+
+    justify-content:center !important;
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    border-radius:50% !important;
+
+    font-size:14px !important;
+}
+
+/* Button */
+
+.vx-responsibility-content .vx-btn-primary{
+    margin-top:20px !important;
+}
+
+/* Image */
+
+.vx-responsibility-image img{
+    width:100% !important;
+
+    border-radius:25px !important;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.12) !important;
+
+    transition:.4s ease !important;
+}
+
+.vx-responsibility-image img:hover{
+    transform:scale(1.03) !important;
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+    .vx-responsibility-content{
+        padding:35px !important;
+        margin-bottom:40px !important;
+    }
+
+    .vx-responsibility-content h2{
+        font-size:2.2rem !important;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-responsibility-content{
+        padding:25px !important;
+        border-radius:20px !important;
+    }
+
+    .vx-responsibility-content h2{
+        font-size:1.8rem !important;
+    }
+
+    .vx-responsibility-content p{
+        font-size:.95rem !important;
+    }
+}
+
+/* =========================================
+   CONTRACT CONTENT CARD
+========================================= */
+
+.vx-contract-content{
+    position:relative !important;
+
+    background:#ffffff !important;
+
+    padding:50px !important;
+
+    border-radius:30px !important;
+
+    border-left:6px solid #990b2c !important;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08) !important;
+
+    overflow:hidden !important;
+
+    transition:.4s ease !important;
+
+    height:100% !important;
+}
+
+.vx-contract-content:hover{
+    transform:translateY(-6px) !important;
+
+    box-shadow:
+        0 25px 60px rgba(153,11,44,.15) !important;
+}
+
+.vx-contract-content::before{
+    content:'' !important;
+
+    position:absolute !important;
+
+    top:0 !important;
+    left:0 !important;
+
+    width:180px !important;
+    height:180px !important;
+
+    background:
+    radial-gradient(
+        rgba(153,11,44,.08),
+        transparent 70%
+    ) !important;
+
+    pointer-events:none !important;
+}
+
+/* TAG */
+
+.vx-contract-content .vx-section-tag{
+    display:inline-block !important;
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    padding:12px 20px !important;
+
+    font-size:11px !important;
+
+    font-weight:700 !important;
+
+    letter-spacing:3px !important;
+
+    text-transform:uppercase !important;
+
+    border-radius:4px !important;
+
+    margin-bottom:25px !important;
+}
+
+/* TITLE */
+
+.vx-contract-content h2{
+    font-size:2rem !important;
+
+    font-weight:800 !important;
+
+    line-height:1.15 !important;
+
+    color:#111 !important;
+
+    margin-bottom:25px !important;
+}
+
+/* PARAGRAPH */
+
+.vx-contract-content p{
+    color:#555 !important;
+
+    font-size:1rem !important;
+
+    line-height:2 !important;
+
+    margin-bottom:20px !important;
+
+    text-align:justify !important;
+}
+
+/* LIST */
+
+.vx-contract-list{
+    list-style:none !important;
+
+    padding:0 !important;
+
+    margin:25px 0 0 !important;
+}
+
+.vx-contract-list li{
+    position:relative !important;
+
+    padding-left:28px !important;
+
+    margin-bottom:14px !important;
+
+    color:#444 !important;
+
+    font-weight:500 !important;
+}
+
+.vx-contract-list li::before{
+    content:'•' !important;
+
+    position:absolute !important;
+
+    left:0 !important;
+
+    top:0 !important;
+
+    color:#990b2c !important;
+
+    font-size:22px !important;
+
+    font-weight:700 !important;
+}
+
+/* IMAGE */
+
+.vx-contract-image img{
+    width:100% !important;
+
+    border-radius:25px !important;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.12) !important;
+
+    transition:.4s ease !important;
+}
+
+.vx-contract-image img:hover{
+    transform:scale(1.03) !important;
+}
+
+/* MOBILE */
+
+@media(max-width:991px){
+
+    .vx-contract-content{
+        padding:35px !important;
+        margin-bottom:40px !important;
+    }
+
+    .vx-contract-content h2{
+        font-size:2.2rem !important;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-contract-content{
+        padding:25px !important;
+        border-radius:20px !important;
+    }
+
+    .vx-contract-content h2{
+        font-size:1.8rem !important;
+    }
+
+    .vx-contract-content p{
+        font-size:.95rem !important;
+    }
+}
 
 /* =========================================
    BENEFITS SECTION
@@ -8589,7 +9158,7 @@ p{
 }
 
 .vx-benefits-content h2{
-    font-size:2.3rem;
+    font-size:2.2rem;
     font-weight:800;
     color:#111;
     margin-bottom:35px;
@@ -8633,7 +9202,7 @@ p{
 
     line-height:55px;
 
-    font-size:22px;
+    font-size:20px;
 }
 
 .vx-benefit-item h4{
@@ -8668,7 +9237,7 @@ p{
 
 .vx-cta-content h2{
     color:#fff;
-    font-size:3rem;
+    font-size:2rem;
     font-weight:800;
     margin-bottom:20px;
 }
@@ -8719,7 +9288,7 @@ p{
 }
 
 .vx-contract-content h2{
-    font-size:2.3rem;
+    font-size:2.2rem;
     font-weight:800;
     margin-bottom:25px;
 }
@@ -8841,7 +9410,7 @@ p{
 }
 
 .vx-intro-card h2{
-    font-size:2.4rem;
+    font-size:2rem;
 
     font-weight:800;
 
@@ -8882,7 +9451,7 @@ p{
 }
 
 .vx-section-heading h2{
-    font-size:2.5rem;
+    font-size:2rem;
     font-weight:800;
     color:#111;
     margin-bottom:15px;
@@ -9005,7 +9574,7 @@ p{
 }
 
 .vx-industries-content h2{
-    font-size:2.4rem;
+    font-size:2rem;
 
     font-weight:800;
 
@@ -9109,7 +9678,7 @@ p{
 }
 
 .vx-contract-content h2{
-    font-size:2.5rem;
+    font-size:2rem;
     font-weight:800;
     color:#111;
     margin-bottom:25px;
@@ -9301,7 +9870,7 @@ p{
 }
 
 .vx-metric-box h3{
-    font-size:2.5rem;
+    font-size:1.5rem;
     font-weight:800;
     color:#fff;
     margin-bottom:10px;
@@ -9317,7 +9886,7 @@ p{
 ========================================= */
 
 .vx-testimonials{
-    padding:100px 0;
+    padding:30px 0;
     background:#fff;
 }
 
@@ -9411,7 +9980,7 @@ p{
 }
 
 .vx-heading h2{
-    font-size:2.5rem;
+    font-size:2rem;
     font-weight:800;
     color:#111;
     margin-bottom:15px;
@@ -9527,7 +10096,7 @@ p{
 }
 
 .vx-heading h2{
-    font-size:2.6rem;
+    font-size:2rem;
     font-weight:800;
     color:#111;
     margin-bottom:15px;
@@ -9550,7 +10119,7 @@ p{
 }
 
 .vx-intro-content h2{
-    font-size:2.5rem;
+    font-size:2rem;
     font-weight:800;
     margin-bottom:25px;
     color:#111;
@@ -9598,7 +10167,7 @@ p{
 
 .vx-service-card h3{
     color:#ffffff !important;
-    font-size:1.8rem;
+    font-size:1.5rem;
     font-weight:700;
     margin-bottom:20px;
     transition:.3s;
@@ -9634,7 +10203,7 @@ p{
 }
 
 .vx-benefits-section h2{
-    font-size:2.3rem;
+    font-size:2.2rem;
     font-weight:800;
     margin-bottom:30px;
 }
@@ -9674,6 +10243,7 @@ p{
 .vx-why-us{
     padding:100px 0;
     background:#111;
+    margin-bottom: 30px;
 }
 
 .vx-why-us .vx-heading h2{
@@ -9696,7 +10266,7 @@ p{
 }
 
 .vx-feature-card h3{
-    font-size:1.25rem;
+    font-size:1.5rem;
     font-weight:700;
     margin-bottom:15px;
 }
@@ -9711,7 +10281,7 @@ p{
 ========================================= */
 
 .vx-testimonials{
-    padding:100px 0;
+    padding:30px 0;
     background:#fff;
 }
 
@@ -9764,7 +10334,7 @@ p{
 }
 
 .vx-faq-section .accordion-button{
-    background:#111;
+    background:#990b2c;
     color:#fff;
     font-weight:600;
     padding:18px 25px;
@@ -9783,12 +10353,53 @@ p{
     color:#666;
 }
 
+
+
+.vx-contract-list{
+    list-style:none !important;
+    padding:0 !important;
+    margin:25px 0 0 !important;
+}
+
+.vx-contract-list li{
+    position:relative !important;
+    padding-left:38px !important;
+    margin-bottom:16px !important;
+    color:#222 !important;
+    font-weight:500 !important;
+}
+
+.vx-contract-list li::before{
+    content:"✓" !important;
+
+    position:absolute !important;
+    left:0 !important;
+    top:2px !important;
+
+    width:22px !important;
+    height:22px !important;
+
+    background:#990b2c !important;
+    color:#ffffff !important;
+
+    border-radius:50% !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    font-size:12px !important;
+    font-weight:700 !important;
+
+    line-height:1 !important;
+}
 /* =========================================
    FINAL CTA
 ========================================= */
 
 .vx-final-cta{
     padding:100px 0;
+    margin-bottom: 30px;
     background:
     linear-gradient(
         135deg,
@@ -9800,7 +10411,7 @@ p{
 
 .vx-final-cta h2{
     color:#fff;
-    font-size:2.8rem;
+    font-size:2rem;
     font-weight:800;
     margin-bottom:20px;
 }
@@ -9922,7 +10533,7 @@ p{
 }
 
 .vx-event-content h2{
-    font-size:2.5rem;
+    font-size:2rem;
     font-weight:800;
     color:#111;
     margin-bottom:25px;
@@ -9991,7 +10602,7 @@ p{
 }
 
 .vx-event-content h2{
-    font-size:2.5rem;
+    font-size:2rem;
     font-weight:800;
     color:#111;
     margin-bottom:25px;
@@ -10022,3 +10633,3304 @@ p{
     transform:scale(1.05);
 }
 
+/* =========================================
+   BENEFITS CONTENT CARD
+========================================= */
+
+.vx-benefits-content{
+    position:relative !important;
+
+    background:#ffffff !important;
+
+    padding:50px !important;
+
+    border-radius:30px !important;
+
+    border-left:6px solid #990b2c !important;
+
+    overflow:hidden !important;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08) !important;
+
+    transition:.4s ease !important;
+
+    height:100% !important;
+}
+
+.vx-benefits-content:hover{
+    transform:translateY(-6px) !important;
+
+    box-shadow:
+        0 25px 60px rgba(153,11,44,.15) !important;
+}
+
+/* Decorative Glow */
+
+.vx-benefits-content::before{
+    content:'' !important;
+
+    position:absolute !important;
+
+    top:0 !important;
+    left:0 !important;
+
+    width:220px !important;
+    height:220px !important;
+
+    background:
+    radial-gradient(
+        rgba(153,11,44,.08),
+        transparent 70%
+    ) !important;
+
+    pointer-events:none !important;
+}
+
+/* TAG */
+
+.vx-benefits-content .vx-section-tag{
+    display:inline-block !important;
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    padding:12px 20px !important;
+
+    border-radius:4px !important;
+
+    font-size:11px !important;
+
+    font-weight:700 !important;
+
+    letter-spacing:3px !important;
+
+    text-transform:uppercase !important;
+
+    margin-bottom:25px !important;
+}
+
+/* TITLE */
+
+.vx-benefits-content h2{
+    font-size:2rem !important;
+
+    font-weight:800 !important;
+
+    line-height:1.15 !important;
+
+    color:#111 !important;
+
+    margin-bottom:25px !important;
+}
+
+/* PARAGRAPH */
+
+.vx-benefits-content p{
+    color:#555 !important;
+
+    font-size:1rem !important;
+
+    line-height:2 !important;
+
+    margin-bottom:25px !important;
+}
+
+
+/* =========================================
+   INDUSTRIES CONTENT CARD
+========================================= */
+
+.vx-industries-content{
+    position:relative !important;
+
+    background:#ffffff !important;
+
+    padding:50px !important;
+
+    border-left:6px solid #990b2c !important;
+
+    border-radius:0 30px 30px 0 !important;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08) !important;
+
+    overflow:hidden !important;
+
+    transition:.4s ease !important;
+
+    height:100% !important;
+}
+
+.vx-industries-content:hover{
+    transform:translateY(-6px) !important;
+
+    box-shadow:
+        0 25px 60px rgba(153,11,44,.15) !important;
+}
+
+/* Decorative Corner Glow */
+
+.vx-industries-content::before{
+    content:'' !important;
+
+    position:absolute !important;
+
+    top:-80px !important;
+    left:-80px !important;
+
+    width:220px !important;
+    height:220px !important;
+
+    background:
+    radial-gradient(
+        rgba(153,11,44,.08),
+        transparent 70%
+    ) !important;
+
+    pointer-events:none !important;
+}
+
+/* Heading */
+
+.vx-industries-content h2{
+    font-size:2rem !important;
+    font-weight:800 !important;
+    line-height:1.15 !important;
+    color:#111 !important;
+    margin-bottom:25px !important;
+}
+
+/* Text */
+
+.vx-industries-content p{
+    color:#555 !important;
+    font-size:1.05rem !important;
+    line-height:2 !important;
+    margin-bottom:0 !important;
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+    .vx-industries-content{
+        padding:35px !important;
+        margin-bottom:40px !important;
+    }
+
+    .vx-industries-content h2{
+        font-size:2.2rem !important;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-industries-content{
+        padding:25px !important;
+        border-radius:20px !important;
+    }
+
+    .vx-industries-content h2{
+        font-size:1.8rem !important;
+    }
+}
+
+
+/* =========================================
+   INTRO SECTION
+========================================= */
+
+.vx-intro-section{
+    padding:100px 0 !important;
+    background:#f8f9fb !important;
+}
+
+/* =========================================
+   INTRO CONTENT CARD
+========================================= */
+
+.vx-intro-content{
+    position:relative !important;
+
+    background:#ffffff !important;
+
+    padding:55px !important;
+
+    border-left:6px solid #990b2c !important;
+
+    border-radius:35px !important;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08) !important;
+
+    overflow:hidden !important;
+
+    transition:all .4s ease !important;
+
+    height:100% !important;
+}
+
+.vx-intro-content:hover{
+    transform:translateY(-8px) !important;
+
+    box-shadow:
+        0 25px 60px rgba(153,11,44,.15) !important;
+}
+
+/* Decorative Effect */
+
+.vx-intro-content::before{
+    content:'' !important;
+
+    position:absolute !important;
+
+    top:-80px !important;
+    left:-80px !important;
+
+    width:250px !important;
+    height:250px !important;
+
+    background:
+        radial-gradient(
+            rgba(153,11,44,.08),
+            transparent 70%
+        ) !important;
+
+    pointer-events:none !important;
+}
+
+/* =========================================
+   SECTION TAG
+========================================= */
+
+.vx-intro-content .vx-section-tag{
+    display:inline-block !important;
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    padding:12px 22px !important;
+
+    border-radius:6px !important;
+
+    font-size:11px !important;
+
+    font-weight:700 !important;
+
+    letter-spacing:3px !important;
+
+    text-transform:uppercase !important;
+
+    margin-bottom:30px !important;
+
+    position:relative !important;
+
+    z-index:2 !important;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.vx-intro-content h2{
+    font-size:2rem !important;
+
+    font-weight:800 !important;
+
+    line-height:1.2 !important;
+
+    color:#111 !important;
+
+    margin-bottom:30px !important;
+
+    position:relative !important;
+
+    z-index:2 !important;
+}
+
+/* =========================================
+   PARAGRAPH
+========================================= */
+
+.vx-intro-content p{
+    color:#555 !important;
+
+    font-size:1.05rem !important;
+
+    line-height:2 !important;
+
+    margin-bottom:25px !important;
+
+    text-align:justify !important;
+
+    position:relative !important;
+
+    z-index:2 !important;
+}
+
+.vx-intro-content p:last-child{
+    margin-bottom:0 !important;
+}
+
+/* =========================================
+   IMAGE BOX
+========================================= */
+
+.vx-image-box{
+    position:relative !important;
+}
+
+.vx-image-box img{
+    width:100% !important;
+
+    height:auto !important;
+
+    display:block !important;
+
+    border-radius:30px !important;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.12) !important;
+
+    transition:all .4s ease !important;
+}
+
+.vx-image-box img:hover{
+    transform:scale(1.03) !important;
+}
+
+/* =========================================
+   DESKTOP SPACING
+========================================= */
+
+@media(min-width:992px){
+
+    .vx-image-box{
+        padding-left:25px !important;
+    }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width:991px){
+
+    .vx-intro-section{
+        padding:80px 0 !important;
+    }
+
+    .vx-intro-content{
+        padding:40px !important;
+
+        margin-bottom:40px !important;
+
+        border-radius:30px !important;
+    }
+
+    .vx-intro-content h2{
+        font-size:1.8rem !important;
+    }
+
+    .vx-image-box{
+        margin-top:20px !important;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+    .vx-intro-section{
+        padding:60px 0 !important;
+    }
+
+    .vx-intro-content{
+        padding:25px !important;
+
+        border-left:5px solid #990b2c !important;
+
+        border-radius:25px !important;
+    }
+
+    .vx-intro-content .vx-section-tag{
+        font-size:10px !important;
+
+        letter-spacing:2px !important;
+
+        padding:10px 16px !important;
+    }
+
+    .vx-intro-content h2{
+        font-size:1.6rem !important;
+
+        margin-bottom:20px !important;
+    }
+
+    .vx-intro-content p{
+        font-size:.95rem !important;
+
+        line-height:1.8 !important;
+
+        margin-bottom:18px !important;
+    }
+
+    .vx-image-box img{
+        border-radius:20px !important;
+    }
+}
+
+/* =========================================
+   INDUSTRIES CONTENT
+========================================= */
+
+.vx-industries-content{
+    position:relative !important;
+
+    background:#ffffff !important;
+
+    padding:55px !important;
+
+    border-left:6px solid #990b2c !important;
+
+    border-radius:35px !important;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08) !important;
+
+    overflow:hidden !important;
+
+    transition:.4s ease !important;
+
+    height:100% !important;
+}
+
+.vx-industries-content:hover{
+    transform:translateY(-6px) !important;
+
+    box-shadow:
+        0 25px 60px rgba(153,11,44,.15) !important;
+}
+
+/* Decorative Glow */
+
+.vx-industries-content::before{
+    content:'' !important;
+
+    position:absolute !important;
+
+    top:-80px !important;
+    left:-80px !important;
+
+    width:240px !important;
+    height:240px !important;
+
+    background:
+    radial-gradient(
+        rgba(153,11,44,.08),
+        transparent 70%
+    ) !important;
+
+    pointer-events:none !important;
+}
+
+/* Tag */
+
+.vx-industries-content .vx-section-tag{
+    display:inline-block !important;
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    padding:12px 22px !important;
+
+    border-radius:6px !important;
+
+    font-size:11px !important;
+
+    font-weight:700 !important;
+
+    letter-spacing:3px !important;
+
+    text-transform:uppercase !important;
+
+    margin-bottom:25px !important;
+}
+
+/* Title */
+
+.vx-industries-content h2{
+    font-size:2rem !important;
+
+    font-weight:800 !important;
+
+    line-height:1.2 !important;
+
+    color:#111 !important;
+
+    margin-bottom:25px !important;
+}
+
+/* Paragraph */
+
+.vx-industries-content p{
+    color:#555 !important;
+
+    font-size:1.05rem !important;
+
+    line-height:2 !important;
+
+    margin-bottom:25px !important;
+}
+
+/* Lists */
+
+.vx-industries-content ul{
+    list-style:none !important;
+    padding:0 !important;
+    margin:0 !important;
+}
+
+.vx-industries-content li{
+    position:relative !important;
+
+    padding-left:28px !important;
+
+    margin-bottom:15px !important;
+
+    color:#444 !important;
+
+    font-weight:500 !important;
+}
+
+.vx-industries-content li::before{
+    content:"✓" !important;
+
+    position:absolute !important;
+
+    left:0 !important;
+    top:0 !important;
+
+    color:#990b2c !important;
+
+    font-weight:700 !important;
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+    .vx-industries-content{
+        padding:35px !important;
+        margin-top:30px !important;
+    }
+
+    .vx-industries-content h2{
+        font-size:1.8rem !important;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-industries-content{
+        padding:25px !important;
+        border-radius:25px !important;
+    }
+
+    .vx-industries-content h2{
+        font-size:1.6rem !important;
+    }
+
+    .vx-industries-content p{
+        font-size:.95rem !important;
+        line-height:1.8 !important;
+    }
+}
+
+/* =========================================
+   BENEFITS CONTENT CARD
+========================================= */
+
+.vx-benefits-content{
+    position:relative !important;
+
+    background:#ffffff !important;
+
+    padding:55px !important;
+
+    border-left:6px solid #990b2c !important;
+
+    border-radius:35px !important;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08) !important;
+
+    overflow:hidden !important;
+
+    height:100% !important;
+
+    transition:.4s ease !important;
+}
+
+.vx-benefits-content:hover{
+    transform:translateY(-6px) !important;
+
+    box-shadow:
+        0 25px 60px rgba(153,11,44,.15) !important;
+}
+
+/* Decorative Effect */
+
+.vx-benefits-content::before{
+    content:'' !important;
+
+    position:absolute !important;
+
+    top:-100px !important;
+    left:-100px !important;
+
+    width:250px !important;
+    height:250px !important;
+
+    background:
+    radial-gradient(
+        rgba(153,11,44,.08),
+        transparent 70%
+    ) !important;
+
+    pointer-events:none !important;
+}
+
+/* Section Tag */
+
+.vx-benefits-content .vx-section-tag{
+    display:inline-block !important;
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    padding:10px 22px !important;
+
+    border-radius:6px !important;
+
+    font-size:11px !important;
+
+    font-weight:700 !important;
+
+    letter-spacing:3px !important;
+
+    text-transform:uppercase !important;
+
+    margin-bottom:25px !important;
+}
+
+/* Title */
+
+.vx-benefits-content h2{
+    font-size:2rem !important;
+
+    font-weight:800 !important;
+
+    line-height:1.2 !important;
+
+    color:#111 !important;
+
+    margin-bottom:25px !important;
+}
+
+/* Text */
+
+.vx-benefits-content p{
+    color:#555 !important;
+
+    font-size:1.05rem !important;
+
+    line-height:2 !important;
+
+    margin-bottom:25px !important;
+}
+
+/* Benefits List */
+
+.vx-benefits-content ul{
+    list-style:none !important;
+
+    padding:0 !important;
+
+    margin:0 !important;
+}
+
+.vx-benefits-content li{
+    position:relative !important;
+
+    padding-left:35px !important;
+
+    margin-bottom:18px !important;
+
+    color:#444 !important;
+
+    font-size:1rem !important;
+
+    font-weight:500 !important;
+}
+
+.vx-benefits-content li::before{
+    content:"✓" !important;
+
+    position:absolute !important;
+
+    left:0 !important;
+    top:0 !important;
+
+    width:22px !important;
+    height:22px !important;
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    border-radius:50% !important;
+
+    text-align:center !important;
+
+    line-height:22px !important;
+
+    font-size:12px !important;
+
+    font-weight:700 !important;
+}
+
+/* Image */
+
+.vx-benefits-image img{
+    width:100% !important;
+
+    border-radius:35px !important;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.12) !important;
+
+    transition:.4s ease !important;
+}
+
+.vx-benefits-image img:hover{
+    transform:scale(1.03) !important;
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+    .vx-benefits-content{
+        padding:35px !important;
+        margin-top:30px !important;
+    }
+
+    .vx-benefits-content h2{
+        font-size:1.8rem !important;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-benefits-content{
+        padding:25px !important;
+        border-radius:25px !important;
+    }
+
+    .vx-benefits-content h2{
+        font-size:1.6rem !important;
+    }
+
+    .vx-benefits-content p{
+        font-size:.95rem !important;
+        line-height:1.8 !important;
+    }
+}
+
+/* =========================================
+   BENEFITS CONTENT CARD
+========================================= */
+
+.vx-benefits-content{
+    position:relative !important;
+
+    background:#ffffff !important;
+
+    padding:55px !important;
+
+    border-left:6px solid #990b2c !important;
+
+    border-radius:35px !important;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08) !important;
+
+    overflow:hidden !important;
+
+    height:100% !important;
+
+    transition:.4s ease !important;
+}
+
+.vx-benefits-content:hover{
+    transform:translateY(-6px) !important;
+
+    box-shadow:
+        0 25px 60px rgba(153,11,44,.15) !important;
+}
+
+/* Decorative Effect */
+
+.vx-benefits-content::before{
+    content:'' !important;
+
+    position:absolute !important;
+
+    top:-100px !important;
+    left:-100px !important;
+
+    width:250px !important;
+    height:250px !important;
+
+    background:
+    radial-gradient(
+        rgba(153,11,44,.08),
+        transparent 70%
+    ) !important;
+
+    pointer-events:none !important;
+}
+
+/* Section Tag */
+
+.vx-benefits-content .vx-section-tag{
+    display:inline-block !important;
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    padding:10px 22px !important;
+
+    border-radius:6px !important;
+
+    font-size:11px !important;
+
+    font-weight:700 !important;
+
+    letter-spacing:3px !important;
+
+    text-transform:uppercase !important;
+
+    margin-bottom:25px !important;
+}
+
+/* Title */
+
+.vx-benefits-content h2{
+    font-size:2rem !important;
+
+    font-weight:800 !important;
+
+    line-height:1.2 !important;
+
+    color:#111 !important;
+
+    margin-bottom:25px !important;
+}
+
+/* Text */
+
+.vx-benefits-content p{
+    color:#555 !important;
+
+    font-size:1.05rem !important;
+
+    line-height:2 !important;
+
+    margin-bottom:25px !important;
+}
+
+/* Benefits List */
+
+.vx-benefits-content ul{
+    list-style:none !important;
+
+    padding:0 !important;
+
+    margin:0 !important;
+}
+
+.vx-benefits-content li{
+    position:relative !important;
+
+    padding-left:35px !important;
+
+    margin-bottom:18px !important;
+
+    color:#444 !important;
+
+    font-size:1rem !important;
+
+    font-weight:500 !important;
+}
+
+.vx-benefits-content li::before{
+    content:"✓" !important;
+
+    position:absolute !important;
+
+    left:0 !important;
+    top:0 !important;
+
+    width:22px !important;
+    height:22px !important;
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    border-radius:50% !important;
+
+    text-align:center !important;
+
+    line-height:22px !important;
+
+    font-size:12px !important;
+
+    font-weight:700 !important;
+}
+
+/* Image */
+
+.vx-benefits-image img{
+    width:100% !important;
+
+    border-radius:35px !important;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.12) !important;
+
+    transition:.4s ease !important;
+}
+
+.vx-benefits-image img:hover{
+    transform:scale(1.03) !important;
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+    .vx-benefits-content{
+        padding:35px !important;
+        margin-top:30px !important;
+    }
+
+    .vx-benefits-content h2{
+        font-size:1.8rem !important;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-benefits-content{
+        padding:25px !important;
+        border-radius:25px !important;
+    }
+
+    .vx-benefits-content h2{
+        font-size:1.6rem !important;
+    }
+
+    .vx-benefits-content p{
+        font-size:.95rem !important;
+        line-height:1.8 !important;
+    }
+}
+
+
+/* =========================================
+   CONTENT CARD STYLE
+========================================= */
+
+.vx-content-card{
+    position:relative !important;
+
+    background:#ffffff !important;
+
+    padding:50px !important;
+
+    border-left:6px solid #990b2c !important;
+
+    border-radius:35px !important;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08) !important;
+
+    overflow:hidden !important;
+
+    height:100% !important;
+
+    transition:.4s ease !important;
+}
+
+/* Hover */
+
+.vx-content-card:hover{
+    transform:translateY(-8px) !important;
+
+    box-shadow:
+        0 25px 60px rgba(153,11,44,.15) !important;
+}
+
+/* Decorative Glow */
+
+.vx-content-card::before{
+    content:'' !important;
+
+    position:absolute !important;
+
+    top:-120px !important;
+    left:-120px !important;
+
+    width:280px !important;
+    height:280px !important;
+
+    background:
+    radial-gradient(
+        rgba(153,11,44,.08),
+        transparent 70%
+    ) !important;
+
+    pointer-events:none !important;
+}
+
+/* Section Tag */
+
+.vx-content-card .vx-section-tag{
+    display:inline-block !important;
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    padding:12px 22px !important;
+
+    border-radius:6px !important;
+
+    font-size:11px !important;
+
+    font-weight:700 !important;
+
+    letter-spacing:4px !important;
+
+    text-transform:uppercase !important;
+
+    margin-bottom:25px !important;
+}
+
+/* Title */
+
+.vx-content-card h2{
+    font-size:2rem !important;
+
+    font-weight:800 !important;
+
+    line-height:1.2 !important;
+
+    color:#111 !important;
+
+    margin-bottom:25px !important;
+}
+
+/* Paragraph */
+
+.vx-content-card p{
+    color:#555 !important;
+
+    font-size:1.05rem !important;
+
+    line-height:2 !important;
+
+    margin-bottom:20px !important;
+
+    text-align:justify !important;
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+    .vx-content-card{
+        padding:35px !important;
+        margin-bottom:30px !important;
+    }
+
+    .vx-content-card h2{
+        font-size:1.8rem !important;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-content-card{
+        padding:25px !important;
+
+        border-left:5px solid #990b2c !important;
+
+        border-radius:25px !important;
+    }
+
+    .vx-content-card h2{
+        font-size:1.6rem !important;
+    }
+
+    .vx-content-card p{
+        font-size:.95rem !important;
+
+        line-height:1.8 !important;
+    }
+}
+
+/* =========================================
+   SECTORS CONTENT CARD
+========================================= */
+
+.vx-sectors-content{
+    position:relative !important;
+
+    background:#ffffff !important;
+
+    padding:55px !important;
+
+    border-left:6px solid #990b2c !important;
+
+    border-radius:35px !important;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08) !important;
+
+    overflow:hidden !important;
+
+    height:100% !important;
+
+    transition:.4s ease !important;
+}
+
+.vx-sectors-content:hover{
+    transform:translateY(-6px) !important;
+
+    box-shadow:
+        0 25px 60px rgba(153,11,44,.15) !important;
+}
+
+/* Decorative Effect */
+
+.vx-sectors-content::before{
+    content:'' !important;
+
+    position:absolute !important;
+
+    top:-100px !important;
+    left:-100px !important;
+
+    width:240px !important;
+    height:240px !important;
+
+    background:
+    radial-gradient(
+        rgba(153,11,44,.08),
+        transparent 70%
+    ) !important;
+
+    pointer-events:none !important;
+}
+
+/* Tag */
+
+.vx-sectors-content .vx-section-tag{
+    display:inline-block !important;
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    padding:10px 22px !important;
+
+    border-radius:6px !important;
+
+    font-size:11px !important;
+
+    font-weight:700 !important;
+
+    letter-spacing:3px !important;
+
+    text-transform:uppercase !important;
+
+    margin-bottom:25px !important;
+}
+
+/* Title */
+
+.vx-sectors-content h2{
+    font-size:2rem !important;
+
+    font-weight:800 !important;
+
+    color:#111 !important;
+
+    line-height:1.2 !important;
+
+    margin-bottom:25px !important;
+}
+
+/* List */
+
+.vx-sectors-list{
+    list-style:none !important;
+
+    padding:0 !important;
+
+    margin:0 !important;
+}
+
+.vx-sectors-list li{
+    position:relative !important;
+
+    padding-left:38px !important;
+
+    margin-bottom:18px !important;
+
+    color:#444 !important;
+
+    font-size:1.05rem !important;
+
+    font-weight:500 !important;
+}
+
+.vx-sectors-list li::before{
+    content:"✓" !important;
+
+    position:absolute !important;
+
+    left:0 !important;
+    top:2px !important;
+
+    width:24px !important;
+    height:24px !important;
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    border-radius:50% !important;
+
+    text-align:center !important;
+
+    line-height:24px !important;
+
+    font-size:12px !important;
+
+    font-weight:700 !important;
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+    .vx-sectors-content{
+        padding:35px !important;
+        margin-top:30px !important;
+    }
+
+    .vx-sectors-content h2{
+        font-size:1.8rem !important;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-sectors-content{
+        padding:25px !important;
+
+        border-left:5px solid #990b2c !important;
+
+        border-radius:25px !important;
+    }
+
+    .vx-sectors-content h2{
+        font-size:1.6rem !important;
+    }
+
+    .vx-sectors-list li{
+        font-size:.95rem !important;
+    }
+}
+
+.vx-sectors-image img{
+    width:100% !important;
+    border-radius:35px !important;
+    box-shadow:0 20px 50px rgba(0,0,0,.12) !important;
+    transition:.4s ease !important;
+}
+
+.vx-sectors-image img:hover{
+    transform:scale(1.03) !important;
+}
+
+@media(max-width:991px){
+
+    .vx-sectors-image{
+        margin-top:30px !important;
+    }
+
+    .vx-sectors-image img{
+        border-radius:25px !important;
+    }
+}
+
+/* =========================================
+   BENEFITS CONTENT CARD
+========================================= */
+
+.vx-benefits-content{
+    position:relative !important;
+
+    background:#fff !important;
+
+    padding:55px !important;
+
+    border-left:6px solid #990b2c !important;
+
+    border-radius:35px !important;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08) !important;
+
+    overflow:hidden !important;
+
+    height:100% !important;
+
+    transition:.4s ease !important;
+}
+
+.vx-benefits-content:hover{
+    transform:translateY(-6px) !important;
+
+    box-shadow:
+    0 25px 60px rgba(153,11,44,.15) !important;
+}
+
+.vx-benefits-content::before{
+    content:'' !important;
+
+    position:absolute !important;
+
+    top:-100px !important;
+    left:-100px !important;
+
+    width:240px !important;
+    height:240px !important;
+
+    background:
+    radial-gradient(
+        rgba(153,11,44,.08),
+        transparent 70%
+    ) !important;
+}
+
+.vx-benefits-content h2{
+    font-size:2rem !important;
+
+    font-weight:800 !important;
+
+    color:#111 !important;
+
+    line-height:1.2 !important;
+
+    margin-bottom:25px !important;
+}
+
+.vx-benefits-image img{
+    width:100% !important;
+
+    border-radius:35px !important;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.12) !important;
+}
+
+@media(max-width:768px){
+
+    .vx-benefits-content{
+        padding:25px !important;
+        border-radius:25px !important;
+    }
+
+    .vx-benefits-content h2{
+        font-size:1.6rem !important;
+    }
+}
+
+/* =========================================
+   MODERN CTA SECTION
+========================================= */
+
+.vx-cta-section{
+    padding:100px 0 !important;
+    background:#f5f5f5 !important;
+}
+
+.vx-cta-section .text-center{
+
+    position:relative !important;
+
+    background:linear-gradient(
+    135deg,
+    #990b2c 0%,
+    #7d0823 100%) !important;
+
+    padding:70px 60px !important;
+
+    border-radius:30px !important;
+
+    overflow:hidden !important;
+
+    box-shadow:
+    0 25px 60px rgba(153,11,44,.25) !important;
+}
+
+/* Decorative Shapes */
+
+.vx-cta-section .text-center::before{
+    content:'' !important;
+
+    position:absolute !important;
+
+    width:260px !important;
+    height:260px !important;
+
+    top:-120px !important;
+    right:-120px !important;
+
+    background:rgba(255,255,255,.08) !important;
+
+    border-radius:50% !important;
+}
+
+.vx-cta-section .text-center::after{
+    content:'' !important;
+
+    position:absolute !important;
+
+    width:180px !important;
+    height:180px !important;
+
+    bottom:-80px !important;
+    left:-80px !important;
+
+    background:rgba(255,255,255,.06) !important;
+
+    border-radius:50% !important;
+}
+
+/* Tag */
+
+.vx-cta-section .vx-section-tag{
+
+    display:inline-block !important;
+
+    background:#ffffff !important;
+
+    color:#990b2c !important;
+
+    padding:10px 22px !important;
+
+    border-radius:50px !important;
+
+    font-size:12px !important;
+
+    font-weight:700 !important;
+
+    letter-spacing:3px !important;
+
+    text-transform:uppercase !important;
+
+    margin-bottom:25px !important;
+}
+
+/* Title */
+
+.vx-cta-section h2{
+
+    font-size:2rem !important;
+
+    font-weight:800 !important;
+
+    color:#ffffff !important;
+
+    line-height:1.2 !important;
+
+    margin-bottom:20px !important;
+}
+
+/* Description */
+
+.vx-cta-section p{
+
+    max-width:850px !important;
+
+    margin:0 auto 35px auto !important;
+
+    font-size:1.05rem !important;
+
+    color:rgba(255,255,255,.9) !important;
+
+    line-height:1.9 !important;
+}
+
+/* Button */
+
+.vx-cta-section .vx-btn-primary{
+
+    display:inline-block !important;
+
+    padding:16px 38px !important;
+
+    background:#ffffff !important;
+
+    color:#990b2c !important;
+
+    border-radius:50px !important;
+
+    font-size:14px !important;
+
+    font-weight:700 !important;
+
+    text-transform:uppercase !important;
+
+    text-decoration:none !important;
+
+    transition:.4s ease !important;
+}
+
+.vx-cta-section .vx-btn-primary:hover{
+
+    background:#111 !important;
+
+    color:#fff !important;
+
+    transform:translateY(-5px) !important;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .vx-cta-section .text-center{
+        padding:45px 25px !important;
+    }
+
+    .vx-cta-section h2{
+        font-size:2rem !important;
+    }
+
+    .vx-cta-section p{
+        font-size:.95rem !important;
+    }
+
+    .vx-cta-section .vx-btn-primary{
+        width:100% !important;
+    }
+}
+
+
+/* =========================================
+   CONTRACT SECTION
+========================================= */
+
+.vx-contract-section{
+    padding:100px 0 !important;
+    background:#f7f7f7 !important;
+}
+
+.vx-contract-section .col-lg-6:first-child{
+
+    background:#ffffff !important;
+
+    padding:50px !important;
+
+    border-left:6px solid #990b2c !important;
+
+  border-radius:35px !important;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08) !important;
+
+    position:relative !important;
+
+    overflow:hidden !important;
+
+    transition:.4s ease !important;
+}
+
+.vx-contract-section .col-lg-6:first-child:hover{
+
+    transform:translateY(-8px) !important;
+
+    box-shadow:0 25px 60px rgba(153,11,44,.15) !important;
+}
+
+/* Top Glow */
+
+.vx-contract-section .col-lg-6:first-child::before{
+
+    content:'' !important;
+
+    position:absolute !important;
+
+    top:-120px !important;
+    left:-120px !important;
+
+    width:260px !important;
+    height:260px !important;
+
+    background:radial-gradient(
+        rgba(153,11,44,.08),
+        transparent 70%
+    ) !important;
+
+    pointer-events:none !important;
+}
+
+/* Tag */
+
+.vx-contract-section .vx-section-tag{
+
+    display:inline-block !important;
+
+    background:#990b2c !important;
+
+    color:#ffffff !important;
+
+    padding:12px 22px !important;
+
+    border-radius:6px !important;
+
+    font-size:11px !important;
+
+    font-weight:700 !important;
+
+    letter-spacing:3px !important;
+
+    text-transform:uppercase !important;
+
+    margin-bottom:25px !important;
+}
+
+/* Heading */
+
+.vx-contract-section h2{
+
+    font-size:2rem !important;
+
+    font-weight:800 !important;
+
+    line-height:1.2 !important;
+
+    color:#111111 !important;
+
+    margin-bottom:25px !important;
+}
+
+/* Paragraph */
+
+.vx-contract-section p{
+
+    font-size:1.05rem !important;
+
+    line-height:1.9 !important;
+
+    color:#555555 !important;
+
+    margin-bottom:25px !important;
+
+    text-align:justify !important;
+}
+
+/* List */
+
+.vx-contract-section .vx-benefits-list{
+
+    list-style:none !important;
+
+    padding:0 !important;
+
+    margin:0 !important;
+}
+
+.vx-contract-section .vx-benefits-list li{
+
+    position:relative !important;
+
+    padding-left:40px !important;
+
+    margin-bottom:18px !important;
+
+    font-size:1rem !important;
+
+    font-weight:500 !important;
+
+    color:#333333 !important;
+}
+
+/* Tick Icon */
+
+.vx-contract-section .vx-benefits-list li::before{
+
+    content:"✓" !important;
+
+    position:absolute !important;
+
+    left:0 !important;
+
+    top:2px !important;
+
+    width:24px !important;
+
+    height:24px !important;
+
+    background:#990b2c !important;
+
+    color:#ffffff !important;
+
+    border-radius:50% !important;
+
+    text-align:center !important;
+
+    line-height:24px !important;
+
+    font-size:13px !important;
+
+    font-weight:700 !important;
+}
+
+/* Image */
+
+.vx-contract-section img{
+
+    width:100% !important;
+
+    border-radius:25px !important;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.12) !important;
+
+    transition:.4s ease !important;
+}
+
+.vx-contract-section img:hover{
+
+    transform:scale(1.03) !important;
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+    .vx-contract-section .col-lg-6:first-child{
+
+        padding:35px !important;
+
+        margin-bottom:30px !important;
+
+        border-radius:0 25px 25px 0 !important;
+    }
+
+    .vx-contract-section h2{
+
+        font-size:1.8rem !important;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-contract-section{
+
+        padding:70px 0 !important;
+    }
+
+    .vx-contract-section .col-lg-6:first-child{
+
+        padding:25px !important;
+    }
+
+    .vx-contract-section h2{
+
+        font-size:1.6rem !important;
+    }
+
+    .vx-contract-section p{
+
+        font-size:.95rem !important;
+    }
+}
+
+/* =========================================
+   HOTEL SERVICES SECTION
+========================================= */
+
+.vx-services-section{
+    padding:100px 0 !important;
+    background:#f8f8f8 !important;
+}
+
+.vx-heading{
+    margin-bottom:60px !important;
+}
+
+.vx-heading .vx-section-tag{
+    display:inline-block !important;
+    color:#990b2c !important;
+    font-size:12px !important;
+    font-weight:700 !important;
+    letter-spacing:4px !important;
+    text-transform:uppercase !important;
+    margin-bottom:12px !important;
+}
+
+.vx-heading h2{
+    font-size:2rem !important;
+    font-weight:800 !important;
+    color:#111 !important;
+    margin-bottom:15px !important;
+}
+
+.vx-heading p{
+    max-width:700px !important;
+    margin:auto !important;
+    color:#666 !important;
+    line-height:1.8 !important;
+}
+
+/* Cards */
+
+.vx-service-card{
+
+    background:#990b2c !important;
+
+    padding:35px 30px !important;
+
+    border-radius:20px !important;
+
+    text-align:center !important;
+
+    height:100% !important;
+
+    transition:.4s ease !important;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08) !important;
+
+    position:relative !important;
+
+    overflow:hidden !important;
+}
+
+.vx-service-card::before{
+
+    content:'' !important;
+
+    position:absolute !important;
+
+    top:-80px !important;
+    right:-80px !important;
+
+    width:180px !important;
+    height:180px !important;
+
+    background:rgba(255,255,255,.05) !important;
+
+    border-radius:50% !important;
+}
+
+.vx-service-card:hover{
+
+    transform:translateY(-10px) !important;
+
+    background:#111 !important;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.18) !important;
+}
+
+.vx-service-card h3{
+
+    color:#fff !important;
+
+    font-size:1.25rem !important;
+
+    font-weight:700 !important;
+
+    margin-bottom:18px !important;
+
+    line-height:1.4 !important;
+}
+
+.vx-service-card p{
+
+    color:rgba(255,255,255,.90) !important;
+
+    font-size:.95rem !important;
+
+    line-height:1.9 !important;
+
+    margin:0 !important;
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+    .vx-services-section{
+        padding:80px 0 !important;
+    }
+
+    .vx-heading h2{
+        font-size:1.8rem !important;
+    }
+
+    .vx-service-card{
+        padding:30px 25px !important;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-services-section{
+        padding:70px 0 !important;
+    }
+
+    .vx-heading h2{
+        font-size:1.6rem !important;
+    }
+
+    .vx-service-card h3{
+        font-size:1.15rem !important;
+    }
+
+    .vx-service-card p{
+        font-size:.9rem !important;
+    }
+}
+
+.vx-heading .vx-section-tag{
+    color: white !important;
+}
+
+/* =========================================
+   FAQ SECTION
+========================================= */
+
+.vx-faq-section{
+    padding:100px 0 !important;
+    background:#ffffff !important;
+}
+
+.vx-faq-section .accordion-item{
+    border:none !important;
+    margin-bottom:12px !important;
+}
+
+.vx-faq-section .accordion-button{
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    font-size:15px !important;
+
+    font-weight:600 !important;
+
+    box-shadow:none !important;
+
+    padding:18px 25px !important;
+}
+
+.vx-faq-section .accordion-button:not(.collapsed){
+    background:#990b2c !important;
+    color:#fff !important;
+}
+
+.vx-faq-section .accordion-button:focus{
+    box-shadow:none !important;
+}
+
+.vx-faq-section .accordion-body{
+
+    background:#f8f8f8 !important;
+
+    padding:20px 25px !important;
+
+    color:#555 !important;
+
+    line-height:1.8 !important;
+
+    border-left:4px solid #990b2c !important;
+}
+
+.vx-faq-section .accordion-button::after{
+    filter:brightness(0) invert(1);
+}
+
+/* =========================================
+   COMMON SECTION STYLING
+========================================= */
+
+.vx-sectors-section,
+.vx-benefits-section,
+.vx-contract-section{
+    padding:100px 0 !important;
+    background:#f7f7f7 !important;
+}
+
+/* =========================================
+   CONTENT CARD
+========================================= */
+
+.vx-content-card{
+    position:relative !important;
+
+    background:#ffffff !important;
+
+    padding:50px !important;
+
+    border-left:6px solid #990b2c !important;
+
+    border-radius:35px !important;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08) !important;
+
+    overflow:hidden !important;
+
+    transition:.4s ease !important;
+}
+
+.vx-content-card:hover{
+    transform:translateY(-8px) !important;
+
+    box-shadow:
+    0 25px 60px rgba(153,11,44,.15) !important;
+}
+
+/* Glow */
+
+.vx-content-card::before{
+    content:'' !important;
+
+    position:absolute !important;
+
+    top:-120px !important;
+    left:-120px !important;
+
+    width:260px !important;
+    height:260px !important;
+
+    background:
+    radial-gradient(
+    rgba(153,11,44,.08),
+    transparent 70%
+    ) !important;
+
+    pointer-events:none !important;
+}
+
+/* =========================================
+   SECTION TAG
+========================================= */
+
+.vx-section-tag{
+    display:inline-block !important;
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    padding:12px 22px !important;
+
+    border-radius:6px !important;
+
+    font-size:11px !important;
+
+    font-weight:700 !important;
+
+    letter-spacing:3px !important;
+
+    text-transform:uppercase !important;
+
+    margin-bottom:25px !important;
+}
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+.vx-content-card h2,
+.vx-benefits-section h2,
+.vx-sectors-section h2,
+.vx-contract-section h2{
+    font-size:2rem !important;
+
+    font-weight:800 !important;
+
+    line-height:1.2 !important;
+
+    color:#111 !important;
+
+    margin-bottom:25px !important;
+}
+
+/* =========================================
+   PARAGRAPH
+========================================= */
+
+.vx-content-card p,
+.vx-benefits-section p,
+.vx-sectors-section p,
+.vx-contract-section p{
+    color:#555 !important;
+
+    font-size:1.05rem !important;
+
+    line-height:1.9 !important;
+
+    text-align:justify !important;
+}
+
+/* =========================================
+   ICON LIST
+========================================= */
+
+.vx-icon-list,
+.vx-benefits-list{
+    list-style:none !important;
+
+    padding:0 !important;
+
+    margin:0 !important;
+}
+
+.vx-icon-list li,
+.vx-benefits-list li{
+    position:relative !important;
+
+    padding-left:42px !important;
+
+    margin-bottom:18px !important;
+
+    color:#333 !important;
+
+    font-size:1rem !important;
+
+    font-weight:500 !important;
+}
+
+.vx-icon-list li i{
+    position:absolute !important;
+
+    left:0 !important;
+
+    top:2px !important;
+
+    width:26px !important;
+
+    height:26px !important;
+
+    line-height:26px !important;
+
+    text-align:center !important;
+
+    border-radius:50% !important;
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    font-size:12px !important;
+}
+
+/* Tick List */
+
+.vx-benefits-list li::before{
+    content:"✓" !important;
+
+    position:absolute !important;
+
+    left:0 !important;
+
+    top:2px !important;
+
+    width:24px !important;
+
+    height:24px !important;
+
+    line-height:24px !important;
+
+    text-align:center !important;
+
+    border-radius:50% !important;
+
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    font-size:12px !important;
+
+    font-weight:700 !important;
+}
+
+/* =========================================
+   IMAGE DESIGN
+========================================= */
+
+.vx-sectors-section img,
+.vx-benefits-section img,
+.vx-contract-section img{
+    width:100% !important;
+
+    border-radius:30px !important;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.12) !important;
+
+    transition:.4s ease !important;
+
+    object-fit:cover !important;
+}
+
+.vx-sectors-section img:hover,
+.vx-benefits-section img:hover,
+.vx-contract-section img:hover{
+    transform:scale(1.03) !important;
+}
+
+/* =========================================
+   SERVICES SECTION
+========================================= */
+
+.vx-services-section{
+    padding:100px 0 !important;
+    background:#fff !important;
+}
+
+.vx-service-card{
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    padding:40px !important;
+
+    border-radius:25px !important;
+
+    text-align:center !important;
+
+    height:100% !important;
+
+    transition:.4s ease !important;
+}
+
+.vx-service-card:hover{
+    transform:translateY(-10px) !important;
+
+    background:#111 !important;
+}
+
+.vx-service-card i{
+    font-size:40px !important;
+
+    margin-bottom:20px !important;
+
+    color:#fff !important;
+}
+
+.vx-service-card h4{
+    font-size:1.3rem !important;
+
+    font-weight:700 !important;
+
+    margin-bottom:15px !important;
+}
+
+.vx-service-card p{
+    color:#eee !important;
+}
+
+/* =========================================
+   WHY CHOOSE US
+========================================= */
+
+.vx-why-section{
+    padding:100px 0 !important;
+
+    background:#000 !important;
+}
+
+.vx-why-section h2{
+    color:#fff !important;
+
+    text-align:center !important;
+
+    margin-bottom:60px !important;
+}
+
+/* =========================================
+   PROCESS SECTION
+========================================= */
+
+.vx-process-section{
+    padding:100px 0 !important;
+
+    background:#f7f7f7 !important;
+}
+
+.vx-process-card{
+    background:#990b2c !important;
+
+    color:#fff !important;
+
+    padding:35px !important;
+
+    border-radius:20px !important;
+
+    height:100% !important;
+
+    transition:.4s ease !important;
+}
+
+.vx-process-card:hover{
+    transform:translateY(-10px) !important;
+}
+
+.vx-process-card i{
+    font-size:45px !important;
+
+    margin-bottom:20px !important;
+}
+
+.vx-process-card h4{
+    color:#fff !important;
+}
+
+/* =========================================
+   CTA SECTION
+========================================= */
+.vx-cta-section{
+    padding:100px 0 !important;
+    background:transparent !important;
+}
+
+.vx-cta-section h2{
+    color:#fff !important;
+
+    font-size:2rem !important;
+
+    margin:25px 0 !important;
+}
+
+.vx-cta-section p{
+    color:#ddd !important;
+}
+
+/* =========================================
+   FAQ SECTION
+========================================= */
+
+.vx-faq-section{
+    padding:100px 0 !important;
+
+    background:#fff !important;
+}
+
+.vx-faq-section h2{
+    text-align:center !important;
+
+    margin-bottom:50px !important;
+}
+
+.accordion-button{
+    background:#000 !important;
+
+    color:#fff !important;
+
+    font-weight:600 !important;
+}
+
+.accordion-button:not(.collapsed){
+    background:#990b2c !important;
+
+    color:#fff !important;
+}
+
+.accordion-body{
+    background:#fff !important;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:991px){
+
+    .vx-content-card{
+        margin-bottom:40px !important;
+
+        padding:35px !important;
+    }
+
+    .vx-content-card h2{
+        font-size:1.8rem !important;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-services-section,
+    .vx-sectors-section,
+    .vx-benefits-section,
+    .vx-contract-section,
+    .vx-process-section,
+    .vx-why-section,
+    .vx-faq-section{
+        padding:70px 0 !important;
+    }
+
+    .vx-content-card{
+        padding:25px !important;
+
+        border-radius:25px !important;
+    }
+
+    .vx-content-card h2{
+        font-size:1.6rem !important;
+    }
+
+    .vx-content-card p{
+        font-size:.95rem !important;
+    }
+
+    .vx-cta-section h2{
+        font-size:1.8rem !important;
+    }
+}
+
+/* =========================================
+   PROCESS SECTION
+========================================= */
+
+.vx-process-section{
+    padding:100px 0 !important;
+    background:#f8f9fc !important;
+}
+
+.vx-process-section .vx-heading{
+    margin-bottom:60px !important;
+}
+
+.vx-process-section .vx-heading h2{
+    font-size:2rem !important;
+    font-weight:800 !important;
+    color:#111 !important;
+    margin-bottom:0 !important;
+}
+
+/* Process Card */
+
+.vx-process-card{
+    background:#ffffff !important;
+    padding:35px 25px !important;
+    border-radius:25px !important;
+    text-align:center !important;
+    height:100% !important;
+    border:1px solid rgba(153,11,44,.08) !important;
+    box-shadow:0 15px 40px rgba(0,0,0,.06) !important;
+    transition:.4s ease !important;
+    position:relative !important;
+    overflow:hidden !important;
+}
+
+.vx-process-card::before{
+    content:'' !important;
+    position:absolute !important;
+    top:0 !important;
+    left:0 !important;
+    width:100% !important;
+    height:4px !important;
+    background:#990b2c !important;
+}
+
+.vx-process-card:hover{
+    transform:translateY(-10px) !important;
+    box-shadow:0 25px 60px rgba(153,11,44,.15) !important;
+}
+
+/* Icon */
+
+.vx-process-card i{
+    width:80px !important;
+    height:80px !important;
+    line-height:80px !important;
+    font-size:32px !important;
+    border-radius:50% !important;
+    background:rgba(153,11,44,.1) !important;
+    color:#990b2c !important;
+    margin-bottom:20px !important;
+    display:inline-block !important;
+    transition:.4s ease !important;
+}
+
+.vx-process-card:hover i{
+    background:#990b2c !important;
+    color:#ffffff !important;
+    transform:rotateY(180deg) !important;
+}
+
+/* Heading */
+
+.vx-process-card h4{
+    font-size:1.25rem !important;
+    font-weight:700 !important;
+    color:#111 !important;
+    margin-bottom:15px !important;
+    line-height:1.4 !important;
+}
+
+/* Text */
+
+.vx-process-card p{
+    font-size:.95rem !important;
+    color:#666 !important;
+    line-height:1.8 !important;
+    margin-bottom:0 !important;
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+    .vx-process-section{
+        padding:80px 0 !important;
+    }
+
+    .vx-process-section .vx-heading h2{
+        font-size:1.8rem !important;
+    }
+
+    .vx-process-card{
+        padding:30px 20px !important;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-process-section{
+        padding:70px 0 !important;
+    }
+
+    .vx-process-section .vx-heading{
+        margin-bottom:40px !important;
+    }
+
+    .vx-process-section .vx-heading h2{
+        font-size:1.6rem !important;
+    }
+
+    .vx-process-card i{
+        width:70px !important;
+        height:70px !important;
+        line-height:70px !important;
+        font-size:28px !important;
+    }
+
+    .vx-process-card h4{
+        font-size:1.1rem !important;
+    }
+}
+
+.vx-cta-section{
+    padding:100px 0 !important;
+    background:#f8f9fc !important;
+}
+
+.vx-cta-box{
+    background:linear-gradient(135deg,#990b2c,#b60d35) !important;
+    padding:80px 50px !important;
+    border-radius:30px !important;
+    color:#fff !important;
+    position:relative !important;
+    overflow:hidden !important;
+}
+
+.vx-cta-box h2{
+    font-size:2rem !important;
+    font-weight:800 !important;
+    color:#fff !important;
+    margin:25px 0 !important;
+}
+
+.vx-cta-box p{
+    color:rgba(255,255,255,.9) !important;
+    margin-bottom:30px !important;
+}
+
+.vx-cta-buttons{
+    display:flex !important;
+    justify-content:center !important;
+    gap:15px !important;
+    flex-wrap:wrap !important;
+}
+
+.vx-contract-section{
+    padding:100px 0 !important;
+    background:#fff !important;
+}
+
+.vx-contract-content{
+    background:#fff !important;
+    padding:50px !important;
+    border-left:6px solid #990b2c !important;
+    border-radius:35px !important;
+    box-shadow:0 15px 40px rgba(0,0,0,.08) !important;
+}
+
+.vx-contract-content h2{
+    font-size:2rem !important;
+    font-weight:800 !important;
+    margin-bottom:25px !important;
+}
+
+.vx-contract-content img{
+    border-radius:25px !important;
+}
+
+.vx-why-us{
+    padding:100px 0 !important;
+    background:#0d0d0d !important;
+}
+
+.vx-why-us .vx-heading h2{
+    color:#fff !important;
+    font-size:2rem !important;
+    font-weight:800 !important;
+}
+
+.vx-why-card{
+    background:#990b2c !important;
+    padding:35px !important;
+    text-align:center !important;
+    color:#fff !important;
+    border-radius:20px !important;
+    height:100% !important;
+    transition:.4s ease !important;
+}
+
+.vx-why-card:hover{
+    transform:translateY(-8px) !important;
+}
+
+.vx-why-card h4{
+    color:#fff !important;
+    font-size:1.2rem !important;
+    font-weight:700 !important;
+}
+
+/* =========================================
+   FIRE MARSHAL SECTORS SECTION
+========================================= */
+
+.vx-sectors-section{
+    padding:100px 0 !important;
+    background:#f7f7f7 !important;
+}
+
+/* Content Card */
+
+.vx-sector-content{
+    background:#ffffff !important;
+    padding:50px !important;
+    border-left:6px solid #990b2c !important;
+    border-radius: 35px!important;
+    box-shadow:0 15px 40px rgba(0,0,0,.08) !important;
+    position:relative !important;
+    overflow:hidden !important;
+    transition:.4s ease !important;
+}
+
+.vx-sector-content:hover{
+    transform:translateY(-8px) !important;
+    box-shadow:0 25px 60px rgba(153,11,44,.15) !important;
+}
+
+/* Decorative Glow */
+
+.vx-sector-content::before{
+    content:'' !important;
+    position:absolute !important;
+    top:-100px !important;
+    left:-100px !important;
+    width:250px !important;
+    height:250px !important;
+    background:radial-gradient(
+        rgba(153,11,44,.08),
+        transparent 70%
+    ) !important;
+    pointer-events:none !important;
+}
+
+/* Heading */
+
+.vx-sector-content h2{
+    font-size:2rem !important;
+    font-weight:800 !important;
+    line-height:1.2 !important;
+    color:#111111 !important;
+    margin-bottom:30px !important;
+}
+
+/* List */
+
+.vx-sector-list{
+    list-style:none !important;
+    padding:0 !important;
+    margin:0 !important;
+}
+
+.vx-sector-list li{
+    display:flex !important;
+    align-items:center !important;
+    gap:15px !important;
+    margin-bottom:18px !important;
+    font-size:1rem !important;
+    font-weight:500 !important;
+    color:#333333 !important;
+}
+
+.vx-sector-list li i{
+    width:42px !important;
+    height:42px !important;
+    flex-shrink:0 !important;
+
+    background:#990b2c !important;
+    color:#ffffff !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    border-radius:50% !important;
+
+    font-size:16px !important;
+
+    transition:.3s ease !important;
+}
+
+.vx-sector-list li:hover i{
+    transform:scale(1.1) !important;
+}
+
+/* Image */
+
+.vx-sectors-section img{
+    width:100% !important;
+    border-radius:25px !important;
+    box-shadow:0 20px 50px rgba(0,0,0,.12) !important;
+    transition:.4s ease !important;
+}
+
+.vx-sectors-section img:hover{
+    transform:scale(1.03) !important;
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+    .vx-sector-content{
+        padding:35px !important;
+        margin-bottom:30px !important;
+        border-radius:0 25px 25px 0 !important;
+    }
+
+    .vx-sector-content h2{
+        font-size:1.8rem !important;
+    }
+}
+
+@media(max-width:768px){
+
+    .vx-sectors-section{
+        padding:70px 0 !important;
+    }
+
+    .vx-sector-content{
+        padding:25px !important;
+    }
+
+    .vx-sector-content h2{
+        font-size:1.6rem !important;
+    }
+
+    .vx-sector-list li{
+        font-size:.95rem !important;
+    }
+
+    .vx-sector-list li i{
+        width:36px !important;
+        height:36px !important;
+        font-size:14px !important;
+    }
+}
+
+
+/* =========================================
+   FAQ SECTION
+========================================= */
+
+.vx-faq-section{
+    padding:100px 0 !important;
+    background:#f7f7f7 !important;
+}
+
+.vx-faq-section .vx-heading{
+    margin-bottom:50px !important;
+}
+
+.vx-faq-section .vx-heading h2{
+    font-size:2rem !important;
+    font-weight:800 !important;
+    color:#111 !important;
+    text-align:center !important;
+}
+
+/* Accordion */
+
+#fireMarshalFAQ .accordion-item{
+    border:none !important;
+    margin-bottom:15px !important;
+    border-radius:8px !important;
+    overflow:hidden !important;
+    box-shadow:0 8px 20px rgba(0,0,0,.08) !important;
+}
+
+/* Question */
+
+#fireMarshalFAQ .accordion-button{
+    background:#000000 !important;
+    color:#ffffff !important;
+    font-size:16px !important;
+    font-weight:600 !important;
+    padding:18px 25px !important;
+    box-shadow:none !important;
+}
+
+/* Active Question */
+
+#fireMarshalFAQ .accordion-button:not(.collapsed){
+    background:#990b2c !important;
+    color:#ffffff !important;
+}
+
+/* Remove Bootstrap Blue */
+
+#fireMarshalFAQ .accordion-button:focus{
+    box-shadow:none !important;
+    border:none !important;
+}
+
+/* Plus / Minus Icon */
+
+#fireMarshalFAQ .accordion-button::after{
+    filter:brightness(0) invert(1);
+}
+
+/* Answer */
+
+#fireMarshalFAQ .accordion-body{
+    background:#ffffff !important;
+    color:#555 !important;
+    font-size:15px !important;
+    line-height:1.9 !important;
+    padding:25px !important;
+    border-top:1px solid #eee !important;
+}
+
+/* Hover */
+
+#fireMarshalFAQ .accordion-button:hover{
+    background:#990b2c !important;
+    color:#fff !important;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .vx-faq-section{
+        padding:70px 0 !important;
+    }
+
+    .vx-faq-section .vx-heading h2{
+        font-size:1.6rem !important;
+    }
+
+    #fireMarshalFAQ .accordion-button{
+        font-size:14px !important;
+        padding:15px 18px !important;
+    }
+
+    #fireMarshalFAQ .accordion-body{
+        font-size:14px !important;
+        padding:20px !important;
+    }
+}
+
+/* =========================================
+   K9 SECTORS SECTION
+========================================= */
+
+.vx-sectors-section{
+    padding:100px 0 !important;
+    background:#f7f7f7 !important;
+}
+
+.vx-sector-content h2{
+    font-size:2rem !important;
+    font-weight:800 !important;
+    color:#111 !important;
+    margin-bottom:20px !important;
+    line-height:1.2 !important;
+}
+
+.vx-sector-content p{
+    font-size:1rem !important;
+    color:#666 !important;
+    line-height:1.8 !important;
+    margin-bottom:30px !important;
+}
+
+.vx-sector-list{
+    list-style:none !important;
+    padding:0 !important;
+    margin:0 !important;
+}
+
+.vx-sector-list li{
+    display:flex !important;
+    align-items:flex-start !important;
+    gap:15px !important;
+    margin-bottom:18px !important;
+    font-size:1rem !important;
+    font-weight:500 !important;
+    color:#333 !important;
+}
+
+.vx-sector-list li i{
+    width:40px !important;
+    height:40px !important;
+    min-width:40px !important;
+    background:#990b2c !important;
+    color:#fff !important;
+    border-radius:8px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    font-size:16px !important;
+}
+
+.vx-sector-image img{
+    width:100% !important;
+    border-radius:20px !important;
+    box-shadow:0 15px 40px rgba(0,0,0,.12) !important;
+}
+
+@media(max-width:991px){
+
+    .vx-sector-content{
+        margin-bottom:40px !important;
+    }
+
+    .vx-sector-content h2{
+        font-size:1.8rem !important;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .vx-sectors-section{
+        padding:70px 0 !important;
+    }
+
+    .vx-sector-content h2{
+        font-size:1.6rem !important;
+    }
+
+}
+
+/* =========================================
+   K9 BENEFITS SECTION
+========================================= */
+
+.vx-benefits-section{
+    padding:100px 0 !important;
+    background:#ffffff !important;
+}
+
+.vx-benefits-image img{
+    width:100% !important;
+    border-radius:20px !important;
+    box-shadow:0 15px 40px rgba(0,0,0,.12) !important;
+}
+
+.vx-benefits-content h2{
+    font-size:2rem !important;
+    font-weight:800 !important;
+    color:#111 !important;
+    margin-bottom:35px !important;
+    line-height:1.2 !important;
+}
+
+.vx-benefit-item{
+    display:flex !important;
+    gap:18px !important;
+    margin-bottom:22px !important;
+}
+
+.vx-benefit-icon{
+    width:55px !important;
+    height:55px !important;
+    min-width:55px !important;
+    background:#990b2c !important;
+    color:#fff !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    border-radius:10px !important;
+    font-size:20px !important;
+}
+
+.vx-benefit-item h4{
+    font-size:1.1rem !important;
+    font-weight:700 !important;
+    margin-bottom:8px !important;
+    color:#111 !important;
+}
+
+.vx-benefit-item p{
+    margin:0 !important;
+    color:#666 !important;
+    line-height:1.7 !important;
+}
+
+@media(max-width:991px){
+
+    .vx-benefits-image{
+        margin-bottom:40px !important;
+    }
+
+    .vx-benefits-content h2{
+        font-size:1.8rem !important;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .vx-benefits-section{
+        padding:70px 0 !important;
+    }
+
+    .vx-benefits-content h2{
+        font-size:1.6rem !important;
+    }
+
+}
+
+/* =========================================
+   K9 CTA SECTION
+========================================= */
+
+.vx-k9-cta-section{
+    padding:100px 0 !important;
+    background:#f7f7f7 !important;
+}
+
+.vx-k9-cta-box{
+    background:linear-gradient(135deg,#990b2c,#b30f36) !important;
+    padding:70px 50px !important;
+    border-radius:25px !important;
+    box-shadow:0 20px 60px rgba(153,11,44,.25) !important;
+}
+
+.vx-k9-cta-box .vx-section-tag{
+    display:inline-block !important;
+    background:#ffffff !important;
+    color:#990b2c !important;
+    padding:10px 20px !important;
+    border-radius:6px !important;
+    font-size:11px !important;
+    font-weight:700 !important;
+    letter-spacing:3px !important;
+    text-transform:uppercase !important;
+    margin-bottom:25px !important;
+}
+
+.vx-k9-cta-box h2{
+    color:#ffffff !important;
+    font-size:2rem !important;
+    font-weight:800 !important;
+    margin-bottom:20px !important;
+    line-height:1.2 !important;
+}
+
+.vx-k9-cta-box p{
+    color:rgba(255,255,255,.9) !important;
+    font-size:1rem !important;
+    line-height:1.9 !important;
+    max-width:850px !important;
+    margin:0 auto 30px !important;
+}
+
+.vx-k9-cta-buttons{
+    display:flex !important;
+    justify-content:center !important;
+    gap:15px !important;
+    flex-wrap:wrap !important;
+}
+
+.vx-k9-cta-buttons .vx-btn-primary{
+    background:#ffffff !important;
+    color:#990b2c !important;
+}
+
+.vx-k9-cta-buttons .vx-btn-primary:hover{
+    background:#111 !important;
+    color:#fff !important;
+}
+
+.vx-k9-cta-buttons .vx-btn-secondary{
+    border:2px solid #fff !important;
+    color:#fff !important;
+    background:transparent !important;
+}
+
+.vx-k9-cta-buttons .vx-btn-secondary:hover{
+    background:#fff !important;
+    color:#990b2c !important;
+}
+
+@media(max-width:768px){
+
+    .vx-k9-cta-section{
+        padding:70px 0 !important;
+    }
+
+    .vx-k9-cta-box{
+        padding:45px 25px !important;
+    }
+
+    .vx-k9-cta-box h2{
+        font-size:1.6rem !important;
+    }
+}
+
+/* =========================================
+   K9 TESTIMONIALS
+========================================= */
+
+.vx-testimonials{
+    padding:30px 0 !important;
+    background:#f7f7f7 !important;
+}
+
+.vx-testimonials .vx-heading{
+    margin-bottom:50px !important;
+}
+
+.vx-testimonials .vx-heading h2{
+    font-size:2rem !important;
+    font-weight:800 !important;
+    color:#111 !important;
+}
+
+.vx-testimonial-card{
+    background:#ffffff !important;
+    padding:50px !important;
+    text-align:center !important;
+    border-radius:20px !important;
+    box-shadow:0 15px 40px rgba(0,0,0,.08) !important;
+    border-top:5px solid #990b2c !important;
+}
+
+.vx-testimonial-card i{
+    font-size:40px !important;
+    color:#990b2c !important;
+    margin-bottom:20px !important;
+}
+
+.vx-testimonial-card p{
+    font-size:1.05rem !important;
+    line-height:2 !important;
+    color:#555 !important;
+    margin-bottom:25px !important;
+    font-style:italic !important;
+}
+
+.vx-testimonial-card h5{
+    font-size:1.1rem !important;
+    font-weight:700 !important;
+    color:#111 !important;
+    margin-bottom:5px !important;
+}
+
+.vx-testimonial-card span{
+    color:#990b2c !important;
+    font-size:.95rem !important;
+    font-weight:600 !important;
+}
+
+@media(max-width:768px){
+
+    .vx-testimonials{
+        padding:70px 0 !important;
+    }
+
+    .vx-testimonials .vx-heading h2{
+        font-size:1.6rem !important;
+    }
+
+    .vx-testimonial-card{
+        padding:30px 25px !important;
+    }
+}
+.carousel-indicators button{
+    width:12px !important;
+    height:12px !important;
+    border-radius:50% !important;
+    background:#990b2c !important;
+}
+
+.vx-testimonial-card{
+    background:#fff !important;
+    padding:50px !important;
+    border-radius:20px !important;
+    text-align:center !important;
+    box-shadow:0 15px 40px rgba(0,0,0,.08) !important;
+}
