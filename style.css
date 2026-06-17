@@ -13934,3 +13934,15 @@ p{
     text-align:center !important;
     box-shadow:0 15px 40px rgba(0,0,0,.08) !important;
 }
+
+.vx-heading p{
+    max-width:700px !important;
+    margin:0 auto !important;
+    text-align:center !important;
+    color:#666 !important;
+    line-height:1.8 !important;
+}
+
+.vx-cta-section p{
+    text-align:center !important;
+}
