@@ -16114,3 +16114,18 @@ MOBILE
 .language-switcher{
     display: none !important;
 }
+
+
+
+.hero-content p{
+    color: #ffffff !important;
+    text-align: right;
+    font-weight: 500;
+}
+
+/* Mobile View */
+@media (max-width: 767px){
+    .hero-content p{
+        text-align: center !important;
+    }
+}
