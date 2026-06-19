@@ -780,7 +780,7 @@ font-size:2rem;
 }
 
 .hero-content h1{
-font-size:2.2rem;
+font-size:1rem;
 }
 }
 
@@ -6961,7 +6961,7 @@ font-size:2.2rem;
     }
 
     .vx-corporate-content h1{
-        font-size:2.2rem;
+        font-size:1.5rem;
     }
 
     .vx-quote-form{
@@ -6973,7 +6973,7 @@ font-size:2.2rem;
     }
 
     .vx-intro-card h2{
-        font-size:1.7rem;
+        font-size:1.5rem;
     }
 
     .vx-section-heading h2{
@@ -7049,7 +7049,7 @@ font-size:2.2rem;
 }
 
 .vx-service-box h4{
-    color:#111;
+    color:white !important;
 
     font-size:1.25rem;
 
@@ -7424,7 +7424,8 @@ font-size:2.2rem;
     .vx-corporate-benefits,
     .vx-industries-section,
     .vx-contract-management{
-        padding:70px 0;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
     }
 
     .vx-benefits-content h2,
@@ -7715,7 +7716,8 @@ font-size:2.2rem;
     .vx-protection-process,
     .vx-reliability-stats,
     .vx-testimonials{
-        padding:70px 0;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
     }
 
     .vx-process-card,
@@ -8047,7 +8049,8 @@ font-size:2.2rem;
     .vx-related-services,
     .vx-accreditations,
     .vx-contact-cta{
-        padding:70px 0;
+       padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-contact-form{
@@ -8229,7 +8232,8 @@ font-size:2.2rem;
 @media(max-width:768px){
 
     .vx-intro-section{
-        padding:70px 0 !important;
+       padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-intro-card{
@@ -8238,7 +8242,7 @@ font-size:2.2rem;
     }
 
     .vx-intro-card h2{
-        font-size:1.9rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-intro-card p{
@@ -8692,7 +8696,8 @@ p{
 @media(max-width:768px){
 
     .vx-services-grid{
-        padding:70px 0;
+         padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-heading h2{
@@ -9349,7 +9354,8 @@ p{
 
     .vx-benefits-section,
     .vx-contract-section{
-        padding:70px 0;
+         padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-service-cta{
@@ -9468,8 +9474,9 @@ p{
 
     overflow:hidden;
 
-    background:#fff;
+    background:#990b2c;
 
+    
     padding:35px;
 
     border-radius:18px;
@@ -9530,7 +9537,7 @@ p{
 }
 
 .vx-service-box p{
-    color:#666;
+    color:white;
 
     line-height:1.8;
 
@@ -9562,9 +9569,9 @@ p{
 
 .vx-industries-image{
     width:100%;
-
+height: 540px;
     border-radius:20px;
-
+object-fit: cover;
     box-shadow:
         0 15px 40px rgba(0,0,0,.08);
 }
@@ -9650,7 +9657,8 @@ p{
     .vx-corporate-intro,
     .vx-corporate-services,
     .vx-industries-section{
-        padding:70px 0;
+        padding:50px 0;
+       
     }
 
     .vx-intro-card{
@@ -9660,7 +9668,7 @@ p{
     .vx-intro-card h2,
     .vx-industries-content h2,
     .vx-section-heading h2{
-        font-size:1.7rem;
+        font-size:1.5rem;
     }
 }
 
@@ -10028,7 +10036,8 @@ p{
     .vx-reliability-stats,
     .vx-testimonials,
     .vx-faq-section{
-        padding:70px 0;
+       padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-heading{
@@ -10464,7 +10473,8 @@ p{
     .vx-testimonials,
     .vx-faq-section,
     .vx-final-cta{
-        padding:70px 0;
+        padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-heading{
@@ -11009,7 +11019,7 @@ p{
 @media(min-width:992px){
 
     .vx-image-box{
-        padding-left:25px !important;
+        
     }
 }
 
@@ -12464,7 +12474,8 @@ p{
 
     .vx-contract-section{
 
-        padding:70px 0 !important;
+        padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-contract-section .col-lg-6:first-child{
@@ -12615,7 +12626,8 @@ p{
 @media(max-width:768px){
 
     .vx-services-section{
-        padding:70px 0 !important;
+        padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-heading h2{
@@ -13109,7 +13121,8 @@ p{
     .vx-process-section,
     .vx-why-section,
     .vx-faq-section{
-        padding:70px 0 !important;
+        padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-content-card{
@@ -13241,7 +13254,8 @@ p{
 @media(max-width:768px){
 
     .vx-process-section{
-        padding:70px 0 !important;
+         padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-process-section .vx-heading{
@@ -13476,7 +13490,8 @@ p{
 @media(max-width:768px){
 
     .vx-sectors-section{
-        padding:70px 0 !important;
+        padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-sector-content{
@@ -13583,7 +13598,8 @@ p{
 @media(max-width:768px){
 
     .vx-faq-section{
-        padding:70px 0 !important;
+        padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-faq-section .vx-heading h2{
@@ -13675,7 +13691,8 @@ p{
 @media(max-width:768px){
 
     .vx-sectors-section{
-        padding:70px 0 !important;
+         padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-sector-content h2{
@@ -13754,7 +13771,8 @@ p{
 @media(max-width:768px){
 
     .vx-benefits-section{
-        padding:70px 0 !important;
+        padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-benefits-content h2{
@@ -13909,7 +13927,8 @@ p{
 @media(max-width:768px){
 
     .vx-testimonials{
-        padding:70px 0 !important;
+        padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-testimonials .vx-heading h2{
@@ -14223,7 +14242,8 @@ p{
 @media (max-width:768px){
 
     .vx-final-cta-section{
-        padding:70px 0;
+        padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-final-content h2{
@@ -14478,7 +14498,8 @@ p{
 @media (max-width:767px){
 
     .vx-cleaning-intro-section{
-        padding:70px 0;
+        padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-cleaning-intro-content h2{
@@ -14606,11 +14627,7 @@ p{
     line-height:1.8;
 }
 
-/* Hide Old Image */
 
-.vx-benefits-image{
-    display:none !important;
-}
 
 /* Mobile */
 
@@ -14745,7 +14762,8 @@ p{
 @media(max-width:767px){
 
     .vx-content-card-section{
-        padding:70px 0 !important;
+         padding-top: 30px !important;
+       padding-bottom: 30px !important;
     }
 
     .vx-content-card{
@@ -15889,7 +15907,7 @@ CONTACT PAGE
 
 .vx-contact-item a,
 .vx-contact-item span{
-    color:#555 !important;
+    color:white !important;
     text-decoration:none !important;
     font-size:16px !important;
 }
@@ -16127,5 +16145,559 @@ MOBILE
 @media (max-width: 767px){
     .hero-content p{
         text-align: center !important;
+    }
+}
+
+.footer-contact li a{
+    color: #bdbdbd;
+    text-decoration:none !important;
+    transition:all .3s ease !important;
+}
+
+.footer-contact li a:hover{
+    color:#A30D2D !important;
+}
+
+.footer-contact li i{
+    margin-right:10px !important;
+}
+
+.footer-contact li{
+    display:flex !important;
+    align-items:center !important;
+    gap:10px !important;
+}
+
+
+
+.vx-corporate-benefits{
+    padding:100px 0 !important;
+    background:#f8f9fc !important;
+}
+
+.vx-benefits-header{
+    max-width:900px !important;
+    margin:0 auto 60px !important;
+}
+
+.vx-benefits-header h2{
+    font-size:2rem !important;
+    font-weight:800 !important;
+    color:#111 !important;
+    margin:20px 0 !important;
+}
+
+
+
+.vx-benefits-header p{
+    font-size:17px !important;
+    line-height:1.9 !important;
+    color:#666 !important;
+}
+
+.vx-benefit-card{
+    background:#fff !important;
+    padding:35px !important;
+    border-radius:20px !important;
+    height:100% !important;
+    border-top:4px solid #A30D2D !important;
+    box-shadow:0 10px 35px rgba(0,0,0,.08) !important;
+    transition:.4s ease !important;
+}
+
+.vx-benefit-card:hover{
+    transform:translateY(-10px) !important;
+    box-shadow:0 20px 45px rgba(0,0,0,.15) !important;
+}
+
+.vx-benefit-card i{
+    width:70px !important;
+    height:70px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    border-radius:50% !important;
+    background:#A30D2D !important;
+    color:#fff !important;
+    font-size:28px !important;
+    margin-bottom:20px !important;
+}
+
+.vx-benefit-card h5{
+    font-size:22px !important;
+    font-weight:700 !important;
+    margin-bottom:15px !important;
+    color:#111 !important;
+}
+
+.vx-benefit-card p{
+    margin:0 !important;
+    color:#666 !important;
+    line-height:1.8 !important;
+}
+
+@media(max-width:768px){
+
+    .vx-corporate-benefits{
+       padding-top: 30px !important;
+       padding-bottom: 30px !important;
+    }
+
+    .vx-benefits-header h2{
+        font-size:34px !important;
+    }
+
+}
+
+.vx-benefit-card{
+    background:#fff !important;
+    padding:25px !important;
+    border-radius:18px !important;
+    border-top:4px solid #A30D2D !important;
+    box-shadow:0 8px 25px rgba(0,0,0,.08) !important;
+    transition:.4s ease !important;
+    height:100% !important;
+}
+
+.vx-benefit-card i{
+    width:60px !important;
+    height:60px !important;
+    font-size:24px !important;
+    margin-bottom:15px !important;
+}
+
+.vx-benefit-card h5{
+    font-size:18px !important;
+    font-weight:700 !important;
+    margin-bottom:10px !important;
+    line-height:1.4 !important;
+}
+
+.vx-benefit-card p{
+    font-size:15px !important;
+    line-height:1.8 !important;
+    margin:0 !important;
+}
+
+.vx-benefit-card:hover{
+    transform:translateY(-6px) !important;
+}
+
+
+.vx-contract-management{
+    padding:100px 0 !important;
+    background:#f8f9fc !important;
+}
+
+
+
+.vx-contract-header{
+    max-width:900px !important;
+    margin:0 auto 50px !important;
+}
+
+.vx-contract-header h2{
+    font-size:2rem !important;
+    font-weight:800 !important;
+    color:#111 !important;
+    margin:20px 0 !important;
+}
+
+.vx-contract-header p{
+    font-size:17px !important;
+    color:#666 !important;
+    line-height:1.9 !important;
+}
+
+.vx-management-card{
+    background:#fff !important;
+    padding:30px !important;
+    border-radius:20px !important;
+    border-top:4px solid #A30D2D !important;
+    height:100% !important;
+    box-shadow:0 10px 30px rgba(0,0,0,.06) !important;
+    transition:.4s ease !important;
+}
+
+.vx-management-card:hover{
+    transform:translateY(-8px) !important;
+    box-shadow:0 20px 40px rgba(0,0,0,.12) !important;
+}
+
+.vx-management-card i{
+    width:65px !important;
+    height:65px !important;
+    background:#A30D2D !important;
+    color:#fff !important;
+    border-radius:50% !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    font-size:24px !important;
+    margin-bottom:20px !important;
+}
+
+.vx-management-card h5{
+    font-size:20px !important;
+    font-weight:700 !important;
+    margin-bottom:12px !important;
+    color:#111 !important;
+}
+
+.vx-management-card p{
+    color:#666 !important;
+    line-height:1.8 !important;
+    margin:0 !important;
+}
+
+@media(max-width:768px){
+
+    .vx-contract-management{
+       padding-top: 30px !important;
+       padding-bottom: 30px !important;
+    }
+
+    .vx-contract-wrapper{
+       
+    }
+
+    .vx-contract-header h2{
+        font-size:34px !important;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .vx-cta-section{
+        padding:40px 15px !important;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .vx-corporate-content{
+        text-align:center !important;
+    }
+
+    .vx-corporate-content h1{
+        text-align:center !important;
+        margin-left:auto !important;
+        margin-right:auto !important;
+    }
+
+
+
+    .vx-corporate-tag{
+        margin:0 auto 20px !important;
+        display:table !important;
+    }
+
+  
+
+    .vx-corporate-buttons{
+        justify-content:center !important;
+    }
+
+
+       .vx-corporate-list,
+    .vx-corporate-list li{
+        text-align:left !important;
+    }
+}
+
+/* MOBILE ONLY */
+
+@media (max-width:768px){
+
+    .vx-stats-bar{
+        padding:40px 0 !important;
+    }
+
+    .vx-stats-bar .row{
+        row-gap:12px !important;
+    }
+
+    .vx-stat{
+        padding:20px 15px !important;
+        min-height:auto !important;
+        text-align:center !important;
+    }
+
+    .vx-stat i{
+        font-size:26px !important;
+        margin-bottom:10px !important;
+    }
+
+    .vx-stat h4{
+        font-size:18px !important;
+        line-height:1 !important;
+        margin-bottom:8px !important;
+        text-align:center !important;
+    }
+
+    .vx-stat p{
+        font-size:13px !important;
+        line-height:1.5 !important;
+        margin:0 !important;
+        text-align:center !important;
+    }
+
+    .vx-stat-content{
+        text-align:center !important;
+    }
+
+    .vx-stats-bar .col-6{
+        padding:6px !important;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    /* Center all section tags */
+    .vx-section-tag,
+    .vx-corporate-tag,
+    .vx-service-tag,
+    .vx-benefits-tag,
+    .vx-intro-card .vx-section-tag,
+    .vx-contract-content .vx-section-tag,
+    .vx-industries-content .vx-section-tag,
+    .vx-corporate-content .vx-section-tag{
+        display: table !important;
+        margin: 0 auto 20px !important;
+        text-align: center !important;
+       
+    }
+
+
+}
+
+/* MOBILE VIEW ONLY */
+@media (max-width: 768px){
+
+    /* Center all headings */
+    .vx-corporate-content h1,
+    .vx-corporate-content h2,
+    .vx-intro-content h2,
+    .vx-responsibility-content h2,
+    .vx-benefits-content h2,
+    .vx-contract-content h2,
+    .vx-industries-content h2,
+    .vx-cta-content h2,
+    .vx-services-content h2,
+    .vx-about-content h2,
+    .vx-section-title,
+    h1,
+    h2{
+        text-align:center !important;
+        font-size:1.5rem !important;
+        line-height:1.2 !important;
+        margin-left:auto !important;
+        margin-right:auto !important;
+    }
+
+    /* Center all section tags */
+    .vx-section-tag{
+        display:table !important;
+        margin:0 auto 20px !important;
+        text-align:center !important;
+    }
+
+}
+
+.vx-concierge-overview{
+    padding:100px 0;
+    background:#f8f9fb;
+}
+
+.vx-overview-header{
+    max-width:900px;
+    margin:0 auto 70px;
+}
+
+.vx-overview-header h2{
+    font-size:2rem;
+    font-weight:800;
+    margin:20px 0;
+    color:#111;
+}
+
+.vx-overview-header p{
+    font-size:1.1rem;
+    line-height:1.8;
+    color:#666;
+}
+
+.vx-concierge-process{
+    position:relative;
+    max-width:1000px;
+    margin:0 auto;
+}
+
+.vx-concierge-process::before{
+    content:'';
+    position:absolute;
+    left:40px;
+    top:0;
+    width:3px;
+    height:100%;
+    background:#990b2c;
+}
+
+.vx-process-item{
+    position:relative;
+    display:flex;
+    gap:35px;
+    margin-bottom:50px;
+}
+
+.vx-process-number{
+    width:80px;
+    height:80px;
+    min-width:80px;
+    border-radius:50%;
+    background:#990b2c;
+    color:#fff;
+    font-size:1.5rem;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    z-index:2;
+}
+
+.vx-process-content{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    width:100%;
+    transition:.4s;
+}
+
+.vx-process-content:hover{
+    transform:translateX(10px);
+}
+
+.vx-process-content h4{
+    font-size:1.5rem;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.vx-process-content p{
+    margin:0;
+    color:#666;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+    .vx-overview-header h2{
+        font-size:1.8rem;
+    }
+
+    .vx-concierge-process::before{
+        left:25px;
+    }
+
+    .vx-process-item{
+        gap:20px;
+    }
+
+    .vx-process-number{
+        width:50px;
+        height:50px;
+        min-width:50px;
+        font-size:1rem;
+    }
+
+    .vx-process-content{
+        padding:20px;
+    }
+}
+
+
+.vx-concierge-benefits-full{
+    padding:100px 0;
+    background:#f8f9fb;
+}
+
+.vx-benefits-header{
+    max-width:900px;
+    margin:0 auto 60px;
+}
+
+.vx-benefits-header h2{
+    font-size:2rem;
+    font-weight:800;
+    color:#111;
+    margin:20px 0;
+}
+
+.vx-benefits-header p{
+    font-size:1.1rem;
+    color:#666;
+    line-height:1.9;
+}
+
+.vx-benefit-box{
+    position:relative;
+    background:#fff;
+    padding:40px 30px;
+    border-radius:25px;
+    height:100%;
+    border-top:5px solid #990b2c;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+    transition:all .4s ease;
+}
+
+.vx-benefit-box:hover{
+    transform:translateY(-10px);
+}
+
+.vx-benefit-number{
+    font-size:2rem;
+    font-weight:800;
+    color:#990b2c;
+    opacity:.15;
+    line-height:1;
+    margin-bottom:20px;
+}
+
+.vx-benefit-box h4{
+    font-size:1.4rem;
+    font-weight:700;
+    margin-bottom:15px;
+    color:#111;
+}
+
+.vx-benefit-box p{
+    margin:0;
+    color:#666;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+    .vx-concierge-benefits-full{
+        padding:70px 0;
+    }
+
+    .vx-benefits-header h2{
+        font-size:1.8rem;
+    }
+
+    .vx-benefit-box{
+        text-align:center;
+        padding:30px 20px;
+    }
+
+    .vx-benefit-number{
+        font-size:2.5rem;
     }
 }
