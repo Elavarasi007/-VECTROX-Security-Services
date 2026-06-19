@@ -202,3 +202,101 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+
+
+document.addEventListener('DOMContentLoaded', function(){
+
+    const menuBtn = document.querySelector('.vx-mobile-toggle');
+    const mobileMenu = document.querySelector('.vx-mobile-menu');
+    const overlay = document.querySelector('.vx-mobile-overlay');
+    const closeBtn = document.querySelector('.vx-mobile-close-btn');
+
+    /* OPEN MENU */
+
+    if(menuBtn){
+
+        menuBtn.addEventListener('click', function(){
+
+            mobileMenu.classList.add('active');
+
+            if(overlay){
+                overlay.classList.add('active');
+            }
+
+        });
+
+    }
+
+    /* CLOSE MENU */
+
+    function closeMenu(){
+
+        mobileMenu.classList.remove('active');
+
+        if(overlay){
+            overlay.classList.remove('active');
+        }
+
+    }
+
+    if(closeBtn){
+        closeBtn.addEventListener('click', closeMenu);
+    }
+
+    if(overlay){
+        overlay.addEventListener('click', closeMenu);
+    }
+
+    /* DROPDOWNS */
+
+    document.querySelectorAll('.vx-mobile-dropdown-btn').forEach(function(btn){
+
+        btn.addEventListener('click', function(e){
+
+            e.preventDefault();
+
+            const parent = this.closest('.vx-mobile-dropdown');
+
+            /* Close other dropdowns */
+
+            document.querySelectorAll('.vx-mobile-dropdown').forEach(function(item){
+
+                if(item !== parent){
+                    item.classList.remove('active');
+                }
+
+            });
+
+            parent.classList.toggle('active');
+
+        });
+
+    });
+
+});
+
+
+function openMenu(){
+
+    mobileMenu.classList.add('active');
+
+    if(overlay){
+        overlay.classList.add('active');
+    }
+
+    document.body.classList.add('vx-menu-open');
+
+}
+
+function closeMenu(){
+
+    mobileMenu.classList.remove('active');
+
+    if(overlay){
+        overlay.classList.remove('active');
+    }
+
+    document.body.classList.remove('vx-menu-open');
+
+}
