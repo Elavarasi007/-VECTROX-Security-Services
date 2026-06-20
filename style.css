@@ -19073,7 +19073,7 @@ h2{
 @media (max-width: 991px){
 
     .vx-final-cta-section{
-        padding: 50px 20px !important;
+        padding: 50px 0px !important;
         text-align: center !important;
         overflow: hidden !important;
     }
