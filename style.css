@@ -18725,8 +18725,5 @@ h2{
     
 }
 
-/* Hide all feedback menu links */
-a[href*="feedback"]{
-    display:none !important;
-}
+
 
