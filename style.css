@@ -18647,4 +18647,86 @@ MOBILE
         padding:18px;
     }
 
+    .eyebrow{
+    text-align: center;
 }
+}
+@media (max-width: 767px){
+
+    .btn.btn-contact{
+        display: table;
+        margin: 20px auto 0;
+        text-align: center;
+    }
+
+}
+@media (max-width: 767px) {
+
+    .section-tag,
+    .vx-section-tag {
+        display: inline-block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .container,
+    .vx-heading,
+    .vx-section-heading,
+    .vx-benefits-header,
+    .vx-overview-header {
+        text-align: center;
+    }
+
+}
+
+.section-tag,
+.vx-section-tag{
+    margin-bottom: 30px !important; /* Space below tag */
+}
+
+h2{
+    margin-bottom: 25px !important; /* Space below heading */
+}
+
+@media (max-width: 767px){
+
+    .service-highlight .row{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .service-highlight .col-6{
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+
+}
+@media (max-width: 767px) {
+
+    .security-services-grid{
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 10px !important;
+        justify-content: center !important;
+    }
+
+    .security-services-grid a,
+    .security-services-grid .service-item,
+    .security-services-grid span{
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        margin: 0 !important;
+    }
+
+
+    
+}
+
+/* Hide all feedback menu links */
+a[href*="feedback"]{
+    display:none !important;
+}
+

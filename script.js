@@ -300,3 +300,9 @@ function closeMenu(){
     document.body.classList.remove('vx-menu-open');
 
 }
+
+[].forEach.call(document.querySelectorAll('*'), function(el) {
+    if (el.offsetWidth > document.documentElement.offsetWidth) {
+        console.log(el);
+    }
+});
