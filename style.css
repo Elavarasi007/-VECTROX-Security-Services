@@ -16249,7 +16249,11 @@ MOBILE
     }
 
     .vx-benefits-header h2{
-        font-size:34px !important;
+        font-size:1.5rem !important;
+    }
+
+    .vx-contract-header p{
+        text-align: justify !important;
     }
 
 }
@@ -16376,7 +16380,7 @@ MOBILE
     }
 
     .vx-contract-header h2{
-        font-size:34px !important;
+        font-size:1.5rem !important;
     }
 
 }
@@ -16386,6 +16390,10 @@ MOBILE
     .vx-cta-section{
         padding:40px 15px !important;
     }
+.vx-testimonial-card p{
+    text-align: justify !important;
+}
+    
 
 }
 
