@@ -19183,3 +19183,24 @@ h2{
     }
 
 }
+
+@media (max-width: 991px){
+
+    .footer-links{
+        text-align: center !important;
+        padding-left: 0 !important;
+        margin: 0 auto !important;
+        list-style: none !important;
+    }
+
+    .footer-links li{
+        text-align: center !important;
+        margin-bottom: 10px !important;
+    }
+
+    .footer-links li a{
+        display: inline-block !important;
+        text-align: center !important;
+    }
+
+}
