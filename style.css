@@ -17224,6 +17224,7 @@ MOBILE
     .vx-site-tag{
         display:table;
         margin:0 auto 20px;
+        text-align:center;
     }
 
     .vx-site-feature-grid{
@@ -17247,6 +17248,9 @@ MOBILE
 
     .vx-site-overview-content p{
         text-align:justify;
+    }
+    .vx-cta-section p{
+        text-align: justify !important;
     }
 }
 
