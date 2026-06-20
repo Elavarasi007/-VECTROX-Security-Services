@@ -2207,8 +2207,8 @@ font-size:1rem;
 
 .logo-area img{
     height:90px !important;
-    width:auto !important;
-    max-width:none !important;
+    width:200px !important;
+    max-width:200px !important;
     display:block !important;
 }
 
@@ -2304,7 +2304,10 @@ font-size:1rem;
 }
 
 #headerWrapper.sticky .logo-area img{
-    height:55px !important;
+     height: 55px !important;
+    width: 200px !important;
+    max-width: 200px !important;
+    object-fit: contain !important;
 }
 
 
