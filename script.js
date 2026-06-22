@@ -36,19 +36,26 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ---------------------------------------------
      Back to top button
   --------------------------------------------- */
-  const backToTop = document.getElementById('backToTop');
+const backToTop = document.getElementById('backToTop');
 
-  window.addEventListener('scroll', function () {
+if(backToTop){
+
+    window.addEventListener('scroll', function () {
     if (window.scrollY > 400) {
       backToTop.classList.add('show');
     } else {
       backToTop.classList.remove('show');
     }
-  });
+    });
 
-  backToTop.addEventListener('click', function () {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+    backToTop.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+}
 
   /* ---------------------------------------------
      Message character counter
@@ -62,19 +69,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ---------------------------------------------
-     Quote form submission (demo)
-  --------------------------------------------- */
-  const quoteForm = document.getElementById('quoteForm');
-  if (quoteForm) {
-    quoteForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      alert('Thank you for your request. Our team will get back to you shortly.');
-      quoteForm.reset();
-      if (charCount) charCount.textContent = '0';
-    });
-  }
+/* ---------------------------------------------
+   Quote form submission
+--------------------------------------------- */
+const quoteForm = document.getElementById('quoteForm');
 
+if (quoteForm) {
+
+    quoteForm.addEventListener('submit', function () {
+
+        alert('Thank you for your request. Your form is being submitted.');
+
+    });
+
+}
   /* ---------------------------------------------
      Mega menu (Services) toggle
   --------------------------------------------- */
@@ -325,7 +333,10 @@ document.addEventListener('DOMContentLoaded', function(){
             e.preventDefault();
 
             helpPopup.classList.add('active');
-            helpOverlay.classList.add('active');
+
+if(helpOverlay){
+    helpOverlay.classList.add('active');
+}
 
         });
 
@@ -336,7 +347,10 @@ document.addEventListener('DOMContentLoaded', function(){
         closeHelp.addEventListener('click', function(){
 
             helpPopup.classList.remove('active');
-            helpOverlay.classList.remove('active');
+
+if(helpOverlay){
+    helpOverlay.classList.remove('active');
+}
 
         });
 
