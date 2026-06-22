@@ -250,29 +250,30 @@ document.addEventListener('DOMContentLoaded', function(){
 
     /* DROPDOWNS */
 
-    document.querySelectorAll('.vx-mobile-dropdown-btn').forEach(function(btn){
+document.querySelectorAll('.vx-mobile-dropdown-btn i').forEach(function(icon){
 
-        btn.addEventListener('click', function(e){
+    icon.addEventListener('click', function(e){
 
-            e.preventDefault();
+        e.preventDefault();
+        e.stopPropagation();
 
-            const parent = this.closest('.vx-mobile-dropdown');
+        const parent = this.closest('.vx-mobile-dropdown');
 
-            /* Close other dropdowns */
+        if(!parent) return;
 
-            document.querySelectorAll('.vx-mobile-dropdown').forEach(function(item){
+        document.querySelectorAll('.vx-mobile-dropdown').forEach(function(item){
 
-                if(item !== parent){
-                    item.classList.remove('active');
-                }
-
-            });
-
-            parent.classList.toggle('active');
+            if(item !== parent){
+                item.classList.remove('active');
+            }
 
         });
 
+        parent.classList.toggle('active');
+
     });
+
+});
 
 });
 
@@ -306,3 +307,51 @@ function closeMenu(){
         console.log(el);
     }
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function(){
+
+    const helpBtn = document.getElementById('helpButton');
+    const helpPopup = document.getElementById('helpPopup');
+    const helpOverlay = document.getElementById('helpOverlay');
+    const closeHelp = document.getElementById('closeHelp');
+
+    if(helpBtn){
+
+        helpBtn.addEventListener('click', function(e){
+
+            e.preventDefault();
+
+            helpPopup.classList.add('active');
+            helpOverlay.classList.add('active');
+
+        });
+
+    }
+
+    if(closeHelp){
+
+        closeHelp.addEventListener('click', function(){
+
+            helpPopup.classList.remove('active');
+            helpOverlay.classList.remove('active');
+
+        });
+
+    }
+
+    if(helpOverlay){
+
+        helpOverlay.addEventListener('click', function(){
+
+            helpPopup.classList.remove('active');
+            helpOverlay.classList.remove('active');
+
+        });
+
+    }
+
+});
+

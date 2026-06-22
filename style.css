@@ -242,9 +242,9 @@ img {
 }
 
 #headerWrapper.sticky .logo-area img{
-    height:70px !important;
+    height:60px !important;
     width:auto !important;
-    max-width:none !important;
+    max-width:auto !important;
 }
 
 /* Navigation */
@@ -264,7 +264,9 @@ img {
     align-items:center !important;
     justify-content:flex-end !important;
     margin:0 !important;
-    padding:0 !important;
+    padding-top: 5px !important;
+    padding-right: 20px !important;
+   
 }
 
 
@@ -309,7 +311,7 @@ img {
 .mega-menu-header h2 {
   color: var(--white);
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 40px;
 }
 
@@ -776,7 +778,7 @@ border-radius:20px;
 }
 
 .quote-card h2{
-font-size:2rem;
+font-size:1.5rem;
 }
 
 .hero-content h1{
@@ -1950,60 +1952,293 @@ font-size:1rem;
 
 
 /* ==========================================================================
-   BACK TO TOP / HELP BUTTON
+   HELP BUTTON
    ========================================================================== */
-#backToTop {
-  position: fixed;
-  bottom: 30px;
-  left: 30px;
-  width: 48px;
-  height: 48px;
-  background: var(--burgundy);
-  color: var(--white);
-  border: none;
-  border-radius: 4px;
-  font-size: 1.1rem;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 999;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-  transition: background 0.3s ease;
+
+.help-button{
+    position: fixed !important;
+    right: 30px !important;
+    bottom: 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    background: #a30d2d !important;
+    color: #ffffff !important;
+    padding: 12px 22px !important;
+    border-radius: 30px !important;
+    text-decoration: none !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    z-index: 99998 !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,.3) !important;
+    transition: all .3s ease !important;
 }
 
-#backToTop.show {
-  display: flex;
+.help-button i{
+    color: #ffffff !important;
+    font-size: 16px !important;
 }
 
-#backToTop:hover {
-  background: var(--burgundy-dark);
+.help-button:hover{
+    background: #7d0823 !important;
+    color: #ffffff !important;
+    transform: translateY(-3px) !important;
 }
 
-.help-button {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background: var(--burgundy);
-  color: var(--white);
-  padding: 12px 22px;
-  border-radius: 30px;
-  font-weight: 700;
-  font-size: 0.95rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  z-index: 999;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-  transition: background 0.3s ease, transform 0.3s ease;
+.help-button:focus,
+.help-button:active,
+.help-button:visited{
+    color: #ffffff !important;
+    text-decoration: none !important;
 }
 
-.help-button:hover {
-  background: var(--burgundy-dark);
-  color: var(--white);
-  transform: translateY(-2px);
+/* ==========================================================================
+   HELP POPUP
+   ========================================================================== */
+
+.help-popup{
+    position: fixed !important;
+    right: 20px !important;
+    bottom: 85px !important;
+
+    width: 240px !important;
+    max-width: 240px !important;
+
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.25) !important;
+
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(15px) !important;
+
+    transition: all .3s ease !important;
+    z-index: 99999 !important;
 }
 
+.help-popup.active{
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+.help-popup-header{
+    background: #a30d2d !important;
+    color: #ffffff !important;
+
+    padding: 10px 12px !important;
+
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+    font-size: 14px !important;
+    font-weight: 700 !important;
+}
+
+.help-popup-header button{
+    background: transparent !important;
+    border: none !important;
+    color: #ffffff !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+}
+
+/* ==========================================================================
+   BODY
+   ========================================================================== */
+
+.help-popup-body{
+    padding: 12px !important;
+}
+
+.form-group{
+    margin-bottom: 8px !important;
+}
+
+.form-group label{
+    display: block !important;
+    margin-bottom: 3px !important;
+
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    color: #222 !important;
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100% !important;
+
+    border: 1px solid #dddddd !important;
+    border-radius: 5px !important;
+
+    padding: 8px 10px !important;
+    font-size: 12px !important;
+
+    outline: none !important;
+}
+
+.form-group input{
+    height: 34px !important;
+}
+
+.form-group textarea{
+    height: 70px !important;
+    resize: none !important;
+}
+
+/* ==========================================================================
+   BUTTON
+   ========================================================================== */
+
+.help-submit{
+    width: 100% !important;
+
+    border: none !important;
+    border-radius: 5px !important;
+
+    background: #a30d2d !important;
+    color: #ffffff !important;
+
+    padding: 10px !important;
+
+    font-size: 13px !important;
+    font-weight: 700 !important;
+
+    cursor: pointer !important;
+    transition: .3s ease !important;
+}
+
+.help-submit:hover{
+    background: #7d0823 !important;
+}
+
+/* ==========================================================================
+   DESKTOP ONLY
+   ========================================================================== */
+
+@media (min-width:768px){
+
+    .help-overlay{
+        display:none !important;
+    }
+
+    .help-popup{
+        width:240px !important;
+        max-width:240px !important;
+    }
+
+}
+
+/* ==========================================================================
+   MOBILE
+   ========================================================================== */
+
+@media (max-width:767px){
+
+    .help-popup{
+        right:10px !important;
+        left:10px !important;
+        width:auto !important;
+        max-width:none !important;
+
+        bottom:80px !important;
+
+        max-height:80vh !important;
+        overflow-y:auto !important;
+    }
+
+    .help-button{
+        right:15px !important;
+        bottom:15px !important;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE POPUP BACKGROUND BLUR
+========================================= */
+
+@media (max-width:767px){
+
+    .help-overlay{
+        position:fixed !important;
+        inset:0 !important;
+
+        background:rgba(0,0,0,0.45) !important;
+
+        backdrop-filter:blur(8px) !important;
+        -webkit-backdrop-filter:blur(8px) !important;
+
+        opacity:0 !important;
+        visibility:hidden !important;
+
+        transition:all .3s ease !important;
+
+        z-index:99997 !important;
+    }
+
+    .help-overlay.active{
+        opacity:1 !important;
+        visibility:visible !important;
+    }
+
+}
+
+
+/* =========================================
+   BACK TO TOP BUTTON
+========================================= */
+
+#backToTop{
+    position: fixed !important;
+    left: 15px !important;
+    bottom: 15px !important;
+
+    width: 40px !important;
+    height: 40px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #ffffff !important;
+    color: #000000 !important;
+
+    border: 1px solid #dcdcdc !important;
+    border-radius: 10px !important;
+
+    cursor: pointer !important;
+
+    z-index: 99999 !important;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.15) !important;
+
+    transition: all .3s ease !important;
+}
+
+#backToTop:hover{
+    background: #a30d2d !important;
+    color: #ffffff !important;
+    border-color: #a30d2d !important;
+}
+
+#backToTop i{
+    font-size: 14px !important;
+}
+
+/* Show Button */
+
+#backToTop.show{
+    display: flex !important;
+}
 /* ==========================================================================
    FADE-IN ANIMATIONS
    ========================================================================== */
@@ -2112,7 +2347,7 @@ font-size:1rem;
   }
 
   .quote-card h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .services-section,
@@ -2174,7 +2409,7 @@ font-size:1rem;
   }
 
   .mega-menu-header h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .help-button span,
@@ -2207,8 +2442,8 @@ font-size:1rem;
 
 .logo-area img{
     height:90px !important;
-    width:200px !important;
-    max-width:200px !important;
+    width:auto !important;
+    max-width:auto !important;
     display:block !important;
 }
 
@@ -2303,13 +2538,20 @@ font-size:1rem;
     justify-content:flex-end !important;
 }
 
-#headerWrapper.sticky .logo-area img{
-     height: 55px !important;
-    width: 200px !important;
-    max-width: 200px !important;
-    object-fit: contain !important;
+/* Normal Header Logo */
+.logo-area img{
+    height: 80px !important;
+    width: auto !important;
 }
 
+/* Sticky Header Logo */
+#headerWrapper.sticky .logo-area img{
+    height: 60px !important;
+    width: auto!important;
+    padding-left: 30px;
+   
+   
+}
 
 
 
@@ -3662,7 +3904,7 @@ font-size:1rem;
     }
 
     .csr-section h2{
-        font-size:1.7rem;
+        font-size:1.5rem;
     }
 
     .csr-section h3{
@@ -6953,7 +7195,7 @@ font-size:1rem;
     }
 
     .vx-intro-card h2{
-        font-size:2rem;
+        font-size:1.5rem;
     }
 }
 
@@ -6980,7 +7222,7 @@ font-size:1rem;
     }
 
     .vx-section-heading h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 }
 
@@ -7417,7 +7659,7 @@ font-size:1rem;
     }
 
     .vx-cta-content h2{
-        font-size:2.1rem;
+        font-size:1.5rem;
     }
 }
 
@@ -7434,11 +7676,11 @@ font-size:1rem;
     .vx-benefits-content h2,
     .vx-industries-content h2,
     .vx-contract-content h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 
     .vx-cta-content h2{
-        font-size:1.7rem;
+        font-size:1.5rem;
     }
 
     .vx-benefit-item{
@@ -8042,7 +8284,7 @@ font-size:1rem;
     }
 
     .vx-contact-content h2{
-        font-size:2rem;
+        font-size:1.5rem;
     }
 }
 
@@ -8061,7 +8303,7 @@ font-size:1rem;
     }
 
     .vx-contact-content h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 
     .vx-related-card,
@@ -8228,7 +8470,7 @@ font-size:1rem;
     }
 
     .vx-intro-card h2{
-        font-size:2rem !important;
+        font-size:1.5rem !important;
     }
 }
 
@@ -8704,7 +8946,7 @@ p{
     }
 
     .vx-heading h2{
-        font-size:2rem;
+        font-size:1.5rem;
     }
 
     .vx-service-card{
@@ -8941,7 +9183,7 @@ p{
     }
 
     .vx-responsibility-content h2{
-        font-size:2.2rem !important;
+        font-size:1.5rem !important;
     }
 }
 
@@ -8953,7 +9195,7 @@ p{
     }
 
     .vx-responsibility-content h2{
-        font-size:1.8rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-responsibility-content p{
@@ -9130,7 +9372,7 @@ p{
     }
 
     .vx-contract-content h2{
-        font-size:2.2rem !important;
+        font-size:1.5rem !important;
     }
 }
 
@@ -9349,7 +9591,7 @@ p{
     }
 
     .vx-cta-content h2{
-        font-size:2rem;
+        font-size:1.5rem;
     }
 }
 
@@ -9366,12 +9608,12 @@ p{
     }
 
     .vx-cta-content h2{
-        font-size:1.7rem;
+        font-size:1.5rem;
     }
 
     .vx-benefits-content h2,
     .vx-contract-content h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 }
 
@@ -9651,7 +9893,7 @@ object-fit: cover;
     .vx-intro-card h2,
     .vx-industries-content h2,
     .vx-section-heading h2{
-        font-size:2rem;
+        font-size:1.5rem;
     }
 }
 
@@ -10028,7 +10270,7 @@ object-fit: cover;
 
     .vx-contract-content h2,
     .vx-heading h2{
-        font-size:2rem;
+        font-size:1.5rem;
     }
 }
 
@@ -10048,7 +10290,7 @@ object-fit: cover;
     }
 
     .vx-heading h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 
     .vx-testimonial-card{
@@ -10459,11 +10701,11 @@ object-fit: cover;
     .vx-intro-content h2,
     .vx-benefits-section h2,
     .vx-final-cta h2{
-        font-size:2rem;
+        font-size:1.5rem;
     }
 
     .vx-heading h2{
-        font-size:2rem;
+        font-size:1.5rem;
     }
 }
 
@@ -10485,13 +10727,13 @@ object-fit: cover;
     }
 
     .vx-heading h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 
     .vx-intro-content h2,
     .vx-benefits-section h2,
     .vx-final-cta h2{
-        font-size:1.7rem;
+        font-size:1.5rem;
     }
 
     .vx-service-card,
@@ -10834,7 +11076,7 @@ object-fit: cover;
     }
 
     .vx-industries-content h2{
-        font-size:2.2rem !important;
+        font-size:1.5rem !important;
     }
 }
 
@@ -10846,7 +11088,7 @@ object-fit: cover;
     }
 
     .vx-industries-content h2{
-        font-size:1.8rem !important;
+        font-size:1.5rem !important;
     }
 }
 
@@ -11045,7 +11287,7 @@ object-fit: cover;
     }
 
     .vx-intro-content h2{
-        font-size:1.8rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-image-box{
@@ -11080,7 +11322,7 @@ object-fit: cover;
     }
 
     .vx-intro-content h2{
-        font-size:1.6rem !important;
+        font-size:1.5rem !important;
 
         margin-bottom:20px !important;
     }
@@ -11245,7 +11487,7 @@ object-fit: cover;
     }
 
     .vx-industries-content h2{
-        font-size:1.8rem !important;
+        font-size:1.5rem !important;
     }
 }
 
@@ -11257,7 +11499,7 @@ object-fit: cover;
     }
 
     .vx-industries-content h2{
-        font-size:1.6rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-industries-content p{
@@ -11447,7 +11689,7 @@ object-fit: cover;
     }
 
     .vx-benefits-content h2{
-        font-size:1.8rem !important;
+        font-size:1.5rem !important;
     }
 }
 
@@ -11649,7 +11891,7 @@ object-fit: cover;
     }
 
     .vx-benefits-content h2{
-        font-size:1.8rem !important;
+        font-size:1.5rem !important;
     }
 }
 
@@ -11661,7 +11903,7 @@ object-fit: cover;
     }
 
     .vx-benefits-content h2{
-        font-size:1.6rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-benefits-content p{
@@ -11789,7 +12031,7 @@ object-fit: cover;
     }
 
     .vx-content-card h2{
-        font-size:1.8rem !important;
+        font-size:1.5rem !important;
     }
 }
 
@@ -11804,7 +12046,7 @@ object-fit: cover;
     }
 
     .vx-content-card h2{
-        font-size:1.6rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-content-card p{
@@ -11966,7 +12208,7 @@ object-fit: cover;
     }
 
     .vx-sectors-content h2{
-        font-size:1.8rem !important;
+        font-size:1.5rem !important;
     }
 }
 
@@ -11981,7 +12223,7 @@ object-fit: cover;
     }
 
     .vx-sectors-content h2{
-        font-size:1.6rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-sectors-list li{
@@ -12090,7 +12332,7 @@ object-fit: cover;
     }
 
     .vx-benefits-content h2{
-        font-size:1.6rem !important;
+        font-size:1.5rem !important;
     }
 }
 
@@ -12254,7 +12496,7 @@ object-fit: cover;
     }
 
     .vx-cta-section h2{
-        font-size:2rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-cta-section p{
@@ -12469,7 +12711,7 @@ object-fit: cover;
 
     .vx-contract-section h2{
 
-        font-size:1.8rem !important;
+        font-size:1.5rem !important;
     }
 }
 
@@ -12488,7 +12730,7 @@ object-fit: cover;
 
     .vx-contract-section h2{
 
-        font-size:1.6rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-contract-section p{
@@ -12618,7 +12860,7 @@ object-fit: cover;
     }
 
     .vx-heading h2{
-        font-size:1.8rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-service-card{
@@ -12634,7 +12876,7 @@ object-fit: cover;
     }
 
     .vx-heading h2{
-        font-size:1.6rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-service-card h3{
@@ -13111,7 +13353,7 @@ object-fit: cover;
     }
 
     .vx-content-card h2{
-        font-size:1.8rem !important;
+        font-size:1.5rem !important;
     }
 }
 
@@ -13135,7 +13377,7 @@ object-fit: cover;
     }
 
     .vx-content-card h2{
-        font-size:1.6rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-content-card p{
@@ -13143,7 +13385,7 @@ object-fit: cover;
     }
 
     .vx-cta-section h2{
-        font-size:1.8rem !important;
+        font-size:1.5rem !important;
     }
 }
 
@@ -13246,7 +13488,7 @@ object-fit: cover;
     }
 
     .vx-process-section .vx-heading h2{
-        font-size:1.8rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-process-card{
@@ -13266,7 +13508,7 @@ object-fit: cover;
     }
 
     .vx-process-section .vx-heading h2{
-        font-size:1.6rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-process-card i{
@@ -13491,7 +13733,7 @@ object-fit: cover;
     }
 
     .vx-sector-content h2{
-        font-size:1.8rem !important;
+        font-size:1.5rem !important;
     }
 }
 
@@ -13507,7 +13749,7 @@ object-fit: cover;
     }
 
     .vx-sector-content h2{
-        font-size:1.6rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-sector-list li{
@@ -13611,7 +13853,7 @@ object-fit: cover;
     }
 
     .vx-faq-section .vx-heading h2{
-        font-size:1.6rem !important;
+        font-size:1.5rem !important;
     }
 
     #fireMarshalFAQ .accordion-button{
@@ -13691,7 +13933,7 @@ object-fit: cover;
     }
 
     .vx-sector-content h2{
-        font-size:1.8rem !important;
+        font-size:1.5rem !important;
     }
 
 }
@@ -13771,7 +14013,7 @@ object-fit: cover;
     }
 
     .vx-benefits-content h2{
-        font-size:1.8rem !important;
+        font-size:1.5rem !important;
     }
 
 }
@@ -13784,7 +14026,7 @@ object-fit: cover;
     }
 
     .vx-benefits-content h2{
-        font-size:1.6rem !important;
+        font-size:1.5rem !important;
     }
 
 }
@@ -13873,7 +14115,7 @@ object-fit: cover;
     }
 
     .vx-k9-cta-box h2{
-        font-size:1.6rem !important;
+        font-size:1.5rem !important;
     }
 }
 
@@ -13940,7 +14182,7 @@ object-fit: cover;
     }
 
     .vx-testimonials .vx-heading h2{
-        font-size:1.6rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-testimonial-card{
@@ -14031,7 +14273,7 @@ object-fit: cover;
     }
 
     .vx-content-card h2{
-        font-size:2rem;
+        font-size:1.5rem;
     }
 
     .vx-content-card p{
@@ -14238,7 +14480,7 @@ object-fit: cover;
     }
 
     .vx-final-content h2{
-        font-size:2.2rem;
+        font-size:1.5rem;
     }
 
     .vx-quote-form{
@@ -14255,7 +14497,7 @@ object-fit: cover;
     }
 
     .vx-final-content h2{
-        font-size:1.9rem;
+        font-size:1.5rem;
     }
 
     .vx-contact-item{
@@ -14498,7 +14740,7 @@ object-fit: cover;
     }
 
     .vx-cleaning-intro-content h2{
-        font-size:2.5rem;
+        font-size:1.5rem;
     }
 
 }
@@ -14511,7 +14753,7 @@ object-fit: cover;
     }
 
     .vx-cleaning-intro-content h2{
-        font-size:2rem;
+        font-size:1.5rem;
     }
 
     .vx-cleaning-intro-content p{
@@ -14646,7 +14888,7 @@ object-fit: cover;
     }
 
     .vx-benefits-wrapper h2{
-        font-size:2.3rem;
+        font-size:1.5rem;
     }
 
     .vx-benefits-grid{
@@ -14662,7 +14904,7 @@ object-fit: cover;
     }
 
     .vx-benefits-wrapper h2{
-        font-size:1.9rem;
+        font-size:1.5rem;
     }
 
 }
@@ -14759,7 +15001,7 @@ object-fit: cover;
     }
 
     .vx-content-card h2{
-        font-size:2.3rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-mini-card h4{
@@ -14779,7 +15021,7 @@ object-fit: cover;
     }
 
     .vx-content-card h2{
-        font-size:1.9rem !important;
+        font-size:1.5rem !important;
     }
 
     .vx-content-card p{
@@ -16119,7 +16361,7 @@ MOBILE
     }
 
     .vx-contact-info-card h2{
-        font-size:34px !important;
+        font-size:1.5rem !important;
     }
 
     .vx-contact-form-card h3{
@@ -16127,7 +16369,7 @@ MOBILE
     }
 
     .vx-emergency-cta h2{
-        font-size:34px !important;
+        font-size:1.5rem !important;
     }
 
     .vx-map-section iframe{
@@ -16623,7 +16865,7 @@ MOBILE
 @media(max-width:768px){
 
     .vx-overview-header h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 
     .vx-concierge-process::before{
@@ -16714,7 +16956,7 @@ MOBILE
     }
 
     .vx-benefits-header h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 
     .vx-benefit-box{
@@ -16822,7 +17064,7 @@ MOBILE
     }
 
     .vx-contract-header h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 
     .vx-operation-card{
@@ -17228,7 +17470,7 @@ MOBILE
     }
 
     .vx-site-overview-content h2{
-        font-size:2rem;
+        font-size:1.5rem;
         text-align:center;
     }
 
@@ -17254,7 +17496,7 @@ MOBILE
     }
 
     .vx-site-overview-content h2{
-        font-size:1.6rem;
+        font-size:1.5rem;
     }
 
     .vx-site-overview-content p{
@@ -17345,7 +17587,7 @@ MOBILE
     }
 
     .vx-magazine-layout h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 }
 
@@ -17431,7 +17673,7 @@ MOBILE
     }
 
     .vx-construction-benefits-pro h2{
-        font-size:1.7rem;
+        font-size:1.5rem;
     }
 
     .vx-benefit-card{
@@ -17525,7 +17767,7 @@ MOBILE
     }
 
     .vx-advantage-header h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 
 }
@@ -17662,7 +17904,7 @@ MOBILE
     }
 
     .vx-risk-header h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 }
 
@@ -17773,7 +18015,7 @@ MOBILE
     }
 
     .vx-event-types-header h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 }
 
@@ -17876,7 +18118,7 @@ MOBILE
     }
 
     .vx-hotel-duty-header h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 }
 
@@ -17973,7 +18215,7 @@ MOBILE
     }
 
     .vx-retail-showcase-header h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 }
 
@@ -18081,7 +18323,7 @@ MOBILE
     }
 
     .vx-warehouse-threats-header h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 }
 
@@ -18196,7 +18438,7 @@ MOBILE
     }
 
     .vx-fire-industries-header h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 
 }
@@ -18297,7 +18539,7 @@ MOBILE
     }
 
     .vx-k9-deployment-header h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 
 }
@@ -18398,7 +18640,7 @@ MOBILE
     }
 
     .vx-keyholding-header h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 
 }
@@ -18513,7 +18755,7 @@ MOBILE
     }
 
     .vx-patrol-header h2{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 
 }
@@ -19019,9 +19261,7 @@ h2{
     }
 
     /* BOOTSTRAP ROW SPACING */
-    .row{
-        row-gap: 20px;
-    }
+   
 
     /* FEEDBACK PAGE */
     .feedback-info-card,
@@ -19062,9 +19302,7 @@ h2{
     }
 
 }
-.help-button{
-    display: none;
-}
+
 .patrol-list li{
     text-align: left;
 }
@@ -19096,7 +19334,7 @@ h2{
     }
 
     .vx-final-content h2{
-        font-size: 28px !important;
+        font-size: 1.5rem !important;
         line-height: 1.3 !important;
         margin-bottom: 15px !important;
         text-align: center !important;
@@ -19229,4 +19467,607 @@ h2{
         margin-top: 30px !important;
     }
 
+}
+
+.service-card a{
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+
+
+/* =========================================
+ bg images for all services both desktop and mobile view
+========================================= */
+
+/* ==================================================
+   CORPORATE OFFICE SECURITY HERO BANNER
+================================================== */
+
+#corporate-hero{
+    position: relative;
+    background: url('images/bg/corporate-office-security.webp') center center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+#corporate-hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.60) 50%,
+        rgba(0,0,0,0.75) 100%
+    );
+    z-index: 1;
+}
+
+/* Content Above Overlay */
+#corporate-hero .container{
+    position: relative;
+    z-index: 2;
+}
+
+/* ==================================================
+   MOBILE HERO BANNER
+================================================== */
+
+@media (max-width: 767px){
+
+    #corporate-hero{
+        background: url('images/bg/corporate-office-security1.webp') center center/cover no-repeat;
+    }
+
+}
+
+/* ==================================================
+   CONCIERGE SECURITY HERO BANNER
+================================================== */
+
+#concierge-hero{
+    position: relative;
+    background: url('images/bg/concierge-security.webp') center center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+#concierge-hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.60) 50%,
+        rgba(0,0,0,0.75) 100%
+    );
+    z-index: 1;
+}
+
+/* Content Above Overlay */
+#concierge-hero .container{
+    position: relative;
+    z-index: 2;
+}
+
+/* ==================================================
+   MOBILE HERO BANNER
+================================================== */
+
+@media (max-width: 767px){
+
+    #concierge-hero{
+        background: url('images/bg/concierge-security1.webp') center center/cover no-repeat;
+    }
+
+}
+
+/* ==================================================
+   CONSTRUCTION SECURITY HERO BANNER
+================================================== */
+
+#construction-hero{
+    position: relative;
+    background: url('images/bg/construction-security.webp') center center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+#construction-hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.60) 50%,
+        rgba(0,0,0,0.75) 100%
+    );
+    z-index: 1;
+}
+
+/* Content Above Overlay */
+#construction-hero .container{
+    position: relative;
+    z-index: 2;
+}
+
+/* ==================================================
+   MOBILE HERO BANNER
+================================================== */
+
+@media (max-width: 767px){
+
+    #construction-hero{
+        background: url('images/bg/construction-security1.webp') center center/cover no-repeat;
+    }
+
+}
+
+/* ==================================================
+   EVENT SECURITY HERO BANNER
+================================================== */
+
+#event-hero{
+    position: relative;
+    background: url('images/bg/event-security.webp') center center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+#event-hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.60) 50%,
+        rgba(0,0,0,0.75) 100%
+    );
+    z-index: 1;
+}
+
+/* Content Above Overlay */
+#event-hero .container{
+    position: relative;
+    z-index: 2;
+}
+
+/* ==================================================
+   MOBILE HERO BANNER
+================================================== */
+
+@media (max-width: 767px){
+
+    #event-hero{
+        background: url('images/bg/event-security1.webp') center center/cover no-repeat;
+    }
+
+}
+
+/* ==================================================
+   HOTEL SECURITY HERO BANNER
+================================================== */
+
+#hotel-hero{
+    position: relative;
+    background: url('images/bg/hotel-security.webp') center center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+#hotel-hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.60) 50%,
+        rgba(0,0,0,0.75) 100%
+    );
+    z-index: 1;
+}
+
+/* Content Above Overlay */
+#hotel-hero .container{
+    position: relative;
+    z-index: 2;
+}
+
+/* ==================================================
+   MOBILE HERO BANNER
+================================================== */
+
+@media (max-width: 767px){
+
+    #hotel-hero{
+        background: url('images/bg/hotel-security1.webp') center center/cover no-repeat;
+    }
+
+}
+
+/* ==================================================
+   RETAIL SECURITY HERO BANNER
+================================================== */
+
+#retail-hero{
+    position: relative;
+    background: url('images/bg/retail-security.webp') center center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+#retail-hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.60) 50%,
+        rgba(0,0,0,0.75) 100%
+    );
+    z-index: 1;
+}
+
+/* Content Above Overlay */
+#retail-hero .container{
+    position: relative;
+    z-index: 2;
+}
+
+/* ==================================================
+   MOBILE HERO BANNER
+================================================== */
+
+@media (max-width: 767px){
+
+    #retail-hero{
+        background: url('images/bg/retail-security1.webp') center center/cover no-repeat;
+    }
+
+}
+
+/* ==================================================
+   INDUSTRIAL & WAREHOUSE SECURITY HERO BANNER
+================================================== */
+
+#industrial-hero{
+    position: relative;
+    background: url('images/bg/industrial-security.webp') center center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+#industrial-hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.60) 50%,
+        rgba(0,0,0,0.75) 100%
+    );
+    z-index: 1;
+}
+
+/* Content Above Overlay */
+#industrial-hero .container{
+    position: relative;
+    z-index: 2;
+}
+
+/* ==================================================
+   MOBILE HERO BANNER
+================================================== */
+
+@media (max-width: 767px){
+
+    #industrial-hero{
+        background: url('images/bg/industrial-security1.webp') center center/cover no-repeat;
+    }
+
+}
+
+/* ==================================================
+   FIRE MARSHAL HERO BANNER
+================================================== */
+
+#fire-marshal-hero{
+    position: relative;
+    background: url('images/bg/fire-marshal.webp') center center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+#fire-marshal-hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.60) 50%,
+        rgba(0,0,0,0.75) 100%
+    );
+    z-index: 1;
+}
+
+/* Content Above Overlay */
+#fire-marshal-hero .container{
+    position: relative;
+    z-index: 2;
+}
+
+/* ==================================================
+   MOBILE HERO BANNER
+================================================== */
+
+@media (max-width: 767px){
+
+    #fire-marshal-hero{
+        background: url('images/bg/fire-marshal1.webp') center center/cover no-repeat;
+    }
+
+}
+
+/* ==================================================
+   K9 SECURITY HERO BANNER
+================================================== */
+
+#k9-hero{
+    position: relative;
+    background: url('images/bg/k9-security.webp') center center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+#k9-hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.60) 50%,
+        rgba(0,0,0,0.75) 100%
+    );
+    z-index: 1;
+}
+
+/* Content Above Overlay */
+#k9-hero .container{
+    position: relative;
+    z-index: 2;
+}
+
+/* ==================================================
+   MOBILE HERO BANNER
+================================================== */
+
+@media (max-width: 767px){
+
+    #k9-hero{
+        background: url('images/bg/k9-security1.webp') center center/cover no-repeat;
+    }
+
+}
+
+/* ==================================================
+   KEY HOLDING HERO BANNER
+================================================== */
+
+#key-holding-hero{
+    position: relative;
+    background: url('images/bg/key-holding.webp') center center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+#key-holding-hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.60) 50%,
+        rgba(0,0,0,0.75) 100%
+    );
+    z-index: 1;
+}
+
+/* Content Above Overlay */
+#key-holding-hero .container{
+    position: relative;
+    z-index: 2;
+}
+
+/* ==================================================
+   MOBILE HERO BANNER
+================================================== */
+
+@media (max-width: 767px){
+
+    #key-holding-hero{
+        background: url('images/bg/key-holding1.webp') center center/cover no-repeat;
+    }
+
+}
+
+/* ==================================================
+   MOBILE PATROLS HERO BANNER
+================================================== */
+
+#mobile-patrol-hero{
+    position: relative;
+    background: url('images/bg/mobile-patrol.webp') center center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+#mobile-patrol-hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.60) 50%,
+        rgba(0,0,0,0.75) 100%
+    );
+    z-index: 1;
+}
+
+/* Content Above Overlay */
+#mobile-patrol-hero .container{
+    position: relative;
+    z-index: 2;
+}
+
+/* ==================================================
+   MOBILE HERO BANNER
+================================================== */
+
+@media (max-width: 767px){
+
+    #mobile-patrol-hero{
+        background: url('images/bg/mobile-patrol1.webp') center center/cover no-repeat;
+    }
+
+}
+
+/* ==================================================
+   TRAFFIC MARSHALS HERO BANNER
+================================================== */
+
+#traffic-marshal-hero{
+    position: relative;
+    background: url('images/bg/traffic-marshals.webp') center center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+#traffic-marshal-hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.60) 50%,
+        rgba(0,0,0,0.75) 100%
+    );
+    z-index: 1;
+}
+
+/* Content Above Overlay */
+#traffic-marshal-hero .container{
+    position: relative;
+    z-index: 2;
+}
+
+/* ==================================================
+   MOBILE HERO BANNER
+================================================== */
+
+@media (max-width: 767px){
+
+    #traffic-marshal-hero{
+        background: url('images/bg/traffic-marshals1.webp') center center/cover no-repeat;
+    }
+
+}
+
+/* ==================================================
+   CLOSE PROTECTION HERO BANNER
+================================================== */
+
+#close-protection-hero{
+    position: relative;
+    background: url('images/bg/close-protection.webp') center center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+#close-protection-hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.60) 50%,
+        rgba(0,0,0,0.75) 100%
+    );
+    z-index: 1;
+}
+
+/* Content Above Overlay */
+#close-protection-hero .container{
+    position: relative;
+    z-index: 2;
+}
+
+/* ==================================================
+   MOBILE HERO BANNER
+================================================== */
+
+@media (max-width: 767px){
+
+    #close-protection-hero{
+        background: url('images/bg/close-protection1.webp') center center/cover no-repeat;
+    }
+
+}
+
+/* ==================================================
+   CLEANING SERVICES HERO BANNER
+================================================== */
+
+#cleaning-services-hero{
+    position: relative;
+    background: url('images/bg/cleaning-services.webp') center center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+#cleaning-services-hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.60) 50%,
+        rgba(0,0,0,0.75) 100%
+    );
+    z-index: 1;
+}
+
+/* Content Above Overlay */
+#cleaning-services-hero .container{
+    position: relative;
+    z-index: 2;
+}
+
+/* ==================================================
+   MOBILE HERO BANNER
+================================================== */
+
+@media (max-width: 767px){
+
+    #cleaning-services-hero{
+        background: url('images/bg/cleaning-services1.webp') center center/cover no-repeat;
+    }
+
+}
+
+.footer-social{
+    display: none !important;
 }

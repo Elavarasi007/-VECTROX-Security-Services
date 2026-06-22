@@ -75,8 +75,8 @@
                 <div class="email-box">
                     <i class="fa-solid fa-envelope"></i>
 
-                    <a href="mailto:info@vectroxsecurity.co.uk">
-                        info@vectroxsecurity.co.uk
+                    <a href="mailto:sunnyalavala2@gmail.com">
+                        sunnyalavala2@gmail.com
                     </a>
                 </div>
 
@@ -244,7 +244,10 @@
     <ul>
 
         <li>
-            <a href="index.html">Home</a>
+           <div class="vx-mobile-dropdown-btn">
+    <a href="index.html">Home</a>
+    
+</div>
         </li>
 
         <!-- ABOUT -->
@@ -252,12 +255,9 @@
         <li class="vx-mobile-dropdown">
 
             <div class="vx-mobile-dropdown-btn">
-
-                About Us
-
-                <i class="fa-solid fa-plus"></i>
-
-            </div>
+    <a href="#">About Us</a>
+    <i class="fa-solid fa-plus"></i>
+</div>
 
             <ul class="vx-mobile-submenu">
 
@@ -287,13 +287,9 @@
         <li class="vx-mobile-dropdown">
 
            <div class="vx-mobile-dropdown-btn">
-
-                
-                <a href="services.html">Services</a>
-
-                <i class="fa-solid fa-plus"></i>
-
-            </div>
+    <a href="services.html">Services</a>
+    <i class="fa-solid fa-plus"></i>
+</div>
 
             <ul class="vx-mobile-submenu">
 
@@ -320,13 +316,12 @@
 
         <li class="vx-mobile-dropdown">
 
-            <div class="vx-mobile-dropdown-btn">
+          <div class="vx-mobile-dropdown-btn">
+    <a href="#">Careers</a>
+    <i class="fa-solid fa-plus"></i>
+</div>
 
-                Careers
-
-                <i class="fa-solid fa-plus"></i>
-
-            </div>
+          
 
             <ul class="vx-mobile-submenu">
 
@@ -342,11 +337,17 @@
         </li>
 
         <li>
-            <a href="blog.html">Blog</a>
+           <div class="vx-mobile-dropdown-btn">
+    <a href="blog.html">Blog</a>
+   
+</div>
         </li>
 
         <li>
-            <a href="contact.html">Contact Us</a>
+           <div class="vx-mobile-dropdown-btn">
+    <a href="contact.html">Contact Us</a>
+   
+</div>
         </li>
 
     </ul>
@@ -357,7 +358,7 @@
 HERO SECTION
 ========================================= -->
 
-<section class="vx-corporate-hero">
+<section class="vx-corporate-hero" id="corporate-hero">
 
     <div class="vx-corporate-overlay"></div>
 
@@ -1603,8 +1604,8 @@ CONTACT CTA
                                 <strong>Email Us</strong>
 
                                 <p>
-                                    <a href="mailto:info@vectroxsecurity.co.uk">
-                                         info@vectroxsecurity.co.uk
+                                    <a href="mailto:sunnyalavala2@gmail.com">
+                                         sunnyalavala2@gmail.com
                                     </a>
                                 </p>
 
@@ -1801,7 +1802,7 @@ VECTROX Security Services delivers professional security solutions across the Un
 
               <li>
                 <i class="fa-solid fa-envelope"></i>
-                info@vectroxsecurity.co.uk
+                sunnyalavala2@gmail.com
               </li>
 
              <li>
@@ -1824,7 +1825,7 @@ VECTROX Security Services delivers professional security solutions across the Un
     <div class="container d-flex justify-content-between align-items-center flex-wrap">
 
       <div class="copyright">
-        © 2026 VECTROX Security Services. All Rights Reserved.
+        © 2026 VECTROX Security Services. Powered by Meg World Technologies. All Rights Reserved.
       </div>
 
            
@@ -1832,11 +1833,7 @@ VECTROX Security Services delivers professional security solutions across the Un
   </div>
 
 </footer>
-<!-- Back to top -->
-<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
-
-<!-- Help button -->
-<a href="#" class="help-button"><i class="fa-regular fa-circle-question"></i> Help</a>
+  
 
 <!-- MOBILE OFFCANVAS MENU -->
 <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
@@ -1898,6 +1895,96 @@ VECTROX Security Services delivers professional security solutions across the Un
       <li><a href="contact.html">Contact Us</a></li>
     </ul>
   </div>
+</div>
+
+
+<!-- Back To Top -->
+
+<button id="backToTop" aria-label="Back To Top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- Help Button -->
+
+<a href="javascript:void(0)" id="helpButton" class="help-button">
+    <i class="fa-solid fa-headset"></i>
+    Chat
+</a>
+
+<!-- HELP OVERLAY -->
+<div id="helpOverlay" class="help-overlay"></div>
+<!-- HELP POPUP -->
+
+<div class="help-popup" id="helpPopup">
+
+<!-- Header -->
+<div class="help-popup-header">
+
+    <span>Chat With Us</span>
+
+    <button type="button" id="closeHelp" aria-label="Close">
+        <i class="fa-solid fa-minus"></i>
+    </button>
+
+</div>
+
+<!-- Body -->
+<div class="help-popup-body">
+
+    <form id="helpForm">
+
+        <div class="form-group">
+            <label for="helpName">Your Name</label>
+            <input
+                type="text"
+                id="helpName"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="helpEmail">Email Address</label>
+            <input
+                type="email"
+                id="helpEmail"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="helpPhone">Phone Number</label>
+            <input
+                type="tel"
+                id="helpPhone"
+                name="phone"
+                placeholder="Enter your phone number"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="helpMessage">Message</label>
+            <textarea
+                id="helpMessage"
+                name="message"
+                rows="5"
+                placeholder="Type your message"
+                required
+            ></textarea>
+        </div>
+
+        <button type="submit" class="help-submit">
+            Send Message
+        </button>
+
+    </form>
+
+</div>
+
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

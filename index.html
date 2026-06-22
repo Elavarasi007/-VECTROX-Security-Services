@@ -73,8 +73,8 @@
                 <div class="email-box">
                     <i class="fa-solid fa-envelope"></i>
 
-                    <a href="mailto:info@vectroxsecurity.co.uk">
-                        info@vectroxsecurity.co.uk
+                    <a href="mailto:sunnyalavala2@gmail.com">
+                        sunnyalavala2@gmail.com
                     </a>
                 </div>
 
@@ -242,7 +242,10 @@
     <ul>
 
         <li>
-            <a href="index.html">Home</a>
+           <div class="vx-mobile-dropdown-btn">
+    <a href="index.html">Home</a>
+    
+</div>
         </li>
 
         <!-- ABOUT -->
@@ -250,12 +253,9 @@
         <li class="vx-mobile-dropdown">
 
             <div class="vx-mobile-dropdown-btn">
-
-                About Us
-
-                <i class="fa-solid fa-plus"></i>
-
-            </div>
+    <a href="#">About Us</a>
+    <i class="fa-solid fa-plus"></i>
+</div>
 
             <ul class="vx-mobile-submenu">
 
@@ -284,14 +284,10 @@
 
         <li class="vx-mobile-dropdown">
 
-            <div class="vx-mobile-dropdown-btn">
-
-                
-                <a href="services.html">Services</a>
-
-                <i class="fa-solid fa-plus"></i>
-
-            </div>
+           <div class="vx-mobile-dropdown-btn">
+    <a href="services.html">Services</a>
+    <i class="fa-solid fa-plus"></i>
+</div>
 
             <ul class="vx-mobile-submenu">
 
@@ -318,13 +314,12 @@
 
         <li class="vx-mobile-dropdown">
 
-            <div class="vx-mobile-dropdown-btn">
+          <div class="vx-mobile-dropdown-btn">
+    <a href="#">Careers</a>
+    <i class="fa-solid fa-plus"></i>
+</div>
 
-                Careers
-
-                <i class="fa-solid fa-plus"></i>
-
-            </div>
+          
 
             <ul class="vx-mobile-submenu">
 
@@ -340,11 +335,17 @@
         </li>
 
         <li>
-            <a href="blog.html">Blog</a>
+           <div class="vx-mobile-dropdown-btn">
+    <a href="blog.html">Blog</a>
+   
+</div>
         </li>
 
         <li>
-            <a href="contact.html">Contact Us</a>
+           <div class="vx-mobile-dropdown-btn">
+    <a href="contact.html">Contact Us</a>
+   
+</div>
         </li>
 
     </ul>
@@ -356,52 +357,92 @@
   <div class="container">
     <div class="row align-items-center">
       <!-- Quote Form -->
-      <div class="col-lg-5 col-xl-4">
-        <div class="quote-card" data-aos="fade-right">
-          <h2>Get a Quote</h2>
-          <form id="quoteForm">
-            <div class="row g-2">
-              <div class="col-6"><input type="text" class="form-control" placeholder="Name of Company"></div>
-              <div class="col-6"><input type="text" class="form-control" placeholder="Address"></div>
-              <div class="col-6"><input type="text" class="form-control" placeholder="Post Code"></div>
-              <div class="col-6"><input type="text" class="form-control" placeholder="Contact Number"></div>
-              <div class="col-6"><input type="text" class="form-control" placeholder="Your Name"></div>
-              <div class="col-6"><input type="email" class="form-control" placeholder="Email"></div>
-              <div class="col-12">
-                <select class="form-select">
-                  <option selected>Choose Security Types</option>
-                  <option>Corporate Security</option>
-                  <option>Retail Security</option>
-                  <option>Event Security</option>
-                  <option>Construction Security</option>
-                  <option>Concierge Security</option>
-                  <option>Mobile Patrols</option>
-                </select>
-              </div>
-              <div class="col-12">
-                <select class="form-select">
-                  <option selected>How did you hear about us?</option>
-                  <option>Google Search</option>
-                  <option>Social Media</option>
-                  <option>Referral</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div class="col-12">
-                <textarea class="form-control" rows="4" maxlength="500" id="messageBox" placeholder="Message"></textarea>
-                <small class="char-count"><span id="charCount">0</span> </small>
-              </div>
-              <div class="col-12">
-              
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-submit">SUBMIT REQUEST</button>
-              </div>
-            </div>
-          </form>
+     <!-- Quote Form -->
+<div class="col-lg-5 col-xl-4">
+  <div class="quote-card" data-aos="fade-right">
+    <h2>Get a Quote</h2>
+
+    <form id="quoteForm" action="https://formsubmit.co/elavarasimanikandan007@gmail.com" method="POST">
+
+      <!-- FormSubmit Settings -->
+      <input type="hidden" name="_subject" value="New Security Quote Request">
+      <input type="hidden" name="_captcha" value="false">
+
+      <div class="row g-2">
+
+        <div class="col-6">
+          <input type="text" name="company_name" class="form-control" placeholder="Name of Company" required>
         </div>
+
+        <div class="col-6">
+          <input type="text" name="address" class="form-control" placeholder="Address" required>
+        </div>
+
+        <div class="col-6">
+          <input type="text" name="post_code" class="form-control" placeholder="Post Code" required>
+        </div>
+
+        <div class="col-6">
+          <input type="text" name="contact_number" class="form-control" placeholder="Contact Number" required>
+        </div>
+
+        <div class="col-6">
+          <input type="text" name="your_name" class="form-control" placeholder="Your Name" required>
+        </div>
+
+        <div class="col-6">
+          <input type="email" name="email" class="form-control" placeholder="Email" required>
+        </div>
+
+        <div class="col-12">
+          <select name="security_type" class="form-select" required>
+            <option value="" selected disabled>Choose Security Types</option>
+            <option>Corporate Security</option>
+            <option>Retail Security</option>
+            <option>Event Security</option>
+            <option>Construction Security</option>
+            <option>Concierge Security</option>
+            <option>Mobile Patrols</option>
+          </select>
+        </div>
+
+        <div class="col-12">
+          <select name="hear_about_us" class="form-select">
+            <option value="" selected disabled>How did you hear about us?</option>
+            <option>Google Search</option>
+            <option>Social Media</option>
+            <option>Referral</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="col-12">
+          <textarea
+            name="message"
+            class="form-control"
+            rows="4"
+            maxlength="500"
+            id="messageBox"
+            placeholder="Message"
+            required
+          ></textarea>
+
+          <small class="char-count">
+            <span id="charCount">0</span>
+          </small>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-submit">
+            SUBMIT REQUEST
+          </button>
+        </div>
+
       </div>
 
+    </form>
+  </div>
+</div>
 
       
 
@@ -438,30 +479,30 @@ VECTROX Security Services is a trusted provider of professional security solutio
         <div class="row g-0 services-grid">
           <div class="col-6 col-md-3 service-card">
     <div class="service-icon">
-        <i class="fa-solid fa-building"></i>
+       <a href="corporate-office-security.html"> <i class="fa-solid fa-building"></i>
     </div>
-    <h5>Corporate Office Security</h5>
+    <h5>Corporate Office Security</h5></a>
 </div>
-          <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <i class="fa-solid fa-user-tie"></i> </div> <h5>Concierge Security</h5> </div>
+          <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <a href="concierge-security.html"><i class="fa-solid fa-user-tie"></i> </div> <h5>Concierge Security</h5></a> </div>
 
-         <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <i class="fa-solid fa-helmet-safety"></i> </div> <h5>Construction Security</h5> </div>
-         <!-- 4 --> <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <i class="fa-solid fa-champagne-glasses"></i> </div> <h5>Event Security</h5> </div>
+         <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <a href="construction-security.html"><i class="fa-solid fa-helmet-safety"></i> </div> <h5>Construction Security</h5></a> </div>
+         <!-- 4 --> <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <a href="event-security.html"><i class="fa-solid fa-champagne-glasses"></i> </div> <h5>Event Security</h5></a> </div>
 
-        <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <i class="fa-solid fa-bell-concierge"></i> </div> <h5>Hotel Security</h5> </div>
+        <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <a href="hotel-security.html"><i class="fa-solid fa-bell-concierge"></i> </div> <h5>Hotel Security</h5></a> </div>
 
-          <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <i class="fa-solid fa-store"></i> </div> <h5>Retail Security</h5> </div>
+          <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <a href="retail-security.html"><i class="fa-solid fa-store"></i> </div> <h5>Retail Security</h5></a> </div>
 
-         <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <i class="fa-solid fa-lock"></i> </div> <h5>Industrial & Warehouse Security</h5> </div>
+         <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <a href="industrial-warehouse-security.html"><i class="fa-solid fa-lock"></i> </div> <h5>Industrial & Warehouse Security</h5></a> </div>
 
-        <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <i class="fa-solid fa-fire-extinguisher"></i> </div> <h5>Fire Marshal</h5> </div>
+        <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <a href="fire-marshal.html"><i class="fa-solid fa-fire-extinguisher"></i> </div> <h5>Fire Marshal</h5></a> </div>
 
-         <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <i class="fa-solid fa-dog"></i> </div> <h5>Dog Security</h5> </div>
+         <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <a href="k9-security.html"><i class="fa-solid fa-dog"></i> </div> <h5>Dog Security</h5></a> </div>
 
-         <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <i class="fa-solid fa-key"></i> </div> <h5>Key Holding</h5> </div>
+         <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <a href="key-holding.html"><i class="fa-solid fa-key"></i> </div> <h5>Key Holding</h5></a> </div>
 
-       <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <i class="fa-solid fa-car"></i> </div> <h5>Mobile Patrols</h5> </div>
+       <div class="col-6 col-md-3 service-card"> <div class="service-icon"><a href="mobile-patrols.html"> <i class="fa-solid fa-car"></i> </div> <h5>Mobile Patrols</h5></a> </div>
 
-          <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <i class="fa-solid fa-person-walking-arrow-right"></i> </div> <h5>Traffic Marshals</h5> </div>
+          <div class="col-6 col-md-3 service-card"> <div class="service-icon"> <a href="traffic-marshals.html"><i class="fa-solid fa-person-walking-arrow-right"></i> </div> <h5>Traffic Marshals</h5></a> </div>
 
         </div>
       </div>
@@ -632,8 +673,8 @@ At VECTROX Security Services, we utilise advanced guard patrol monitoring techno
         </div>
 
        <p class="footer-about">
-VECTROX Security Services delivers professional security solutions across the United Kingdom, providing Security Guarding, Mobile Patrols, Construction Security, Corporate Security, Concierge Security, Event Security, CCTV Monitoring, and Key Holding services backed by experienced personnel and exceptional customer service.
-</p>
+      VECTROX Security Services delivers professional security solutions across the United Kingdom, providing Security Guarding, Mobile Patrols, Construction Security, Corporate Security, Concierge Security, Event Security, CCTV Monitoring, and Key Holding services backed by experienced personnel and exceptional customer service.
+      </p>
 
         <div class="footer-social">
           <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -692,7 +733,7 @@ VECTROX Security Services delivers professional security solutions across the Un
 
               <li>
                 <i class="fa-solid fa-envelope"></i>
-                info@vectroxsecurity.co.uk
+                sunnyalavala2@gmail.com
               </li>
 
              <li>
@@ -715,7 +756,7 @@ VECTROX Security Services delivers professional security solutions across the Un
     <div class="container d-flex justify-content-between align-items-center flex-wrap">
 
       <div class="copyright">
-        © 2026 VECTROX Security Services. All Rights Reserved.
+        © 2026 VECTROX Security Services. Powered by Meg World Technologies. All Rights Reserved.
       </div>
 
        
@@ -723,11 +764,9 @@ VECTROX Security Services delivers professional security solutions across the Un
   </div>
 
 </footer>
-<!-- Back to top -->
-<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
-<!-- Help button -->
-<a href="#" class="help-button"><i class="fa-regular fa-circle-question"></i> Help</a>
+
+
 
 <!-- MOBILE OFFCANVAS MENU -->
 <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
@@ -791,7 +830,103 @@ VECTROX Security Services delivers professional security solutions across the Un
   </div>
 </div>
 
+
+
+<!-- Back To Top -->
+
+<button id="backToTop" aria-label="Back To Top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- Help Button -->
+
+<a href="javascript:void(0)" id="helpButton" class="help-button">
+    <i class="fa-solid fa-headset"></i>
+    Chat
+</a>
+
+<!-- HELP OVERLAY -->
+<div id="helpOverlay" class="help-overlay"></div>
+<!-- HELP POPUP -->
+
+<div class="help-popup" id="helpPopup">
+
+<!-- Header -->
+<div class="help-popup-header">
+
+    <span>Chat With Us</span>
+
+    <button type="button" id="closeHelp" aria-label="Close">
+        <i class="fa-solid fa-minus"></i>
+    </button>
+
+</div>
+
+<!-- Body -->
+<div class="help-popup-body">
+
+    <form id="helpForm">
+
+        <div class="form-group">
+            <label for="helpName">Your Name</label>
+            <input
+                type="text"
+                id="helpName"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="helpEmail">Email Address</label>
+            <input
+                type="email"
+                id="helpEmail"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="helpPhone">Phone Number</label>
+            <input
+                type="tel"
+                id="helpPhone"
+                name="phone"
+                placeholder="Enter your phone number"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="helpMessage">Message</label>
+            <textarea
+                id="helpMessage"
+                name="message"
+                rows="5"
+                placeholder="Type your message"
+                required
+            ></textarea>
+        </div>
+
+        <button type="submit" class="help-submit">
+            Send Message
+        </button>
+
+    </form>
+
+</div>
+
+
+</div>
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
+
+
 </body>
 </html>
