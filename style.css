@@ -16157,7 +16157,7 @@ CONTACT PAGE
 
 .vx-contact-item a,
 .vx-contact-item span{
-    color:black !important;
+    color:white !important;
     text-decoration:none !important;
     font-size:16px !important;
 }
@@ -20079,3 +20079,22 @@ h2{
 .nav-menu > li:nth-child(5){
     display: none !important;
 }
+
+
+@media (max-width: 767px){
+
+    p{
+        text-align: justify !important;
+
+    }
+    .vx-faq-section .accordion-body{
+        text-align: justify;
+    }
+
+}
+    #contact_li a{
+        color: black !important;
+    }
+    #contact_lii span{
+         color: black !important;
+    }
