@@ -445,65 +445,73 @@
                         Request A Free Consultation
                     </h3>
 
-                    <form>
+                   <form action="https://formsubmit.co/sunnyalavala2@gmail.com" method="POST">
 
-                        <div class="row">
+    <input type="hidden" name="_subject" value="New Security Services Enquiry">
+    <input type="hidden" name="_captcha" value="false">
 
-                            <div class="col-md-6">
-                                <input type="text" placeholder="Full Name">
-                            </div>
+    <div class="row">
 
-                            <div class="col-md-6">
-                                <input type="email" placeholder="Email Address">
-                            </div>
+        <div class="col-md-6">
+            <input type="text" name="full_name" placeholder="Full Name" required>
+        </div>
 
-                            <div class="col-md-6">
-                                <input type="tel" placeholder="Phone Number">
-                            </div>
+        <div class="col-md-6">
+            <input type="email" name="email" placeholder="Email Address" required>
+        </div>
 
-                            <div class="col-md-6">
-                                <input type="text" placeholder="Company Name">
-                            </div>
+        <div class="col-md-6">
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+        </div>
 
-                            <div class="col-12">
+        <div class="col-md-6">
+            <input type="text" name="company_name" placeholder="Company Name">
+        </div>
 
-                                <select>
+        <div class="col-12">
 
-                                    <option>Select Service</option>
+            <select name="service" required>
 
-                                    <option>Corporate Security</option>
-                                    <option>Concierge Security</option>
-                                    <option>Construction Security</option>
-                                    <option>Event Security</option>
-                                    <option>Retail Security</option>
-                                    <option>Hotel Security</option>
-                                    <option>Industrial Security</option>
-                                    <option>Mobile Patrols</option>
-                                    <option>Key Holding</option>
-                                    <option>Close Protection</option>
-                                    <option>Cleaning Services</option>
+                <option value="">Select Service</option>
 
-                                </select>
+                <option>Corporate Security</option>
+                <option>Concierge Security</option>
+                <option>Construction Security</option>
+                <option>Event Security</option>
+                <option>Retail Security</option>
+                <option>Hotel Security</option>
+                <option>Industrial Security</option>
+                <option>Mobile Patrols</option>
+                <option>Key Holding</option>
+                <option>Close Protection</option>
+                <option>Cleaning Services</option>
 
-                            </div>
+            </select>
 
-                            <div class="col-12">
+        </div>
 
-                                <textarea rows="6" placeholder="Tell us about your requirements"></textarea>
+        <div class="col-12">
 
-                            </div>
+            <textarea
+                name="message"
+                rows="6"
+                placeholder="Tell us about your requirements"
+                required
+            ></textarea>
 
-                            <div class="col-12">
+        </div>
 
-                                <button type="submit">
-                                    SEND ENQUIRY
-                                </button>
+        <div class="col-12">
 
-                            </div>
+            <button type="submit">
+                SEND ENQUIRY
+            </button>
 
-                        </div>
+        </div>
 
-                    </form>
+    </div>
+
+</form>
 
                 </div>
 
@@ -721,10 +729,12 @@ VECTROX Security Services delivers professional security solutions across the Un
                 123 Business Street, London, UK
               </li>
 
-              <li>
-                <i class="fa-solid fa-envelope"></i>
-                sunnyalavala2@gmail.com
-              </li>
+            <li>
+    <i class="fa-solid fa-envelope"></i>
+    <a href="mailto:sunnyalavala2@gmail.com">
+        sunnyalavala2@gmail.com
+    </a>
+</li>
 
              <li>
     <i class="fa-solid fa-phone"></i>
@@ -850,56 +860,60 @@ VECTROX Security Services delivers professional security solutions across the Un
 <!-- Body -->
 <div class="help-popup-body">
 
-    <form id="helpForm">
+<form id="helpForm" action="https://formsubmit.co/sunnyalavala2@gmail.com" method="POST">
 
-        <div class="form-group">
-            <label for="helpName">Your Name</label>
-            <input
-                type="text"
-                id="helpName"
-                name="name"
-                placeholder="Enter your name"
-                required
-            >
-        </div>
+    <input type="hidden" name="_subject" value="New Website Help Enquiry">
+    <input type="hidden" name="_captcha" value="false">
 
-        <div class="form-group">
-            <label for="helpEmail">Email Address</label>
-            <input
-                type="email"
-                id="helpEmail"
-                name="email"
-                placeholder="Enter your email"
-                required
-            >
-        </div>
+    <div class="form-group">
+        <label for="helpName">Your Name</label>
+        <input
+            type="text"
+            id="helpName"
+            name="name"
+            placeholder="Enter your name"
+            required
+        >
+    </div>
 
-        <div class="form-group">
-            <label for="helpPhone">Phone Number</label>
-            <input
-                type="tel"
-                id="helpPhone"
-                name="phone"
-                placeholder="Enter your phone number"
-            >
-        </div>
+    <div class="form-group">
+        <label for="helpEmail">Email Address</label>
+        <input
+            type="email"
+            id="helpEmail"
+            name="email"
+            placeholder="Enter your email"
+            required
+        >
+    </div>
 
-        <div class="form-group">
-            <label for="helpMessage">Message</label>
-            <textarea
-                id="helpMessage"
-                name="message"
-                rows="5"
-                placeholder="Type your message"
-                required
-            ></textarea>
-        </div>
+    <div class="form-group">
+        <label for="helpPhone">Phone Number</label>
+        <input
+            type="tel"
+            id="helpPhone"
+            name="phone"
+            placeholder="Enter your phone number"
+        >
+    </div>
 
-        <button type="submit" class="help-submit">
-            Send Message
-        </button>
+    <div class="form-group">
+        <label for="helpMessage">Message</label>
+        <textarea
+            id="helpMessage"
+            name="message"
+            rows="5"
+            placeholder="Type your message"
+            required
+        ></textarea>
+    </div>
 
-    </form>
+    <button type="submit" class="help-submit">
+        Send Message
+    </button>
+
+</form>
+
 
 </div>
 

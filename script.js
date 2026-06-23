@@ -78,7 +78,9 @@ if (quoteForm) {
 
     quoteForm.addEventListener('submit', function () {
 
-        alert('Thank you for your request. Your form is being submitted.');
+        setTimeout(function(){
+            alert('Thank you for your request. Your form has been submitted successfully.');
+        }, 500);
 
     });
 

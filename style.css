@@ -15052,7 +15052,7 @@ object-fit: cover;
 }
 
 .vx-contact-item a:hover{
-    color:#c9c6c9 !important;
+    color:grey !important;
 }
 
 /* =========================
@@ -16157,7 +16157,7 @@ CONTACT PAGE
 
 .vx-contact-item a,
 .vx-contact-item span{
-    color:white !important;
+    color:black !important;
     text-decoration:none !important;
     font-size:16px !important;
 }
@@ -20069,5 +20069,13 @@ h2{
 }
 
 .footer-social{
+    display: none !important;
+}
+
+.vx-careers-content p{
+    text-align: justify;
+}
+
+.nav-menu > li:nth-child(5){
     display: none !important;
 }
