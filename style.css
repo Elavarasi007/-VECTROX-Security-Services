@@ -20219,6 +20219,7 @@ h2{
 
 .footer-logo{
     margin-bottom:25px !important;
+  
 }
 
 .footer-logo img{
@@ -20357,6 +20358,10 @@ h2{
     .footer-contact li{
         justify-content:center !important;
     }
+    .footer-logo{
+    margin-bottom:25px !important;
+    margin-left: 60px !important;
+}
 
 }
 
