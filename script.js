@@ -384,3 +384,43 @@ if(helpOverlay){
 
 });
 
+
+
+document.addEventListener('DOMContentLoaded', function(){
+
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const popup = document.getElementById('galleryPopup');
+    const popupImage = document.getElementById('popupImage');
+    const closeBtn = document.getElementById('galleryClose');
+
+    galleryItems.forEach(function(item){
+
+        item.addEventListener('click', function(e){
+
+            e.preventDefault();
+
+            popupImage.src = this.getAttribute('href');
+
+            popup.classList.add('active');
+
+        });
+
+    });
+
+    closeBtn.addEventListener('click', function(){
+
+        popup.classList.remove('active');
+
+    });
+
+    popup.addEventListener('click', function(e){
+
+        if(e.target === popup){
+            popup.classList.remove('active');
+        }
+
+    });
+
+});
+
+

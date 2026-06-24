@@ -1711,6 +1711,7 @@ font-size:1rem;
 .site-footer p {
   color: #c9c6c9;
   font-size: 0.92rem;
+  text-align: left;
 }
 
 .footer-contact {
@@ -5913,14 +5914,14 @@ font-size:1rem;
 }
 
 .faq-intro{
-    max-width:850px;
+    max-width:auto;
     margin-bottom:40px;
     color:#666;
     line-height:1.9;
 }
 
 .faq-wrapper{
-    max-width:1000px;
+    max-width:auto;
 }
 
 .faq-item{
@@ -6000,7 +6001,7 @@ font-size:1rem;
 }
 
 .gallery-intro{
-    max-width:900px;
+    max-width:auto;
     color:#666;
     line-height:1.9;
     margin-bottom:40px;
@@ -6069,8 +6070,95 @@ font-size:1rem;
     }
 
 }
+/* Gallery Popup */
+
+.gallery-popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.92);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    z-index:99999;
+}
+
+.gallery-popup.active{
+    opacity:1;
+    visibility:visible;
+}
+
+.gallery-popup img{
+    max-width:90%;
+    max-height:90vh;
+    border-radius:10px;
+}
+
+.gallery-close{
+    position:absolute;
+    top:25px;
+    right:30px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:rgba(255,255,255,.15);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.gallery-close:hover{
+    background:#a30d2d;
+}
 
 
+.gallery-close{
+    position:absolute;
+    top:20px;
+    right:20px;
+    z-index:999999 !important;
+}
+@media (max-width:768px){
+
+    .gallery-close{
+        position:fixed !important;
+        top:15px !important;
+        right:15px !important;
+
+        width:45px !important;
+        height:45px !important;
+
+        font-size:22px !important;
+
+        z-index:999999 !important;
+
+        background:rgba(0,0,0,.7) !important;
+        color:#fff !important;
+        border-radius:50% !important;
+    }
+    
+
+}
+
+@media (max-width:768px){
+
+    .gallery-popup{
+        display:none !important;
+    }
+   
+
+}
+@media (max-width:768px){
+    .gallery-overlay{
+        display:none !important;
+    }
+}
 /* =========================================
    PRIVACY POLICY PAGE
 ========================================= */
@@ -13228,6 +13316,7 @@ object-fit: cover;
 
 .vx-service-card p{
     color:#eee !important;
+    text-align: center !important;
 }
 
 /* =========================================
@@ -16267,7 +16356,7 @@ WHY CONTACT VECTROX
 
 .vx-benefit-box{
     background:#fff !important;
-    padding:35px !important;
+    padding:25px !important;
     border-radius:15px !important;
     text-align:center !important;
     box-shadow:0 10px 30px rgba(0,0,0,.08) !important;
@@ -16915,7 +17004,7 @@ MOBILE
 .vx-benefit-box{
     position:relative;
     background:#fff;
-    padding:40px 30px;
+    padding:30px 20px;
     border-radius:25px;
     height:100%;
     border-top:5px solid #990b2c;
@@ -16996,7 +17085,7 @@ MOBILE
 .vx-operation-card{
     background:#fff;
     border-radius:25px;
-    padding:35px 30px;
+    padding:30px 15px;
     text-align:center;
     height:100%;
     box-shadow:0 15px 40px rgba(0,0,0,0.08);
@@ -17979,6 +18068,7 @@ MOBILE
     width:55px;
     height:55px;
     align-items:center;
+    margin-left: 55px;
     justify-content:center;
     border-radius:50%;
     background:#A30D2D;
@@ -17986,6 +18076,15 @@ MOBILE
     font-weight:700;
     margin-bottom:18px;
 }
+@media(max-width:767px){
+.vx-event-type-card span{
+    margin: auto;
+}
+
+}
+
+
+
 
 .vx-event-type-card h4{
     font-size:1.05rem;
@@ -20076,9 +20175,7 @@ h2{
     text-align: justify;
 }
 
-.nav-menu > li:nth-child(5){
-    display: none !important;
-}
+
 
 
 @media (max-width: 767px){
@@ -20098,3 +20195,174 @@ h2{
     #contact_lii span{
          color: black !important;
     }
+
+
+
+.about-feature-card p, .security-feature-box p, .csr-card p, .env-card p, .quality-card p,.equality-card p,
+.pension-card p, .drug-card p, .slavery-card p, .loneworker-card p, .vx-service-box p, .vx-benefit-box p, .vx-operation-card p,
+.vx-operation-card, .vx-related-card p, .vx-event-type-card p,.vx-why-card p, .vx-event-types-header p,.vx-hotel-duty-card p, .vx-retail-sector-card p, .vx-process-card p
+,.vx-threat-card p, .vx-fire-industry-card p,.vx-k9-sector-card p, .vx-keyholding-header p,.vx-patrol-header p,.vx-patrol-card p,.vx-office-card p {
+    text-align: center !important;
+}
+
+.vx-risk-card p{
+    text-align: left;
+}
+
+/* =========================================
+   FOOTER IMPROVEMENTS
+========================================= */
+
+.site-footer{
+    padding-top:80px !important;
+}
+
+.footer-logo{
+    margin-bottom:25px !important;
+}
+
+.footer-logo img{
+    max-width:220px !important;
+    height:auto !important;
+}
+
+.footer-about{
+    line-height:1.9 !important;
+    max-width:360px !important;
+    margin-bottom:25px !important;
+}
+
+.footer-social{
+    margin-top:25px !important;
+}
+
+.footer-social a{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    width:42px !important;
+    height:42px !important;
+
+    margin-right:10px !important;
+
+    border-radius:50% !important;
+
+    background:rgba(255,255,255,0.08) !important;
+
+    transition:all .3s ease !important;
+}
+
+.footer-social a:hover{
+    background:#a30d2d !important;
+    transform:translateY(-3px) !important;
+}
+
+.footer-links{
+    margin:0 !important;
+    padding:0 !important;
+    list-style:none !important;
+}
+
+.footer-links li{
+    margin-bottom:12px !important;
+}
+
+.footer-links li a{
+    color:#ffffff !important;
+    text-decoration:none !important;
+    transition:all .3s ease !important;
+}
+
+.footer-links li a:hover{
+    color:#a30d2d !important;
+    padding-left:6px !important;
+}
+
+.footer-contact{
+    margin:0 !important;
+    padding:0 !important;
+    list-style:none !important;
+}
+
+.footer-contact li{
+    display:flex !important;
+    align-items:flex-start !important;
+    gap:12px !important;
+
+    margin-bottom:15px !important;
+}
+
+.footer-contact li i{
+    color:#a30d2d !important;
+    margin-top:4px !important;
+}
+
+.footer-contact li a{
+    color:#ffffff !important;
+    text-decoration:none !important;
+}
+
+.footer-contact li a:hover{
+    color:#a30d2d !important;
+}
+
+.site-footer h4{
+    margin-bottom:25px !important;
+    position:relative !important;
+}
+
+.site-footer h4::after{
+    content:'' !important;
+
+    position:absolute !important;
+    left:0 !important;
+    bottom:-8px !important;
+
+    width:40px !important;
+    height:3px !important;
+
+    background:#a30d2d !important;
+}
+
+.footer-bottom{
+    margin-top:50px !important;
+    padding:20px 0 !important;
+
+    border-top:1px solid rgba(255,255,255,0.08) !important;
+}
+
+.copyright{
+    text-align:center !important;
+    width:100% !important;
+}
+
+/* MOBILE */
+
+@media(max-width:767px){
+
+    .site-footer{
+        text-align:center !important;
+    }
+
+    .footer-about{
+        max-width:100% !important;
+    }
+
+    .site-footer h4::after{
+        left:50% !important;
+        transform:translateX(-50%) !important;
+    }
+
+    .footer-contact li{
+        justify-content:center !important;
+    }
+
+}
+
+.top-bar-right a{
+    display: none;
+}
+.top-bar-left{
+    padding-left: 400px;
+}
