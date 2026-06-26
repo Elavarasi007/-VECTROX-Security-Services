@@ -784,6 +784,7 @@ font-size:1.5rem;
 .hero-content h1{
 font-size:1rem;
 }
+
 }
 
 /* ==========================================================================
@@ -15790,11 +15791,11 @@ object-fit: cover;
 @media(max-width:767px){
 
     .vx-career-content h2{
-        font-size:32px !important;
+        font-size:1.5rem !important;
     }
 
     .vx-career-content h3{
-        font-size:24px !important;
+        font-size:1.5rem !important;
     }
 
     .vx-evp-features{
@@ -15813,7 +15814,7 @@ object-fit: cover;
 }
 
 .vx-policy-card h3{
-    font-size:28px !important;
+    font-size:25px !important;
     margin-bottom:20px !important;
     font-weight:700 !important;
 }
@@ -15996,6 +15997,9 @@ object-fit: cover;
     .vx-training-grid{
         grid-template-columns:1fr !important;
     }
+    .vx-policy-card h3{
+        font-size: 1.5rem;
+    }
 
 }
 
@@ -16162,6 +16166,7 @@ object-fit: cover;
     .vx-testimonial-grid{
         grid-template-columns:1fr !important;
     }
+   
 
 }
 
@@ -16178,7 +16183,7 @@ object-fit: cover;
     color:#555 !important;
     letter-spacing:0 !important;
     word-spacing:0 !important;
-    text-align:left !important;
+    text-align:justify !important;
     margin-bottom:25px !important;
 }
 
@@ -16587,7 +16592,7 @@ MOBILE
     }
 
     .vx-contract-header p{
-        text-align: justify !important;
+        text-align: center !important;
     }
 
 }
@@ -16725,7 +16730,7 @@ MOBILE
         padding:40px 15px !important;
     }
 .vx-testimonial-card p{
-    text-align: justify !important;
+    text-align: center !important;
 }
     
 
@@ -17592,7 +17597,7 @@ MOBILE
         text-align:justify;
     }
     .vx-cta-section p{
-        text-align: justify !important;
+        text-align: center !important;
     }
 }
 
@@ -19519,7 +19524,7 @@ h2{
     }
 
     .vx-final-content p{
-        text-align: justify !important;
+        text-align: center !important;
     }
 
 }
@@ -20181,11 +20186,11 @@ h2{
 @media (max-width: 767px){
 
     p{
-        text-align: justify !important;
+        text-align: center !important;
 
     }
     .vx-faq-section .accordion-body{
-        text-align: justify;
+        text-align: left;
     }
 
 }
@@ -20370,4 +20375,148 @@ h2{
 }
 .top-bar-left{
     padding-left: 400px;
+}
+
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .services-section p,
+    .about-section p {
+        text-align: center  !important;
+    }
+     .vx-testimonials-content p{
+        text-align: center !important;
+    }
+      .patrol-section p {
+        text-align: left !important;
+    }
+     .services-section p{
+        padding: 0 8px !important;
+    }
+}
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .inner-content > .container > p {
+        text-align: center !important;
+    }
+}
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .values-box .value-item > p {
+        text-align: center !important;
+    }
+}
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .security-commitment-box > p {
+        text-align: center !important;
+    }
+}
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .csr-commitment > p {
+        text-align: center !important;
+    }
+}
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .env-commitment > p {
+        text-align: center !important;
+    }
+}
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .hs-commitment-box > p {
+        text-align: center !important;
+    }
+}
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .quality-commitment-box > p {
+        text-align: center !important;
+    }
+}
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .equality-commitment-box > p {
+        text-align: center !important;
+    }
+}
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .pension-commitment-box > p {
+        text-align: center !important;
+    }
+}
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .drug-commitment-box > p {
+        text-align: center !important;
+    }
+}
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .slavery-commitment-box > p {
+        text-align: center !important;
+    }
+}
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .loneworker-commitment-box > p {
+        text-align: center !important;
+    }
+}
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .gallery-section .gallery-intro {
+        text-align: center !important;
+    }
+}
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .faq-intro {
+        text-align: center !important;
+    }
+}
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .vx-services-cta > p {
+        text-align: center !important;
+    }
+}
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .vx-hotel-duty-header > p {
+        text-align: center !important;
+    }
+}
+
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .vx-contact-row {
+        justify-content: flex-start !important;
+        text-align: left !important;
+    }
+
+    .vx-contact-row span {
+        text-align: left !important;
+    }
+}
+
+/* Mobile View Only */
+@media (max-width: 767px) {
+    .vx-contact-item {
+        display: flex;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
+    }
+
+    .vx-contact-item > div {
+        text-align: left !important;
+    }
+
+    .vx-contact-item strong,
+    .vx-contact-item p {
+        text-align: left !important;
+    }
 }
