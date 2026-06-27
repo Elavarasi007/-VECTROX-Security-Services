@@ -20571,3 +20571,31 @@ h2{
     }
 
 }
+/* ==========================
+   FOOTER LOGO MOBILE FIX
+========================== */
+
+@media (max-width: 991px){
+
+    .site-footer .col-lg-3,
+    .site-footer .col-md-6,
+    .site-footer .footer-logo{
+        text-align:center !important;
+    }
+
+    .site-footer .footer-logo{
+        width:100% !important;
+        display:flex !important;
+        justify-content:center !important;
+        align-items:center !important;
+        margin:0 auto 25px !important;
+    }
+
+    .site-footer .footer-logo img{
+        display:block !important;
+        width:220px !important;
+        max-width:100% !important;
+        margin:0 auto !important;
+    }
+
+}
