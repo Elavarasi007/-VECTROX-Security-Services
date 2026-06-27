@@ -20520,3 +20520,54 @@ h2{
         text-align: left !important;
     }
 }
+
+
+/* ==========================
+   METALLIC SHINE
+========================== */
+
+.footer-logo{
+    position:relative !important;
+    display:inline-block !important;
+    overflow:hidden !important;
+}
+
+.footer-logo img{
+    position:relative;
+    z-index:2;
+}
+
+.footer-logo::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+    105deg,
+    transparent 35%,
+    rgba(255,255,255,.85) 48%,
+    rgba(255,255,255,.15) 52%,
+    transparent 65%
+    );
+
+    transform:translateX(-180%);
+
+    animation:metalShine 6s linear infinite;
+
+    z-index:5;
+
+    pointer-events:none;
+
+}
+
+@keyframes metalShine{
+
+    100%{
+        transform:translateX(220%);
+    }
+
+}
